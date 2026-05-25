@@ -6,7 +6,7 @@
     <Authors>Shiqan</Authors>
     <Company />
     <Copyright>Copyright © 2020-2026 Shiqan</Copyright>
-    <PackageProjectUrl>https://github.com/Shiqan/FortniteReplayDecompressor</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/xdeltax/Play.Parse.Analyze.Repeat...Fortnite.Replay.Decompressor</PackageProjectUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <ContinuousIntegrationBuild Condition="'$(GITHUB_ACTIONS)' == 'true'">true</ContinuousIntegrationBuild>
