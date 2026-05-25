@@ -21,6 +21,6 @@ jobs:
       - uses: actions/setup-dotnet@v5
         with:
           dotnet-version: 10.x
-      - run: dotnet restore
-      - run: dotnet build --configuration Release --no-restore
-      - run: dotnet test --coverage --report-github
+      - run: dotnet restore ./FortniteReplayDecompressor.slnx
+      - run: dotnet build ./FortniteReplayDecompressor.slnx --configuration Release
+      - run: dotnet test ./FortniteReplayDecompressor.slnx --coverage --report-github
