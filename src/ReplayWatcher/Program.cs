@@ -51,17 +51,18 @@ internal static class Program
                 }
                 else
                 {
-                    var targetFile = options.ReplayDirectories
-                        .Select(d => Path.Combine(d, target))
-                        .FirstOrDefault(f => File.Exists(f));
+                    var targetMatch = options.ReplayDirectories
+                        .Where(Directory.Exists)
+                        .Select(d => new { BaseDir = d, File = Directory.EnumerateFiles(d, target, SearchOption.AllDirectories).FirstOrDefault() })
+                        .FirstOrDefault(x => x.File != null);
                     
-                    if (targetFile != null)
+                    if (targetMatch != null)
                     {
-                        var signature = TryGetSignature(targetFile);
-                        if (signature != null && CanReadReplayFile(targetFile)) 
+                        var signature = TryGetSignature(targetMatch.File);
+                        if (signature != null && CanReadReplayFile(targetMatch.File)) 
                         {
-                            var outDir = Path.Combine(Path.GetDirectoryName(targetFile)!, options.OutputSubdirectory);
-                            ProcessReplay(targetFile, signature, outDir, processed, pending, false, ref lastProcessedResultRef[0]);
+                            var outDir = Path.Combine(targetMatch.BaseDir, options.OutputSubdirectory);
+                            ProcessReplay(targetMatch.File, signature, outDir, processed, pending, false, ref lastProcessedResultRef[0]);
                         }
                     }
                 }
@@ -119,7 +120,7 @@ internal static class Program
 
                             if (!initializedExisting && !options.ProcessExisting)
                             {
-                                var existingReplayFiles = Directory.EnumerateFiles(replayDir, "*.replay").ToList();
+                                var existingReplayFiles = Directory.EnumerateFiles(replayDir, "*.replay", SearchOption.AllDirectories).ToList();
                                 foreach (var replayFile in existingReplayFiles)
                                 {
                                     var signature = TryGetSignature(replayFile);
@@ -178,7 +179,7 @@ internal static class Program
         ref ReplayAnalyzer.ReplayProcessResult? lastProcessedResult)
     {
         var nowUtc = DateTime.UtcNow;
-        var replayFiles = Directory.EnumerateFiles(replayDirectory, "*.replay").ToList();
+        var replayFiles = Directory.EnumerateFiles(replayDirectory, "*.replay", SearchOption.AllDirectories).ToList();
 
         var existingSet = new HashSet<string>(replayFiles, StringComparer.OrdinalIgnoreCase);
         foreach (var stalePending in pending.Keys.Where(key => !existingSet.Contains(key)).ToList())
@@ -320,7 +321,7 @@ internal static class Program
         }
 
         var latestReplay = existingDirs
-            .SelectMany(d => Directory.EnumerateFiles(d, "*.replay"))
+            .SelectMany(d => Directory.EnumerateFiles(d, "*.replay", SearchOption.AllDirectories))
             .Select(file => new { File = file, LastWriteUtc = File.GetLastWriteTimeUtc(file) })
             .OrderByDescending(item => item.LastWriteUtc)
             .Select(item => item.File)
@@ -340,7 +341,8 @@ internal static class Program
         }
 
         Console.WriteLine($"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] L pressed: reparsing latest replay.");
-        var outDir = Path.Combine(Path.GetDirectoryName(latestReplay)!, outputSubdirectory);
+        var baseDir = replayDirectories.FirstOrDefault(d => latestReplay.StartsWith(d, StringComparison.OrdinalIgnoreCase)) ?? Path.GetDirectoryName(latestReplay)!;
+        var outDir = Path.Combine(baseDir, outputSubdirectory);
         ProcessReplay(latestReplay, signature, outDir, processed, pending, showDetails: false, ref lastProcessedResult);
     }
 
@@ -359,7 +361,7 @@ internal static class Program
         }
 
         var replayFiles = existingDirs
-            .SelectMany(d => Directory.EnumerateFiles(d, "*.replay"))
+            .SelectMany(d => Directory.EnumerateFiles(d, "*.replay", SearchOption.AllDirectories))
             .Select(file => new { File = file, LastWriteUtc = File.GetLastWriteTimeUtc(file) })
             .OrderBy(item => item.LastWriteUtc)
             .Select(item => item.File)
@@ -382,7 +384,8 @@ internal static class Program
                 continue;
             }
 
-            var outDir = Path.Combine(Path.GetDirectoryName(replayFile)!, outputSubdirectory);
+            var baseDir = replayDirectories.FirstOrDefault(d => replayFile.StartsWith(d, StringComparison.OrdinalIgnoreCase)) ?? Path.GetDirectoryName(replayFile)!;
+            var outDir = Path.Combine(baseDir, outputSubdirectory);
             ProcessReplay(replayFile, signature, outDir, processed, pending, showDetails: false, ref lastProcessedResult);
         }
     }
