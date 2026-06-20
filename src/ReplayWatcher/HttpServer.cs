@@ -9,13 +9,19 @@ using System.Threading.Tasks;
 public sealed class HttpServer : IDisposable
 {
     private readonly HttpListener _listener;
+    private readonly string _replayDirectory;
     private readonly string _parsedDir;
     private readonly string _wwwroot;
+    private readonly Action<string> _reparseAction;
+    private readonly Func<DateTime?> _pendingStatusFunc;
 
-    public HttpServer(string parsedDir, string wwwroot)
+    public HttpServer(string replayDirectory, string parsedDir, string wwwroot, Action<string> reparseAction, Func<DateTime?> pendingStatusFunc)
     {
+        _replayDirectory = replayDirectory;
         _parsedDir = parsedDir;
         _wwwroot = wwwroot;
+        _reparseAction = reparseAction;
+        _pendingStatusFunc = pendingStatusFunc;
         _listener = new HttpListener();
         _listener.Prefixes.Add("http://127.0.0.1:5142/");
     }
@@ -54,7 +60,19 @@ public sealed class HttpServer : IDisposable
 
         try
         {
-            if (request.Url?.LocalPath == "/api/replays")
+            if (request.Url?.LocalPath == "/api/status")
+            {
+                await HandleApiStatusAsync(response);
+            }
+            else if (request.Url?.LocalPath == "/api/source-replays")
+            {
+                await HandleApiSourceReplaysAsync(response);
+            }
+            else if (request.Url?.LocalPath == "/api/reparse" && request.HttpMethod == "POST")
+            {
+                await HandleApiReparseAsync(request, response);
+            }
+            else if (request.Url?.LocalPath == "/api/replays")
             {
                 await HandleApiReplaysAsync(response);
             }
@@ -101,6 +119,79 @@ public sealed class HttpServer : IDisposable
 
         var json = JsonSerializer.Serialize(files);
         await WriteStringAsync(response, json);
+    }
+
+    private async Task HandleApiStatusAsync(HttpListenerResponse response)
+    {
+        response.ContentType = "application/json";
+        response.AddHeader("Access-Control-Allow-Origin", "*");
+
+        var firstSeen = _pendingStatusFunc();
+        var isLive = firstSeen.HasValue;
+        var durationMinutes = isLive ? (int)(DateTime.UtcNow - firstSeen.Value).TotalMinutes : 0;
+
+        var json = JsonSerializer.Serialize(new
+        {
+            isLive,
+            durationMinutes
+        });
+        await WriteStringAsync(response, json);
+    }
+
+    private async Task HandleApiSourceReplaysAsync(HttpListenerResponse response)
+    {
+        response.ContentType = "application/json";
+        response.AddHeader("Access-Control-Allow-Origin", "*");
+
+        if (!Directory.Exists(_replayDirectory))
+        {
+            await WriteStringAsync(response, "[]");
+            return;
+        }
+
+        var parsedFiles = Directory.Exists(_parsedDir) 
+            ? new HashSet<string>(Directory.GetFiles(_parsedDir, "*.json").Select(Path.GetFileNameWithoutExtension), StringComparer.OrdinalIgnoreCase)
+            : new HashSet<string>();
+
+        var files = Directory.GetFiles(_replayDirectory, "*.replay")
+            .Select(f => new FileInfo(f))
+            .OrderByDescending(f => f.LastWriteTimeUtc)
+            .Select(f => new
+            {
+                filename = f.Name,
+                mtime = new DateTimeOffset(f.LastWriteTimeUtc).ToUnixTimeMilliseconds(),
+                isParsed = parsedFiles.Contains(Path.GetFileNameWithoutExtension(f.Name))
+            })
+            .ToList();
+
+        var json = JsonSerializer.Serialize(files);
+        await WriteStringAsync(response, json);
+    }
+
+    private async Task HandleApiReparseAsync(HttpListenerRequest request, HttpListenerResponse response)
+    {
+        response.ContentType = "application/json";
+        response.AddHeader("Access-Control-Allow-Origin", "*");
+
+        try
+        {
+            using var reader = new StreamReader(request.InputStream, request.ContentEncoding);
+            var body = await reader.ReadToEndAsync();
+            var doc = JsonDocument.Parse(body);
+            var target = doc.RootElement.GetProperty("target").GetString();
+
+            if (!string.IsNullOrEmpty(target))
+            {
+                _reparseAction(target);
+            }
+
+            await WriteStringAsync(response, "{\"success\":true}");
+        }
+        catch (Exception ex)
+        {
+            response.StatusCode = 400;
+            await WriteStringAsync(response, JsonSerializer.Serialize(new { success = false, error = ex.Message }));
+        }
     }
 
     private async Task HandleApiReplayFileAsync(HttpListenerRequest request, HttpListenerResponse response)

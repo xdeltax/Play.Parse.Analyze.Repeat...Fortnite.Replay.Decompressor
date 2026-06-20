@@ -19,7 +19,7 @@ internal static class Program
 
         var processed = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
         var pending = new Dictionary<string, PendingReplay>(StringComparer.OrdinalIgnoreCase);
-        ReplayAnalyzer.ReplayProcessResult? lastProcessedResult = null;
+        var lastProcessedResultRef = new ReplayAnalyzer.ReplayProcessResult?[1];
         var initializedExisting = false;
         DateTime? lastMissingDirLog = null;
         var nextScanUtc = DateTime.UtcNow;
@@ -38,7 +38,33 @@ internal static class Program
         };
 
         var wwwrootPath = Path.Combine(AppContext.BaseDirectory, "wwwroot");
-        using var httpServer = new HttpServer(outputDirectory, wwwrootPath);
+        using var httpServer = new HttpServer(
+            options.ReplayDirectory, 
+            outputDirectory, 
+            wwwrootPath,
+            reparseAction: (target) => 
+            {
+                EnsurePendingProgressLineTerminated(pending);
+                if (target == "all")
+                {
+                    ReparseAllReplays(options.ReplayDirectory, outputDirectory, processed, pending, ref lastProcessedResultRef[0]);
+                }
+                else
+                {
+                    var file = Path.Combine(options.ReplayDirectory, target);
+                    var signature = TryGetSignature(file);
+                    if (signature != null && CanReadReplayFile(file)) 
+                    {
+                        ProcessReplay(file, signature, outputDirectory, processed, pending, false, ref lastProcessedResultRef[0]);
+                    }
+                }
+            },
+            pendingStatusFunc: () => 
+            {
+                var oldest = pending.Values.OrderBy(p => p.FirstSeenUtc).FirstOrDefault();
+                return oldest?.FirstSeenUtc;
+            }
+        );
         try 
         {
             httpServer.Start();
@@ -49,7 +75,7 @@ internal static class Program
             Console.WriteLine($"[Web Dashboard] Could not start HTTP server on port 5142: {ex.Message}");
         }
 
-        PrintShortcutHint(lastProcessedResult);
+        PrintShortcutHint(lastProcessedResultRef[0]);
 
         while (!cts.IsCancellationRequested)
         {
@@ -57,7 +83,7 @@ internal static class Program
             {
                 if (!Console.IsInputRedirected && Console.KeyAvailable)
                 {
-                    HandleKeyboardInput(options.ReplayDirectory, outputDirectory, processed, pending, ref lastProcessedResult, cts);
+                    HandleKeyboardInput(options.ReplayDirectory, outputDirectory, processed, pending, ref lastProcessedResultRef[0], cts);
                 }
 
                 if (DateTime.UtcNow >= nextScanUtc)
@@ -90,7 +116,7 @@ internal static class Program
                             Console.WriteLine($"Initialized with {processed.Count} existing replay file(s). New files will be processed.");
                         }
 
-                        ScanAndProcess(options.ReplayDirectory, outputDirectory, processed, pending, ref lastProcessedResult);
+                        ScanAndProcess(options.ReplayDirectory, outputDirectory, processed, pending, ref lastProcessedResultRef[0]);
                     }
 
                     nextScanUtc = DateTime.UtcNow.AddSeconds(options.ScanIntervalSeconds);
