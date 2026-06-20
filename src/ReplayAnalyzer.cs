@@ -124,13 +124,29 @@ internal static class ReplayAnalyzer
             .ToDictionary(g => g.Key, g => g.First());
         var killFeed = replay.KillFeed?.ToList() ?? new List<KillFeedEntry>();
 
-        var rankedPlayers = players
+        var teamRankedPlayers = players
+            .Where(p => p.Placement.HasValue && p.Placement.Value > 0)
+            .OrderBy(p => p.Placement)
+            .ThenBy(p => p.TeamIndex ?? int.MaxValue)
+            .ThenByDescending(p => p.DeathTimeDouble ?? (double?)p.DeathTime ?? double.MaxValue)
+            .ThenByDescending(p => p.Kills ?? 0)
+            .ThenBy(p => p.PlayerId ?? string.Empty)
+            .ToList();
+        var teamUnrankedAliveRealPlayers = players
+            .Where(p => !p.IsBot && (!p.Placement.HasValue || p.Placement.Value <= 0))
+            .OrderBy(p => p.TeamIndex ?? int.MaxValue)
+            .ThenByDescending(p => p.DeathTimeDouble ?? (double?)p.DeathTime ?? double.MaxValue)
+            .ThenByDescending(p => p.Kills ?? 0)
+            .ThenBy(p => GetPlayerDisplayName(p), StringComparer.OrdinalIgnoreCase)
+            .ToList();
+
+        var normalRankedPlayers = players
             .Where(p => p.Placement.HasValue && p.Placement.Value > 0)
             .OrderBy(p => p.Placement)
             .ThenByDescending(p => p.Kills ?? 0)
             .ThenBy(p => p.PlayerId ?? string.Empty)
             .ToList();
-        var unrankedAliveRealPlayers = players
+        var normalUnrankedAliveRealPlayers = players
             .Where(p => !p.IsBot && (!p.Placement.HasValue || p.Placement.Value <= 0))
             .OrderByDescending(p => p.Kills ?? 0)
             .ThenBy(p => GetPlayerDisplayName(p), StringComparer.OrdinalIgnoreCase)
@@ -157,7 +173,7 @@ internal static class ReplayAnalyzer
         var lines = new List<string>
         {
             $"File : {Path.GetFileNameWithoutExtension(replayFilePath)}",
-            FormatSummaryLine("Match:", $"{ToIsoOrUnknown(replay.Info?.Timestamp)}; Duration: {FormatDurationMmSs(durationSeconds)}"),
+            FormatSummaryLine("Match:", $"{ToIsoOrUnknown(replay.Info?.Timestamp)}; Duration: {FormatDurationMmSs(durationSeconds)}; Mode: {GetGameMode(replay.GameData?.CurrentPlaylist)}"),
             $"       {totalPlayers} Total Players",
             $"       {realPlayers} Real Players ",
             $"       {botPlayers} BOT Players",
@@ -226,6 +242,30 @@ internal static class ReplayAnalyzer
                 lines.Add("       Owner has Crown");
             }
 
+            lines.Add(string.Empty);
+            var ownerTeamIndex = owner.TeamIndex;
+            var teammates = ownerTeamIndex.HasValue ? players.Where(p => p.TeamIndex == ownerTeamIndex.Value).ToList() : new List<PlayerData> { owner };
+            var teamKills = teammates.Sum(p => p.Kills ?? 0);
+            
+            var teamIds = teammates.Where(p => p.Id.HasValue).Select(p => p.Id!.Value).ToHashSet();
+            var teamKnocks = killFeed.Count(k => k.FinisherOrDowner.HasValue && teamIds.Contains(k.FinisherOrDowner.Value) && k.IsDowned && !k.IsRevived);
+            var teamRevivesFromFeed = killFeed.Count(k => k.FinisherOrDowner.HasValue && teamIds.Contains(k.FinisherOrDowner.Value) && k.IsRevived);
+            var teamRevivesDisplay = Math.Max(teamRevivesFromFeed, ownerRevives ?? 0);
+
+            var teamStr = ownerTeamIndex.HasValue ? $"Team {ownerTeamIndex.Value:00}" : "Team ??";
+            lines.Add($"Owner Team ({teamStr}):");
+            lines.Add($"       {teammates.Count} Players | Team Kills: {teamKills} | Team Knocks: {teamKnocks} | Team Revives: {teamRevivesDisplay}");
+            
+            foreach (var teammate in teammates.OrderByDescending(p => p.DeathTimeDouble ?? (double?)p.DeathTime ?? double.MaxValue).ThenByDescending(p => p.Kills ?? 0).ThenBy(p => GetPlayerDisplayName(p)))
+            {
+                 var teammateKills = teammate.Kills ?? 0;
+                 var teammateKnocks = teammate.Id.HasValue ? killFeed.Count(k => k.FinisherOrDowner == teammate.Id.Value && k.IsDowned && !k.IsRevived) : 0;
+                 var teammateDamage = teammate.IsReplayOwner ? (ownerDamageGiven?.ToString() ?? "?") : "?";
+                 var teammateState = (teammate.DeathTimeDouble.HasValue || teammate.DeathTime.HasValue) ? "Dead " : "Alive";
+                 lines.Add($"       - {FormatDisplayNameWithCrown(teammate).PadRight(20)} | Kills: {teammateKills,2} | Knocks: {teammateKnocks,2} | Dmg: {teammateDamage,4} | {teammateState}");
+            }
+            lines.Add(string.Empty);
+
             lines.Add("Owner Killfeed:");
 
             if (ownerFeedEvents.Count == 0)
@@ -283,7 +323,16 @@ internal static class ReplayAnalyzer
             lines.Add(string.Empty);
         }
 
-        lines.Add("Ranking");
+        AppendRanking(lines, "Team-Ranking", teamRankedPlayers, teamUnrankedAliveRealPlayers);
+        lines.Add(string.Empty);
+        AppendRanking(lines, "Ranking", normalRankedPlayers, normalUnrankedAliveRealPlayers);
+
+        return string.Join(Environment.NewLine, lines);
+    }
+
+    private static void AppendRanking(List<string> lines, string title, List<PlayerData> rankedPlayers, List<PlayerData> unrankedAliveRealPlayers)
+    {
+        lines.Add(title);
 
         if (rankedPlayers.Count == 0 && unrankedAliveRealPlayers.Count == 0)
         {
@@ -301,7 +350,8 @@ internal static class ReplayAnalyzer
                 var level = FormatLevel(player.Level);
                 var seasonLevel = FormatLevel(player.SeasonLevelUIDisplay);
                 var platform = string.IsNullOrWhiteSpace(player.Platform) ? "unknown" : player.Platform;
-                var line = $"#?? * {baseDisplayId.PadRight(idWidth)} | Real  | Kills: {kills,2} | Level: {level} ({seasonLevel}) | Platform: {platform}";
+                var teamPrefix = player.TeamIndex.HasValue ? $"[T{player.TeamIndex.Value:00}]" : "[T??]";
+                var line = $"#?? * {teamPrefix} {baseDisplayId.PadRight(idWidth)} | Real  | Kills: {kills,2} | Level: {level} ({seasonLevel}) | Platform: {platform}";
                 lines.Add(line);
             }
 
@@ -309,6 +359,7 @@ internal static class ReplayAnalyzer
             {
                 var baseDisplayId = FormatDisplayNameWithCrown(player);
                 var kills = player.Kills ?? 0;
+                var teamPrefix = player.TeamIndex.HasValue ? $"[T{player.TeamIndex.Value:00}]" : "[T??]";
                 string line;
 
                 if (player.IsReplayOwner)
@@ -316,28 +367,24 @@ internal static class ReplayAnalyzer
                     var level = FormatLevel(player.Level);
                     var seasonLevel = FormatLevel(player.SeasonLevelUIDisplay);
                     var platform = string.IsNullOrWhiteSpace(player.Platform) ? "unknown" : player.Platform;
-                    line = $"#{player.Placement.GetValueOrDefault(),2:00} * {baseDisplayId.PadRight(idWidth)} * OWNER * Kills: {kills,2} | Level: {level} ({seasonLevel}) | Platform: {platform}";
+                    line = $"#{player.Placement.GetValueOrDefault(),2:00} * {teamPrefix} {baseDisplayId.PadRight(idWidth)} * OWNER * Kills: {kills,2} | Level: {level} ({seasonLevel}) | Platform: {platform}";
                 }
                 else if (!player.IsBot)
                 {
                     var level = FormatLevel(player.Level);
                     var seasonLevel = FormatLevel(player.SeasonLevelUIDisplay);
                     var platform = string.IsNullOrWhiteSpace(player.Platform) ? "unknown" : player.Platform;
-                    line = $"#{player.Placement.GetValueOrDefault(),2:00} * {baseDisplayId.PadRight(idWidth)} | Real  | Kills: {kills,2} | Level: {level} ({seasonLevel}) | Platform: {platform}";
+                    line = $"#{player.Placement.GetValueOrDefault(),2:00} * {teamPrefix} {baseDisplayId.PadRight(idWidth)} | Real  | Kills: {kills,2} | Level: {level} ({seasonLevel}) | Platform: {platform}";
                 }
                 else
                 {
                     var type = string.IsNullOrWhiteSpace(player.BotId) ? "NPC  " : "BOT  ";
-                    line = $"#{player.Placement.GetValueOrDefault(),2:00} | {baseDisplayId.PadRight(idWidth)} | {type} | Kills: {kills,2}";
+                    line = $"#{player.Placement.GetValueOrDefault(),2:00} | {teamPrefix} {baseDisplayId.PadRight(idWidth)} | {type} | Kills: {kills,2}";
                 }
 
                 lines.Add(line);
             }
         }
-
-        lines.Add(string.Empty);
-
-        return string.Join(Environment.NewLine, lines);
     }
 
     private static double? GetNormalizedEventTimeSeconds(FortniteReplay replay, KillFeedEntry entry)
@@ -503,6 +550,21 @@ internal static class ReplayAnalyzer
     private static string FormatLevel(uint? value)
     {
         return value.HasValue ? value.Value.ToString().PadLeft(3) : "???";
+    }
+
+    private static string GetGameMode(string? playlist)
+    {
+        if (string.IsNullOrWhiteSpace(playlist)) return "UNKNOWN";
+        var lower = playlist.ToLowerInvariant();
+        if (lower.Contains("solo")) return "SOLO";
+        if (lower.Contains("duo")) return "DUOS";
+        if (lower.Contains("trio")) return "TRIOS";
+        if (lower.Contains("squad")) return "SQUADS";
+        if (lower.Contains("50v50")) return "50v50";
+        if (lower.Contains("teamrumble")) return "TEAM RUMBLE";
+        if (lower.Contains("creative")) return "CREATIVE";
+        if (lower.Contains("respawn")) return "TEAM RUMBLE";
+        return playlist; // fallback
     }
 
     private static AppOptions ParseOptions(string[] args)
