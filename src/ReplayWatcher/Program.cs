@@ -24,6 +24,7 @@ internal static class Program
         DateTime? lastMissingDirLog = null;
         var nextScanUtc = DateTime.UtcNow;
 
+        Console.WriteLine($"--- ReplayWatcher v5.0.0 ---");
         Console.WriteLine($"Watching Fortnite replay directory: {options.ReplayDirectory}");
         Console.WriteLine($"Output directory: {outputDirectory}");
         Console.WriteLine($"Scan interval: {options.ScanIntervalSeconds} second(s)");

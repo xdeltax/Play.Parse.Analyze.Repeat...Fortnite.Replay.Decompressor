@@ -156,6 +156,20 @@ If you wish to modify the React code, you can find the source in `ReplayDashboar
 - File access errors while a replay is being written:
 	- Replays may still be locked by Fortnite while recording.
 	- Wait a few seconds and retry; `ReplayWatcher` retries automatically after files become stable.
+
+## Version History
+
+- **v5.0.0**
+  - Added the embedded **React Web Dashboard** (`ReplayDashboard.Client`).
+  - `ReplayWatcher` now automatically acts as an HTTP server and opens the browser on launch.
+  - Stopped shipping `ConsoleReader` as a standalone executable to simplify usage.
+- **v4.0.0**
+  - Added enhanced Team-Ranking (kills grouped by team, sorting by death time).
+  - Added automated game mode detection (SOLO, DUO, TRIOS, SQUADS).
+  - Killfeed improvements (weapon extraction, distances parsed to meters).
+- **v3.0.0 & Older**
+  - Original parsing logic inherited from upstream with basic JSON & TXT exports.
+
 - Build or run fails with missing SDK/runtime:
 	- Check your SDK version with `dotnet --info`.
 	- Install/update .NET 10 SDK: `winget install --id Microsoft.DotNet.SDK.10 --exact`.
