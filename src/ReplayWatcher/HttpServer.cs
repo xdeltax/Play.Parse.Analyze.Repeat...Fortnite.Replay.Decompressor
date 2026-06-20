@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -9,16 +10,16 @@ using System.Threading.Tasks;
 public sealed class HttpServer : IDisposable
 {
     private readonly HttpListener _listener;
-    private readonly string _replayDirectory;
-    private readonly string _parsedDir;
+    private readonly IReadOnlyList<string> _replayDirectories;
+    private readonly IReadOnlyList<string> _parsedDirs;
     private readonly string _wwwroot;
     private readonly Action<string> _reparseAction;
     private readonly Func<DateTime?> _pendingStatusFunc;
 
-    public HttpServer(string replayDirectory, string parsedDir, string wwwroot, Action<string> reparseAction, Func<DateTime?> pendingStatusFunc)
+    public HttpServer(IReadOnlyList<string> replayDirectories, IReadOnlyList<string> parsedDirs, string wwwroot, Action<string> reparseAction, Func<DateTime?> pendingStatusFunc)
     {
-        _replayDirectory = replayDirectory;
-        _parsedDir = parsedDir;
+        _replayDirectories = replayDirectories;
+        _parsedDirs = parsedDirs;
         _wwwroot = wwwroot;
         _reparseAction = reparseAction;
         _pendingStatusFunc = pendingStatusFunc;
@@ -101,13 +102,9 @@ public sealed class HttpServer : IDisposable
         response.ContentType = "application/json";
         response.AddHeader("Access-Control-Allow-Origin", "*");
 
-        if (!Directory.Exists(_parsedDir))
-        {
-            await WriteStringAsync(response, "[]");
-            return;
-        }
-
-        var files = Directory.GetFiles(_parsedDir, "*.json")
+        var files = _parsedDirs
+            .Where(Directory.Exists)
+            .SelectMany(d => Directory.GetFiles(d, "*.json"))
             .Select(f => new FileInfo(f))
             .OrderByDescending(f => f.LastWriteTimeUtc)
             .Select(f => new
@@ -143,17 +140,18 @@ public sealed class HttpServer : IDisposable
         response.ContentType = "application/json";
         response.AddHeader("Access-Control-Allow-Origin", "*");
 
-        if (!Directory.Exists(_replayDirectory))
+        var parsedFiles = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        foreach (var dir in _parsedDirs.Where(Directory.Exists))
         {
-            await WriteStringAsync(response, "[]");
-            return;
+            foreach (var f in Directory.GetFiles(dir, "*.json"))
+            {
+                parsedFiles.Add(Path.GetFileNameWithoutExtension(f));
+            }
         }
 
-        var parsedFiles = Directory.Exists(_parsedDir) 
-            ? new HashSet<string>(Directory.GetFiles(_parsedDir, "*.json").Select(Path.GetFileNameWithoutExtension), StringComparer.OrdinalIgnoreCase)
-            : new HashSet<string>();
-
-        var files = Directory.GetFiles(_replayDirectory, "*.replay")
+        var files = _replayDirectories
+            .Where(Directory.Exists)
+            .SelectMany(d => Directory.GetFiles(d, "*.replay"))
             .Select(f => new FileInfo(f))
             .OrderByDescending(f => f.LastWriteTimeUtc)
             .Select(f => new
@@ -197,11 +195,21 @@ public sealed class HttpServer : IDisposable
     private async Task HandleApiReplayFileAsync(HttpListenerRequest request, HttpListenerResponse response)
     {
         var fileName = Uri.UnescapeDataString(request.Url!.LocalPath.Replace("/api/replays/", ""));
-        var filePath = Path.Combine(_parsedDir, fileName);
+        
+        string? filePath = null;
+        foreach (var dir in _parsedDirs)
+        {
+            var candidate = Path.Combine(dir, fileName);
+            if (File.Exists(candidate))
+            {
+                filePath = candidate;
+                break;
+            }
+        }
 
         response.AddHeader("Access-Control-Allow-Origin", "*");
 
-        if (!File.Exists(filePath))
+        if (filePath == null)
         {
             response.StatusCode = 404;
             return;

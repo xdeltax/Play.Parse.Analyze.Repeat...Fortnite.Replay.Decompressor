@@ -8,14 +8,13 @@ using System.Diagnostics;
 
 internal static class Program
 {
-    private sealed record WatcherOptions(string ReplayDirectory, string OutputSubdirectory, int ScanIntervalSeconds, bool ProcessExisting);
+    private sealed record WatcherOptions(IReadOnlyList<string> ReplayDirectories, string OutputSubdirectory, int ScanIntervalSeconds, bool ProcessExisting);
     private sealed record PendingReplay(string Signature, DateTime FirstSeenUtc, DateTime NextProbeUtc, bool WaitingLineOpen);
 
     public static async Task Main(string[] args)
     {
         var options = ParseOptions(args);
-
-        var outputDirectory = Path.Combine(options.ReplayDirectory, options.OutputSubdirectory);
+        var parsedDirs = options.ReplayDirectories.Select(d => Path.Combine(d, options.OutputSubdirectory)).ToList();
 
         var processed = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
         var pending = new Dictionary<string, PendingReplay>(StringComparer.OrdinalIgnoreCase);
@@ -25,8 +24,9 @@ internal static class Program
         var nextScanUtc = DateTime.UtcNow;
 
         Console.WriteLine($"--- ReplayWatcher v5.0.0 ---");
-        Console.WriteLine($"Watching Fortnite replay directory: {options.ReplayDirectory}");
-        Console.WriteLine($"Output directory: {outputDirectory}");
+        Console.WriteLine("Watching Fortnite replay directories:");
+        foreach (var dir in options.ReplayDirectories) Console.WriteLine($" - {dir}");
+        Console.WriteLine($"Output subdirectory: {options.OutputSubdirectory}");
         Console.WriteLine($"Scan interval: {options.ScanIntervalSeconds} second(s)");
         Console.WriteLine("Press Ctrl+C or X to stop.");
 
@@ -39,23 +39,30 @@ internal static class Program
 
         var wwwrootPath = Path.Combine(AppContext.BaseDirectory, "wwwroot");
         using var httpServer = new HttpServer(
-            options.ReplayDirectory, 
-            outputDirectory, 
+            options.ReplayDirectories, 
+            parsedDirs, 
             wwwrootPath,
             reparseAction: (target) => 
             {
                 EnsurePendingProgressLineTerminated(pending);
                 if (target == "all")
                 {
-                    ReparseAllReplays(options.ReplayDirectory, outputDirectory, processed, pending, ref lastProcessedResultRef[0]);
+                    ReparseAllReplays(options.ReplayDirectories, options.OutputSubdirectory, processed, pending, ref lastProcessedResultRef[0]);
                 }
                 else
                 {
-                    var file = Path.Combine(options.ReplayDirectory, target);
-                    var signature = TryGetSignature(file);
-                    if (signature != null && CanReadReplayFile(file)) 
+                    var targetFile = options.ReplayDirectories
+                        .Select(d => Path.Combine(d, target))
+                        .FirstOrDefault(f => File.Exists(f));
+                    
+                    if (targetFile != null)
                     {
-                        ProcessReplay(file, signature, outputDirectory, processed, pending, false, ref lastProcessedResultRef[0]);
+                        var signature = TryGetSignature(targetFile);
+                        if (signature != null && CanReadReplayFile(targetFile)) 
+                        {
+                            var outDir = Path.Combine(Path.GetDirectoryName(targetFile)!, options.OutputSubdirectory);
+                            ProcessReplay(targetFile, signature, outDir, processed, pending, false, ref lastProcessedResultRef[0]);
+                        }
                     }
                 }
             },
@@ -83,40 +90,49 @@ internal static class Program
             {
                 if (!Console.IsInputRedirected && Console.KeyAvailable)
                 {
-                    HandleKeyboardInput(options.ReplayDirectory, outputDirectory, processed, pending, ref lastProcessedResultRef[0], cts);
+                    HandleKeyboardInput(options.ReplayDirectories, options.OutputSubdirectory, processed, pending, ref lastProcessedResultRef[0], cts);
                 }
 
                 if (DateTime.UtcNow >= nextScanUtc)
                 {
-                    if (!Directory.Exists(options.ReplayDirectory))
+                    var anyDirExists = false;
+                    foreach (var replayDir in options.ReplayDirectories)
                     {
-                        if (!lastMissingDirLog.HasValue || (DateTime.UtcNow - lastMissingDirLog.Value).TotalSeconds >= 30)
+                        if (Directory.Exists(replayDir))
                         {
-                            Console.WriteLine($"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] Waiting for replay directory: {options.ReplayDirectory}");
-                            lastMissingDirLog = DateTime.UtcNow;
-                        }
-                    }
-                    else
-                    {
-                        Directory.CreateDirectory(outputDirectory);
+                            anyDirExists = true;
+                            var outDir = Path.Combine(replayDir, options.OutputSubdirectory);
+                            Directory.CreateDirectory(outDir);
 
-                        if (!initializedExisting && !options.ProcessExisting)
-                        {
-                            var existingReplayFiles = Directory.EnumerateFiles(options.ReplayDirectory, "*.replay").ToList();
-                            foreach (var replayFile in existingReplayFiles)
+                            if (!initializedExisting && !options.ProcessExisting)
                             {
-                                var signature = TryGetSignature(replayFile);
-                                if (signature is not null)
+                                var existingReplayFiles = Directory.EnumerateFiles(replayDir, "*.replay").ToList();
+                                foreach (var replayFile in existingReplayFiles)
                                 {
-                                    processed[replayFile] = signature;
+                                    var signature = TryGetSignature(replayFile);
+                                    if (signature is not null)
+                                    {
+                                        processed[replayFile] = signature;
+                                    }
                                 }
                             }
 
-                            initializedExisting = true;
-                            Console.WriteLine($"Initialized with {processed.Count} existing replay file(s). New files will be processed.");
+                            ScanAndProcess(replayDir, outDir, processed, pending, ref lastProcessedResultRef[0]);
                         }
+                    }
 
-                        ScanAndProcess(options.ReplayDirectory, outputDirectory, processed, pending, ref lastProcessedResultRef[0]);
+                    if (!anyDirExists)
+                    {
+                        if (!lastMissingDirLog.HasValue || (DateTime.UtcNow - lastMissingDirLog.Value).TotalSeconds >= 30)
+                        {
+                            Console.WriteLine($"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] Waiting for any replay directory to be created...");
+                            lastMissingDirLog = DateTime.UtcNow;
+                        }
+                    }
+                    else if (!initializedExisting && !options.ProcessExisting)
+                    {
+                        initializedExisting = true;
+                        Console.WriteLine($"Initialized with {processed.Count} existing replay file(s) across directories. New files will be processed.");
                     }
 
                     nextScanUtc = DateTime.UtcNow.AddSeconds(options.ScanIntervalSeconds);
@@ -234,8 +250,8 @@ internal static class Program
     }
 
     private static void HandleKeyboardInput(
-        string replayDirectory,
-        string outputDirectory,
+        IReadOnlyList<string> replayDirectories,
+        string outputSubdirectory,
         IDictionary<string, string> processed,
         IDictionary<string, PendingReplay> pending,
         ref ReplayAnalyzer.ReplayProcessResult? lastProcessedResult,
@@ -257,14 +273,14 @@ internal static class Program
             if (key == ConsoleKey.L)
             {
                 EnsurePendingProgressLineTerminated(pending);
-                ReparseLatestReplay(replayDirectory, outputDirectory, processed, pending, ref lastProcessedResult);
+                ReparseLatestReplay(replayDirectories, outputSubdirectory, processed, pending, ref lastProcessedResult);
                 continue;
             }
 
             if (key == ConsoleKey.R)
             {
                 EnsurePendingProgressLineTerminated(pending);
-                ReparseAllReplays(replayDirectory, outputDirectory, processed, pending, ref lastProcessedResult);
+                ReparseAllReplays(replayDirectories, outputSubdirectory, processed, pending, ref lastProcessedResult);
                 continue;
             }
 
@@ -277,20 +293,21 @@ internal static class Program
     }
 
     private static void ReparseLatestReplay(
-        string replayDirectory,
-        string outputDirectory,
+        IReadOnlyList<string> replayDirectories,
+        string outputSubdirectory,
         IDictionary<string, string> processed,
         IDictionary<string, PendingReplay> pending,
         ref ReplayAnalyzer.ReplayProcessResult? lastProcessedResult)
     {
-        if (!Directory.Exists(replayDirectory))
+        var existingDirs = replayDirectories.Where(Directory.Exists).ToList();
+        if (existingDirs.Count == 0)
         {
-            Console.WriteLine($"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] Cannot reparse latest replay, directory missing: {replayDirectory}");
+            Console.WriteLine($"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] Cannot reparse latest replay, no directories exist.");
             return;
         }
 
-        var latestReplay = Directory
-            .EnumerateFiles(replayDirectory, "*.replay")
+        var latestReplay = existingDirs
+            .SelectMany(d => Directory.EnumerateFiles(d, "*.replay"))
             .Select(file => new { File = file, LastWriteUtc = File.GetLastWriteTimeUtc(file) })
             .OrderByDescending(item => item.LastWriteUtc)
             .Select(item => item.File)
@@ -310,24 +327,26 @@ internal static class Program
         }
 
         Console.WriteLine($"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] L pressed: reparsing latest replay.");
-        ProcessReplay(latestReplay, signature, outputDirectory, processed, pending, showDetails: false, ref lastProcessedResult);
+        var outDir = Path.Combine(Path.GetDirectoryName(latestReplay)!, outputSubdirectory);
+        ProcessReplay(latestReplay, signature, outDir, processed, pending, showDetails: false, ref lastProcessedResult);
     }
 
     private static void ReparseAllReplays(
-        string replayDirectory,
-        string outputDirectory,
+        IReadOnlyList<string> replayDirectories,
+        string outputSubdirectory,
         IDictionary<string, string> processed,
         IDictionary<string, PendingReplay> pending,
         ref ReplayAnalyzer.ReplayProcessResult? lastProcessedResult)
     {
-        if (!Directory.Exists(replayDirectory))
+        var existingDirs = replayDirectories.Where(Directory.Exists).ToList();
+        if (existingDirs.Count == 0)
         {
-            Console.WriteLine($"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] Cannot reparse all replays, directory missing: {replayDirectory}");
+            Console.WriteLine($"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] Cannot reparse all replays, no directories exist.");
             return;
         }
 
-        var replayFiles = Directory
-            .EnumerateFiles(replayDirectory, "*.replay")
+        var replayFiles = existingDirs
+            .SelectMany(d => Directory.EnumerateFiles(d, "*.replay"))
             .Select(file => new { File = file, LastWriteUtc = File.GetLastWriteTimeUtc(file) })
             .OrderBy(item => item.LastWriteUtc)
             .Select(item => item.File)
@@ -350,7 +369,8 @@ internal static class Program
                 continue;
             }
 
-            ProcessReplay(replayFile, signature, outputDirectory, processed, pending, showDetails: false, ref lastProcessedResult);
+            var outDir = Path.Combine(Path.GetDirectoryName(replayFile)!, outputSubdirectory);
+            ProcessReplay(replayFile, signature, outDir, processed, pending, showDetails: false, ref lastProcessedResult);
         }
     }
 
@@ -478,7 +498,14 @@ internal static class Program
 
     private static WatcherOptions ParseOptions(string[] args)
     {
-        var replayDirectory = GetDefaultReplayDirectory();
+        var replayDirectories = new List<string> { GetDefaultReplayDirectory() };
+        var localLower = Path.Combine(AppContext.BaseDirectory, "replays");
+        var localUpper = Path.Combine(AppContext.BaseDirectory, "REPLAYS");
+        
+        if (Directory.Exists(localLower)) replayDirectories.Add(localLower);
+        else if (Directory.Exists(localUpper)) replayDirectories.Add(localUpper);
+        else replayDirectories.Add(localUpper);
+
         var outputSubdirectory = "PARSED";
         var scanIntervalSeconds = 2;
         var processExisting = false;
@@ -489,7 +516,8 @@ internal static class Program
 
             if (string.Equals(current, "--dir", StringComparison.OrdinalIgnoreCase) && i + 1 < args.Length)
             {
-                replayDirectory = Path.GetFullPath(args[++i]);
+                replayDirectories.Clear();
+                replayDirectories.Add(Path.GetFullPath(args[++i]));
                 continue;
             }
 
@@ -520,7 +548,7 @@ internal static class Program
             }
         }
 
-        return new WatcherOptions(replayDirectory, outputSubdirectory, scanIntervalSeconds, processExisting);
+        return new WatcherOptions(replayDirectories, outputSubdirectory, scanIntervalSeconds, processExisting);
     }
 
     private static string GetDefaultReplayDirectory()
