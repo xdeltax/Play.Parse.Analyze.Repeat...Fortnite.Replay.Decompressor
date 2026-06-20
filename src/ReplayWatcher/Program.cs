@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 internal static class Program
 {
@@ -34,6 +35,18 @@ internal static class Program
             eventArgs.Cancel = true;
             cts.Cancel();
         };
+
+        var wwwrootPath = Path.Combine(AppContext.BaseDirectory, "wwwroot");
+        using var httpServer = new HttpServer(outputDirectory, wwwrootPath);
+        try 
+        {
+            httpServer.Start();
+            OpenBrowser("http://127.0.0.1:5142/");
+        } 
+        catch (Exception ex)
+        {
+            Console.WriteLine($"[Web Dashboard] Could not start HTTP server on port 5142: {ex.Message}");
+        }
 
         PrintShortcutHint(lastProcessedResult);
 
@@ -487,5 +500,17 @@ internal static class Program
     {
         var localAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
         return Path.Combine(localAppData, "FortniteGame", "Saved", "Demos");
+    }
+
+    private static void OpenBrowser(string url)
+    {
+        try
+        {
+            Process.Start(new ProcessStartInfo(url) { UseShellExecute = true });
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"[Web Dashboard] Could not open browser automatically: {ex.Message}. Please open {url} manually.");
+        }
     }
 }

@@ -127,31 +127,22 @@ Run it directly:
 
 This project includes a **React Web Dashboard** that monitors your replays and visualizes the match stats, rankings, and killfeed in real-time.
 
-### Installation from Scratch
+### Installation & Usage
 
-If you just downloaded the repository and do not have any of the required tools (Node.js or .NET) installed, follow these steps to get the web dashboard running:
+The web dashboard is now **fully embedded** into the `ReplayWatcher` executable! You do **not** need Node.js, Vite, or any other tools. 
 
-1. **Install Node.js**: You need Node.js to run the web client. Download and install it from [nodejs.org](https://nodejs.org/).
-2. **Install .NET SDK**: The web client compiles and runs the C# parser in the background. If you don't have .NET, install the .NET 10 SDK. On Windows, you can simply run:
-   ```powershell
-   winget install --id Microsoft.DotNet.SDK.10 --exact
-   ```
-3. **Install Client Dependencies**: Open a terminal, navigate into the dashboard folder, and install the required packages:
-   ```powershell
-   cd ReplayDashboard.Client
-   npm install
-   ```
+1. Download the latest `ReplayWatcher.zip` (or EXE) from the Releases page.
+2. Run `ReplayWatcher.exe`.
+3. The executable will watch your replays in the background and **automatically open your default browser** to the dashboard (`http://localhost:5142`).
 
-### Running the Dashboard
+*That's it! As long as the command prompt window is open, the dashboard is live and updates instantly when a new replay is saved.*
 
-Once installed, simply start the client server:
+### Advanced / Development
 
-```powershell
-cd ReplayDashboard.Client
-npm run dev
-```
-
-Open `http://localhost:5142` in your browser. The dashboard will automatically start the `.NET` `ReplayWatcher` in the background for you. As you play Fortnite, new replays will automatically appear on the dashboard!
+If you wish to modify the React code, you can find the source in `ReplayDashboard.Client`. To run it in dev mode:
+1. Ensure Node.js is installed.
+2. Run `npm install` then `npm run dev`.
+3. The Vite server will automatically start the C# watcher in the background for you.
 
 ## Troubleshooting
 
