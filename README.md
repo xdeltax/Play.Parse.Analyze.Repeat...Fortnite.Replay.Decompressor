@@ -12,6 +12,7 @@ This project was originally forked from [Shiqan/FortniteReplayDecompressor](http
 - Kill feed summary and replay stats
 - Default output written to `REPLAYS/PARSED`
 - Optional long-running replay watcher (`ReplayWatcher`) for automatic parsing after a match finishes
+- **New:** React Web Dashboard (`ReplayDashboard.Client`) for a beautiful, real-time browser UI
 
 Screenshot:
 
@@ -25,6 +26,7 @@ The project is split into several key components that work together to process a
 2. **ReplayAnalyzer**: A robust extraction layer that takes the raw object model and processes it into meaningful statistics. It searches the replay for the recording player ("owner"), determines their final match placement, aggregates the team's total eliminations, and reconstructs the timeline of the kill feed. It outputs this data as both a comprehensive JSON file and a human-readable summary TXT file.
 3. **ReplayWatcher**: A standalone background worker designed to run silently. It uses file system watchers to monitor your Fortnite replay directory (`%LOCALAPPDATA%\FortniteGame\Saved\Demos`) for new or modified `*.replay` files. Once a match concludes and the file becomes stable (fully written by the game), the watcher automatically triggers the `ReplayAnalyzer` and drops the parsed results into a designated output folder, alerting you in the console.
 4. **ConsoleReader**: A command-line tool for manually bulk-processing existing replay files or entire directories.
+5. **ReplayDashboard.Client**: A Vite + React web application. When launched, it automatically boots up the `ReplayWatcher` in the background and serves a modern, glassmorphic UI in your browser that live-updates whenever a new replay is saved.
 
 ## Requirements
 
@@ -120,6 +122,36 @@ Run it directly:
 ```powershell
 .\dist\ReplayWatcher\ReplayWatcher.exe
 ```
+
+## Web Dashboard & Installation
+
+This project includes a **React Web Dashboard** that monitors your replays and visualizes the match stats, rankings, and killfeed in real-time.
+
+### Installation from Scratch
+
+If you just downloaded the repository and do not have any of the required tools (Node.js or .NET) installed, follow these steps to get the web dashboard running:
+
+1. **Install Node.js**: You need Node.js to run the web client. Download and install it from [nodejs.org](https://nodejs.org/).
+2. **Install .NET SDK**: The web client compiles and runs the C# parser in the background. If you don't have .NET, install the .NET 10 SDK. On Windows, you can simply run:
+   ```powershell
+   winget install --id Microsoft.DotNet.SDK.10 --exact
+   ```
+3. **Install Client Dependencies**: Open a terminal, navigate into the dashboard folder, and install the required packages:
+   ```powershell
+   cd ReplayDashboard.Client
+   npm install
+   ```
+
+### Running the Dashboard
+
+Once installed, simply start the client server:
+
+```powershell
+cd ReplayDashboard.Client
+npm run dev
+```
+
+Open `http://localhost:5142` in your browser. The dashboard will automatically start the `.NET` `ReplayWatcher` in the background for you. As you play Fortnite, new replays will automatically appear on the dashboard!
 
 ## Troubleshooting
 

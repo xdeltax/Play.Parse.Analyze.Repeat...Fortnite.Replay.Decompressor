@@ -1,0 +1,201 @@
+File : C7S2 UnsavedReplay-2026.05.23-21.47.54
+Match: 2026-05-23T19:47:54.9890000Z; Duration: 07:16
+       Mode         : SOLO  (1v1) | 99 Teams
+       Game Version : v40.40
+       Session ID   : 97176da57e1b42a8b2fdc381c6f5100b
+       99 Total Players
+       21 Real Players 
+       78 BOT Players
+       25 NPCs
+       124 in Sum
+       1 Player with Crown
+Owner: xdx2k7 (634311A416164074906752232C0DC6D2)
+       Rank#: #24
+       killed 3 / knocked 0; 
+       Killed at 08:49 by BOT Player (xXMariAnnieXx) | dist:   3.4 m | via: Area51Gun
+       Accuracy 33.9%; Assists 0; Revives 0; Damage: 455 Given; 391 Received
+       Structures Dmg: 220; Materials: 1139 gathered / 180 used; Travel: 2421 m
+       Skin: Character_SoloSnooze | Pickaxe: Pickaxe_ID_020_Keg | Glider: Glider_ID_308_VividMale_H8JAS | Backpack: -
+
+Owner Team (Team 08):
+       1 Players | Team Kills: 3 | Team Knocks: 0 | Team Revives: 0
+       - xdx2k7               | Kills:  3 | Knocks:  0 | Dmg:  455 | Dead 
+
+Owner Killfeed:
+   1. [04:39] killed!: [BOT ] MorninWaffles | Rank: 68 |  12.6 m | Shotgun: Dual
+   2. [05:33] killed!: [BOT ] Carcrusher94  | Rank: 54 |   7.1 m | Shotgun: Dual
+   3. [08:04] killed!: [BOT ] NeoHero4      | Rank: 27 |   6.4 m | SMG: MusterQuickMag
+
+Team-Ranking
+#?? * [T03] break_ombroso     | Real  | Kills:  2 | Level: ??? (187) | Platform: PSN
+#?? * [T05] Aurora fan3689    | Real  | Kills:  2 | Level: 175 (175) | Platform: XSX
+#?? * [T09] ST4RT CROKS       | Real  | Kills:  2 | Level:  70 ( 70) | Platform: XSX
+#?? * [T11] Mansy9853 (Crown) | Real  | Kills: 10 | Level: ??? (109) | Platform: WIN
+#?? * [T18] Elvitronic        | Real  | Kills:  3 | Level: 226 (226) | Platform: WIN
+#?? * [T20] MrDepa_           | Real  | Kills:  2 | Level: ??? ( 98) | Platform: PS5
+#21 | [T46] SoSweaty63        | BOT   | Kills:  2
+#22 | [T61] xXMariAnnieXx     | BOT   | Kills:  5
+#23 | [T52] xXxjmarcinxXx     | BOT   | Kills:  2
+#24 * [T08] xdx2k7            * OWNER * Kills:  3 | Level: 154 (154) | Platform: WIN | Skin: Character_SoloSnooze
+#25 * [T13] m1kar1337228      | Real  | Kills:  1 | Level: 273 (273) | Platform: WIN | Skin: Character_HeavyRoar
+#26 | [T58] YourBestFriend63  | BOT   | Kills:  1
+#27 | [T56] NeoHero4          | BOT   | Kills:  1
+#28 | [T87] AngryDuck51       | BOT   | Kills:  0
+#29 | [T51] XxBenEfsaneimxX   | BOT   | Kills:  2
+#30 * [T24] TTVKyzen3446      | Real  | Kills:  2 | Level:  68 ( 68) | Platform: XSX | Skin: Tank
+#31 | [T41] BioDragoon        | BOT   | Kills:  0
+#32 | [T45] PrancingPwnee     | BOT   | Kills:  0
+#33 | [T50] biceps_1          | BOT   | Kills:  1
+#34 | [T44] PlzBeNiceToMe     | BOT   | Kills:  1
+#35 | [T68] TLDR4life         | BOT   | Kills:  0
+#36 | [T30] Сибирская Кошка   | BOT   | Kills:  1
+#37 | [T63] PaLyANChO         | BOT   | Kills:  0
+#38 | [T31] CounterMantra     | BOT   | Kills:  1
+#39 | [T82] UltimateZenith14  | BOT   | Kills:  0
+#40 | [T93] MrPatatafrita     | BOT   | Kills:  1
+#41 | [T92] Notatest22        | BOT   | Kills:  1
+#42 | [T70] Amanda9938643     | BOT   | Kills:  0
+#43 | [T85] Panzabirra98      | BOT   | Kills:  0
+#44 * [T04] Ivan71837         | Real  | Kills:  2 | Level: ??? (???) | Platform: XBL | Skin: Character_CozyMechanic_Hen
+#45 | [T84] Destrukteur03     | BOT   | Kills:  0
+#46 | [T91] RiskyDigits       | BOT   | Kills:  1
+#47 | [T33] ImGonnaWin2234    | BOT   | Kills:  0
+#48 | [T76] Greedy33          | BOT   | Kills:  0
+#49 * [T17] BBOYexe           | Real  | Kills:  0 | Level: ??? (301) | Platform: PSN | Skin: SunriseCastle_48TIZ
+#50 | [T77] Quack4Bread       | BOT   | Kills:  2
+#51 * [T21] NxG-Gh3San        | Real  | Kills:  0 | Level: ??? (???) | Platform: PSN | Skin: Cupid
+#52 * [T10] oo mr valle       | Real  | Kills:  1 | Level: ??? (200) | Platform: XBL | Skin: BannerRed
+#53 | [T71] Skelettosaure5    | BOT   | Kills:  0
+#54 | [T64] Carcrusher94      | BOT   | Kills:  1
+#55 | [T73] GiusyLove212      | BOT   | Kills:  0
+#56 | [T26] Nashtyboy67       | BOT   | Kills:  0
+#57 | [T54] FreeMinded49      | BOT   | Kills:  0
+#58 | [T49] فهر1              | BOT   | Kills:  1
+#59 | [T39] Питбуль1          | BOT   | Kills:  0
+#60 | [T97] Bongodrum010      | BOT   | Kills:  0
+#61 | [T96] Angrification     | BOT   | Kills:  1
+#62 | [T80] SickPapaya        | BOT   | Kills:  0
+#63 | [T90] OpenShutCase      | BOT   | Kills:  0
+#64 | [T36] Rrrrumba98        | BOT   | Kills:  0
+#65 * [T15] aliskebab11       | Real  | Kills:  1 | Level: 194 (194) | Platform: WIN | Skin: Character_IcicleCane_Bright
+#66 * [T19] nagibator_rabov   | Real  | Kills:  1 | Level: 117 (117) | Platform: WIN | Skin: Character_BriskReign
+#67 | [T78] ViciousPie44      | BOT   | Kills:  0
+#68 | [T81] MorninWaffles     | BOT   | Kills:  0
+#69 | [T69] XenoBotanist27    | BOT   | Kills:  0
+#70 | [T60] Wenawenaaaa       | BOT   | Kills:  0
+#71 | [T29] PatateCommode     | BOT   | Kills:  0
+#72 | [T59] TheFlopperKing    | BOT   | Kills:  0
+#73 | [T89] Kregore73         | BOT   | Kills:  0
+#74 | [T75] LazyLlama7        | BOT   | Kills:  1
+#75 | [T07] كول1              | BOT   | Kills:  0
+#76 * [T06] crshdcoupe        | Real  | Kills:  1 | Level: ??? ( 18) | Platform: WIN | Skin: Rider
+#77 | [T74] BlindCat47        | BOT   | Kills:  0
+#78 | [T57] SMGsRdaBest       | BOT   | Kills:  0
+#79 | [T28] eliteIt4li4       | BOT   | Kills:  0
+#80 * [T16] Alfiejrob0302     | Real  | Kills:  1 | Level: 458 (458) | Platform: PS5 | Skin: Character_WaterfallCharm_D
+#81 | [T98] Снова_хайп        | BOT   | Kills:  0
+#82 | [T27] SneakyBush9898    | BOT   | Kills:  1
+#83 | [T101] BoatRider10       | BOT   | Kills:  0
+#84 | [T42] ElderFly13        | BOT   | Kills:  0
+#85 * [T22] PrimeMarno        | Real  | Kills:  0 | Level: 228 (228) | Platform: PS5 | Skin: Character_IcicleCane_Bright
+#86 | [T86] ДинамитХ          | BOT   | Kills:  0
+#87 | [T53] CrazyPea96        | BOT   | Kills:  0
+#88 * [T23] PIKPRESJA         | Real  | Kills:  0 | Level: ??? (117) | Platform: WIN | Skin: Character_CozyMechanic_Hen
+#89 | [T72] Sm4tt0            | BOT   | Kills:  0
+#90 | [T25] KingOfFudge       | BOT   | Kills:  0
+#91 * [T12] Mosettig22        | Real  | Kills:  0 | Level: ??? (???) | Platform: XBL | Skin: Character_BoldDormRise
+#92 | [T47] Вернигора         | BOT   | Kills:  0
+#93 | [T88] Fall3nSlasher     | BOT   | Kills:  0
+#94 | [T34] OneMillionAnts24  | BOT   | Kills:  1
+#95 | [T38] آدم1              | BOT   | Kills:  0
+#96 | [T100] HandsomeLemon34   | BOT   | Kills:  0
+#97 | [T55] GrannyGunner3     | BOT   | Kills:  0
+#98 * [T14] onshore_cake91    | Real  | Kills:  0 | Level: 846 (846) | Platform: PS5 | Skin: SoccerGirlD
+#99 | [T43] SomethingFishy3   | BOT   | Kills:  0
+
+Ranking
+#?? * [T11] Mansy9853 (Crown) | Real  | Kills: 10 | Level: ??? (109) | Platform: WIN
+#?? * [T18] Elvitronic        | Real  | Kills:  3 | Level: 226 (226) | Platform: WIN
+#?? * [T05] Aurora fan3689    | Real  | Kills:  2 | Level: 175 (175) | Platform: XSX
+#?? * [T03] break_ombroso     | Real  | Kills:  2 | Level: ??? (187) | Platform: PSN
+#?? * [T20] MrDepa_           | Real  | Kills:  2 | Level: ??? ( 98) | Platform: PS5
+#?? * [T09] ST4RT CROKS       | Real  | Kills:  2 | Level:  70 ( 70) | Platform: XSX
+#21 | [T46] SoSweaty63        | BOT   | Kills:  2
+#22 | [T61] xXMariAnnieXx     | BOT   | Kills:  5
+#23 | [T52] xXxjmarcinxXx     | BOT   | Kills:  2
+#24 * [T08] xdx2k7            * OWNER * Kills:  3 | Level: 154 (154) | Platform: WIN | Skin: Character_SoloSnooze
+#25 * [T13] m1kar1337228      | Real  | Kills:  1 | Level: 273 (273) | Platform: WIN | Skin: Character_HeavyRoar
+#26 | [T58] YourBestFriend63  | BOT   | Kills:  1
+#27 | [T56] NeoHero4          | BOT   | Kills:  1
+#28 | [T87] AngryDuck51       | BOT   | Kills:  0
+#29 | [T51] XxBenEfsaneimxX   | BOT   | Kills:  2
+#30 * [T24] TTVKyzen3446      | Real  | Kills:  2 | Level:  68 ( 68) | Platform: XSX | Skin: Tank
+#31 | [T41] BioDragoon        | BOT   | Kills:  0
+#32 | [T45] PrancingPwnee     | BOT   | Kills:  0
+#33 | [T50] biceps_1          | BOT   | Kills:  1
+#34 | [T44] PlzBeNiceToMe     | BOT   | Kills:  1
+#35 | [T68] TLDR4life         | BOT   | Kills:  0
+#36 | [T30] Сибирская Кошка   | BOT   | Kills:  1
+#37 | [T63] PaLyANChO         | BOT   | Kills:  0
+#38 | [T31] CounterMantra     | BOT   | Kills:  1
+#39 | [T82] UltimateZenith14  | BOT   | Kills:  0
+#40 | [T93] MrPatatafrita     | BOT   | Kills:  1
+#41 | [T92] Notatest22        | BOT   | Kills:  1
+#42 | [T70] Amanda9938643     | BOT   | Kills:  0
+#43 | [T85] Panzabirra98      | BOT   | Kills:  0
+#44 * [T04] Ivan71837         | Real  | Kills:  2 | Level: ??? (???) | Platform: XBL | Skin: Character_CozyMechanic_Hen
+#45 | [T84] Destrukteur03     | BOT   | Kills:  0
+#46 | [T91] RiskyDigits       | BOT   | Kills:  1
+#47 | [T33] ImGonnaWin2234    | BOT   | Kills:  0
+#48 | [T76] Greedy33          | BOT   | Kills:  0
+#49 * [T17] BBOYexe           | Real  | Kills:  0 | Level: ??? (301) | Platform: PSN | Skin: SunriseCastle_48TIZ
+#50 | [T77] Quack4Bread       | BOT   | Kills:  2
+#51 * [T21] NxG-Gh3San        | Real  | Kills:  0 | Level: ??? (???) | Platform: PSN | Skin: Cupid
+#52 * [T10] oo mr valle       | Real  | Kills:  1 | Level: ??? (200) | Platform: XBL | Skin: BannerRed
+#53 | [T71] Skelettosaure5    | BOT   | Kills:  0
+#54 | [T64] Carcrusher94      | BOT   | Kills:  1
+#55 | [T73] GiusyLove212      | BOT   | Kills:  0
+#56 | [T26] Nashtyboy67       | BOT   | Kills:  0
+#57 | [T54] FreeMinded49      | BOT   | Kills:  0
+#58 | [T49] فهر1              | BOT   | Kills:  1
+#59 | [T39] Питбуль1          | BOT   | Kills:  0
+#60 | [T97] Bongodrum010      | BOT   | Kills:  0
+#61 | [T96] Angrification     | BOT   | Kills:  1
+#62 | [T80] SickPapaya        | BOT   | Kills:  0
+#63 | [T90] OpenShutCase      | BOT   | Kills:  0
+#64 | [T36] Rrrrumba98        | BOT   | Kills:  0
+#65 * [T15] aliskebab11       | Real  | Kills:  1 | Level: 194 (194) | Platform: WIN | Skin: Character_IcicleCane_Bright
+#66 * [T19] nagibator_rabov   | Real  | Kills:  1 | Level: 117 (117) | Platform: WIN | Skin: Character_BriskReign
+#67 | [T78] ViciousPie44      | BOT   | Kills:  0
+#68 | [T81] MorninWaffles     | BOT   | Kills:  0
+#69 | [T69] XenoBotanist27    | BOT   | Kills:  0
+#70 | [T60] Wenawenaaaa       | BOT   | Kills:  0
+#71 | [T29] PatateCommode     | BOT   | Kills:  0
+#72 | [T59] TheFlopperKing    | BOT   | Kills:  0
+#73 | [T89] Kregore73         | BOT   | Kills:  0
+#74 | [T75] LazyLlama7        | BOT   | Kills:  1
+#75 | [T07] كول1              | BOT   | Kills:  0
+#76 * [T06] crshdcoupe        | Real  | Kills:  1 | Level: ??? ( 18) | Platform: WIN | Skin: Rider
+#77 | [T74] BlindCat47        | BOT   | Kills:  0
+#78 | [T57] SMGsRdaBest       | BOT   | Kills:  0
+#79 | [T28] eliteIt4li4       | BOT   | Kills:  0
+#80 * [T16] Alfiejrob0302     | Real  | Kills:  1 | Level: 458 (458) | Platform: PS5 | Skin: Character_WaterfallCharm_D
+#81 | [T98] Снова_хайп        | BOT   | Kills:  0
+#82 | [T27] SneakyBush9898    | BOT   | Kills:  1
+#83 | [T101] BoatRider10       | BOT   | Kills:  0
+#84 | [T42] ElderFly13        | BOT   | Kills:  0
+#85 * [T22] PrimeMarno        | Real  | Kills:  0 | Level: 228 (228) | Platform: PS5 | Skin: Character_IcicleCane_Bright
+#86 | [T86] ДинамитХ          | BOT   | Kills:  0
+#87 | [T53] CrazyPea96        | BOT   | Kills:  0
+#88 * [T23] PIKPRESJA         | Real  | Kills:  0 | Level: ??? (117) | Platform: WIN | Skin: Character_CozyMechanic_Hen
+#89 | [T72] Sm4tt0            | BOT   | Kills:  0
+#90 | [T25] KingOfFudge       | BOT   | Kills:  0
+#91 * [T12] Mosettig22        | Real  | Kills:  0 | Level: ??? (???) | Platform: XBL | Skin: Character_BoldDormRise
+#92 | [T47] Вернигора         | BOT   | Kills:  0
+#93 | [T88] Fall3nSlasher     | BOT   | Kills:  0
+#94 | [T34] OneMillionAnts24  | BOT   | Kills:  1
+#95 | [T38] آدم1              | BOT   | Kills:  0
+#96 | [T100] HandsomeLemon34   | BOT   | Kills:  0
+#97 | [T55] GrannyGunner3     | BOT   | Kills:  0
+#98 * [T14] onshore_cake91    | Real  | Kills:  0 | Level: 846 (846) | Platform: PS5 | Skin: SoccerGirlD
+#99 | [T43] SomethingFishy3   | BOT   | Kills:  0
