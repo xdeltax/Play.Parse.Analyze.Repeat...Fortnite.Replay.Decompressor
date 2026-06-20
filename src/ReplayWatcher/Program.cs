@@ -79,7 +79,20 @@ internal static class Program
         } 
         catch (Exception ex)
         {
-            Console.WriteLine($"[Web Dashboard] Could not start HTTP server on port 5142: {ex.Message}");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine();
+            Console.WriteLine("==================================================");
+            Console.WriteLine(" FEHLER BEIM STARTEN DES DASHBOARDS");
+            Console.WriteLine("==================================================");
+            Console.WriteLine($"Port 5142 wird bereits von einem anderen Programm (oder einer anderen ReplayWatcher-Instanz) verwendet.");
+            Console.WriteLine($"Bitte schließe die andere Instanz und starte diese .exe neu.");
+            Console.WriteLine($"Details: {ex.Message}");
+            Console.WriteLine("==================================================");
+            Console.WriteLine();
+            Console.ResetColor();
+            Console.WriteLine("Drücke eine beliebige Taste zum Beenden...");
+            Console.ReadKey();
+            return;
         }
 
         PrintShortcutHint(lastProcessedResultRef[0]);

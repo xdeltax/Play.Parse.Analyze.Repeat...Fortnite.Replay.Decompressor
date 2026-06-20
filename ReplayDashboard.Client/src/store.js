@@ -7,6 +7,7 @@ export const useStore = create((set, get) => ({
   sourceReplays: [],
   status: { isLive: false, durationMinutes: 0 },
   selectedReplay: null,
+  parsingTarget: null,
 
   setSelectedReplay: (filename) => set({ selectedReplay: filename }),
 
@@ -56,6 +57,7 @@ export const useStore = create((set, get) => ({
   },
 
   reparse: async (target) => {
+    set({ parsingTarget: target });
     try {
       await fetch(`${API_BASE}/reparse`, {
         method: 'POST',
@@ -63,9 +65,11 @@ export const useStore = create((set, get) => ({
         body: JSON.stringify({ target })
       });
       // Force immediate refresh
-      get().fetchData();
+      await get().fetchData();
     } catch (err) {
       console.error("Failed to trigger reparse:", err);
+    } finally {
+      set({ parsingTarget: null });
     }
   }
 }));

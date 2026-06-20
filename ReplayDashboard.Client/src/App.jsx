@@ -3,7 +3,7 @@ import { useStore } from './store';
 import './index.css';
 
 const App = () => {
-  const { replays, sourceReplays, status, selectedReplay, fetchData, setSelectedReplay, reparse } = useStore();
+  const { replays, sourceReplays, status, selectedReplay, parsingTarget, fetchData, setSelectedReplay, reparse } = useStore();
   const [currentReplayData, setCurrentReplayData] = useState(null);
 
   useEffect(() => {
@@ -72,10 +72,11 @@ const App = () => {
           <h2 style={{ margin: '0 0 10px 0', fontSize: '1.2rem', color: 'var(--accent)' }}>Replay List</h2>
           <button 
             className="action-btn" 
-            style={{ width: '100%', padding: '10px', background: 'var(--primary)', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold' }}
+            style={{ width: '100%', padding: '10px', background: 'var(--primary)', color: 'white', border: 'none', borderRadius: '4px', cursor: parsingTarget ? 'not-allowed' : 'pointer', fontWeight: 'bold', opacity: parsingTarget ? 0.6 : 1 }}
+            disabled={!!parsingTarget}
             onClick={() => reparse('all')}
           >
-            Parse All Unparsed
+            {parsingTarget === 'all' ? 'Parsing All... ⏳' : 'Parse All Unparsed'}
           </button>
         </div>
         <div className="replay-list" style={{ flex: 1, overflowY: 'auto', padding: '10px' }}>
@@ -110,10 +111,11 @@ const App = () => {
                     </button>
                   ) : (
                     <button 
+                      disabled={!!parsingTarget}
                       onClick={() => reparse(sr.filename)}
-                      style={{ padding: '4px 8px', background: 'transparent', border: '1px solid var(--primary)', borderRadius: '4px', color: 'var(--primary)', cursor: 'pointer', fontSize: '0.8rem' }}
+                      style={{ padding: '4px 8px', background: 'transparent', border: '1px solid var(--primary)', borderRadius: '4px', color: 'var(--primary)', cursor: parsingTarget ? 'not-allowed' : 'pointer', fontSize: '0.8rem', opacity: parsingTarget ? 0.5 : 1 }}
                     >
-                      Parse
+                      {parsingTarget === sr.filename ? '⏳...' : 'Parse'}
                     </button>
                   )}
                 </div>
