@@ -17,6 +17,15 @@ Screenshot:
 
 ![Replay watcher console output](Screenshot.png)
 
+## How it works
+
+The project is split into several key components that work together to process and analyze Fortnite replays:
+
+1. **FortniteReplayReader**: The core parsing engine that reads raw `*.replay` binary files (which use the Unreal Engine replay format) and deserializes them into a structured C# object model. It handles decompression, reading network packets, and extracting game events.
+2. **ReplayAnalyzer**: A robust extraction layer that takes the raw object model and processes it into meaningful statistics. It searches the replay for the recording player ("owner"), determines their final match placement, aggregates the team's total eliminations, and reconstructs the timeline of the kill feed. It outputs this data as both a comprehensive JSON file and a human-readable summary TXT file.
+3. **ReplayWatcher**: A standalone background worker designed to run silently. It uses file system watchers to monitor your Fortnite replay directory (`%LOCALAPPDATA%\FortniteGame\Saved\Demos`) for new or modified `*.replay` files. Once a match concludes and the file becomes stable (fully written by the game), the watcher automatically triggers the `ReplayAnalyzer` and drops the parsed results into a designated output folder, alerting you in the console.
+4. **ConsoleReader**: A command-line tool for manually bulk-processing existing replay files or entire directories.
+
 ## Requirements
 
 - .NET SDK 10.0 or newer

@@ -41,7 +41,7 @@ internal static class Program
         {
             try
             {
-                if (Console.KeyAvailable)
+                if (!Console.IsInputRedirected && Console.KeyAvailable)
                 {
                     HandleKeyboardInput(options.ReplayDirectory, outputDirectory, processed, pending, ref lastProcessedResult, cts);
                 }

@@ -1,0 +1,121 @@
+File : C7S3 SoloVsSquads-2026.06.20-12.11.41
+Match: 2026-06-20T10:11:41.2880000Z; Duration: 23:02
+       98 Total Players
+       20 Real Players 
+       78 BOT Players
+       22 NPCs
+       120 in Sum
+       5 Players with Crown
+Owner: xdx2k7 (634311A416164074906752232C0DC6D2)
+       Rank#: #01
+       killed 6 / knocked 4; 
+       Accuracy 12.0%; Assists 3; Revives 0; Damage: 1063 Given; 699 Received
+       Owner has Crown
+Owner Killfeed:
+   1. [03:54] knocked: [BOT ] RudeAwaken1ngz   | Rank: 19
+   2. [04:09] knocked: [BOT ] Strider0728      | Rank: 19
+   3. [05:20] knocked: [BOT ] Quack4Bread      | Rank: 19
+   4. [05:40] killed!: [BOT ] UltraDavid26     | Rank: 19
+   5. [19:36] knocked: [Real] tob1978 (Crown)  | Rank: 2
+   6. [23:13] killed!: [Real] hymnisch-Beiname | Rank: 2
+
+Ranking
+#01 * xdx2k7 (Crown)        * OWNER * Kills:  6 | Level:  29 ( 29) | Platform: WIN
+#02 * Yanis876_Edi          | Real  | Kills:  2 | Level: ??? (???) | Platform: PSN
+#02 * tob1978 (Crown)       | Real  | Kills:  2 | Level: ??? ( 65) | Platform: PS5
+#02 * hymnisch-Beiname      | Real  | Kills:  0 | Level:  53 ( 53) | Platform: PS5
+#03 * eleredolym            | Real  | Kills:  6 | Level: ??? (131) | Platform: PS5
+#03 * Ilias_liokaris1       | Real  | Kills:  5 | Level: ??? (???) | Platform: PSN
+#03 * Steffanos_13          | Real  | Kills:  4 | Level: ??? (???) | Platform: WIN
+#03 * ANTONYGAME18          | Real  | Kills:  2 | Level: ??? ( 74) | Platform: XSX
+#04 * Hug0bo22 (Crown)      | Real  | Kills: 11 | Level: ??? (???) | Platform: WIN
+#04 * brizzlygear_          | Real  | Kills: 10 | Level: ??? (???) | Platform: WIN
+#04 * pakk83                | Real  | Kills:  3 | Level: ??? ( 16) | Platform: PS5
+#04 * DefensiveBoa5204      | Real  | Kills:  2 | Level: ??? (???) | Platform: XBL
+#05 * xkillermartialx       | Real  | Kills:  8 | Level: ??? ( 94) | Platform: PS5
+#05 * Escobar-111-_ (Crown) | Real  | Kills:  6 | Level: ??? ( 91) | Platform: PS5
+#05 * Kirito2356_ban        | Real  | Kills:  5 | Level:  15 ( 15) | Platform: PS5
+#05 * VaryingVines3676      | Real  | Kills:  5 | Level: ??? (???) | Platform: PSN
+#06 * Sousoupickles (Crown) | Real  | Kills:  9 | Level: 141 (141) | Platform: PS5
+#07 | misiubysiu            | BOT   | Kills:  0
+#07 | Albacore6             | BOT   | Kills:  0
+#07 | DrQuikMaths           | BOT   | Kills:  0
+#07 | ginga872              | BOT   | Kills:  0
+#08 | DarlingSnail          | BOT   | Kills:  0
+#08 | Ayıdoğan_19           | BOT   | Kills:  0
+#08 | Vazkor_AN             | BOT   | Kills:  0
+#08 | anton1_51             | BOT   | Kills:  0
+#09 | Журбинка              | BOT   | Kills:  1
+#09 | Lulabyebye            | BOT   | Kills:  1
+#09 | PrimeSystem           | BOT   | Kills:  1
+#09 | TwoWeeks18            | BOT   | Kills:  0
+#10 | Soundthealarm18       | BOT   | Kills:  1
+#10 | DemonOnWheels         | BOT   | Kills:  1
+#10 | MuddyBoots7           | BOT   | Kills:  0
+#10 | GimmeCrisps           | BOT   | Kills:  0
+#11 | Maczetaaa30552        | BOT   | Kills:  1
+#11 | JudgeFudge            | BOT   | Kills:  1
+#11 | Phorgas               | BOT   | Kills:  0
+#11 | Salamander8910        | BOT   | Kills:  0
+#12 | LilGrande56           | BOT   | Kills:  0
+#12 | IhaveAGoodElo         | BOT   | Kills:  0
+#12 | Crestfallen64         | BOT   | Kills:  0
+#12 | GamerGreat30          | BOT   | Kills:  0
+#13 | Renegade53            | BOT   | Kills:  0
+#13 | PatatasHazard         | BOT   | Kills:  0
+#13 | TheMônia43133         | BOT   | Kills:  0
+#13 | Oracle_panda          | BOT   | Kills:  0
+#14 | RoyaleKing60953       | BOT   | Kills:  0
+#14 | ريان85                | BOT   | Kills:  0
+#14 | Той_що_в_скалі_сидить | BOT   | Kills:  0
+#14 | kawanaczczo           | BOT   | Kills:  0
+#15 * Aka-Rugged-Jr18       | Real  | Kills:  1 | Level: 115 (115) | Platform: PS5
+#15 * DRAGON .1988          | Real  | Kills:  0 | Level: ??? (???) | Platform: XBL
+#16 | Хуха23237             | BOT   | Kills:  2
+#16 | كونور1                | BOT   | Kills:  1
+#16 | paprikalost1252       | BOT   | Kills:  1
+#16 | BubblyFalcon          | BOT   | Kills:  0
+#17 | Warning1496           | BOT   | Kills:  2
+#17 | 44Sedano44            | BOT   | Kills:  1
+#17 | El-duende-Samez87     | BOT   | Kills:  1
+#17 | SuperMati58047        | BOT   | Kills:  0
+#18 | dönerci_MeMo          | BOT   | Kills:  0
+#18 | Иван С Усами          | BOT   | Kills:  0
+#19 | RudeAwaken1ngz        | BOT   | Kills:  0
+#19 | UltraDavid26          | BOT   | Kills:  0
+#19 | Quack4Bread           | BOT   | Kills:  0
+#19 | Strider0728           | BOT   | Kills:  0
+#20 | İnşaatMühendisi1      | BOT   | Kills:  0
+#20 | 9Яков                 | BOT   | Kills:  0
+#20 | صامد1                 | BOT   | Kills:  0
+#20 | Dawson201             | BOT   | Kills:  0
+#21 | Їжачок11211           | BOT   | Kills:  0
+#21 | Chimuelopr0           | BOT   | Kills:  0
+#21 | Riftmage54            | BOT   | Kills:  0
+#21 | JungleProwler25       | BOT   | Kills:  0
+#22 | SnipersDelight50      | BOT   | Kills:  0
+#22 | PapaParadise82        | BOT   | Kills:  0
+#22 | BobDobaleena          | BOT   | Kills:  0
+#22 | TepidPorridge         | BOT   | Kills:  0
+#23 | BillyBrilliant23      | BOT   | Kills:  0
+#23 | DiamondQuartz78       | BOT   | Kills:  0
+#23 | CtrlAltDeleted94      | BOT   | Kills:  0
+#23 | A Sweaty Dog          | BOT   | Kills:  0
+#24 | Back2Work61           | BOT   | Kills:  0
+#24 | d0m3dw3ll3r           | BOT   | Kills:  0
+#24 | FlamingoGuru          | BOT   | Kills:  0
+#24 | Katil Kene01          | BOT   | Kills:  0
+#25 * Augustinerᴰᴱシ         | Real  | Kills:  0 | Level:  65 ( 65) | Platform: WIN
+#25 | HaHaHeeHee73          | BOT   | Kills:  0
+#25 | WalkTheDog80          | BOT   | Kills:  0
+#25 | MutantGecko7          | BOT   | Kills:  0
+#25 | Valley6789            | BOT   | Kills:  0
+#26 | PeterUnlustig55089    | BOT   | Kills:  0
+#26 | PatateCommode         | BOT   | Kills:  0
+#26 | Agua_Cat              | BOT   | Kills:  0
+#26 | NarEşkisi1            | BOT   | Kills:  0
+#27 | Hollywood70           | BOT   | Kills:  0
+#27 | BoldPrediction        | BOT   | Kills:  0
+#27 | Chipper70             | BOT   | Kills:  0
+#27 | JellyBeats81          | BOT   | Kills:  0
+
