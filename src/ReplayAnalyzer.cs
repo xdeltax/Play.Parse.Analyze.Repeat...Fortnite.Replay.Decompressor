@@ -170,10 +170,26 @@ internal static class ReplayAnalyzer
             : hardSum;
         static string FormatSummaryLine(string label, string value) => $"{label} {value}";
 
+        var gameVersion = replay.Header?.Branch is not null
+            ? (System.Text.RegularExpressions.Regex.Match(replay.Header.Branch, @"Release-(\d+\.\d+)") is { Success: true } m ? $"v{m.Groups[1].Value}" : replay.Header.Branch)
+            : "unknown";
+
+        var gameMode = GetGameMode(replay.GameData?.CurrentPlaylist);
+        var playersPerTeam = GetPlayersPerTeam(replay.GameData?.CurrentPlaylist);
+        var teamsInMatch = replay.GameData?.TeamSize is int ts and > 0 ? ts : (int?)null;
+        var largeTeam = replay.GameData?.IsLargeTeamGame == true ? " [Large Team]" : string.Empty;
+        var modeDetail = playersPerTeam > 0
+            ? $"{gameMode}{largeTeam}  ({playersPerTeam}v{playersPerTeam})"
+            : $"{gameMode}{largeTeam}";
+        var teamsDetail = teamsInMatch.HasValue ? $" | {teamsInMatch.Value} Teams" : string.Empty;
+
         var lines = new List<string>
         {
             $"File : {Path.GetFileNameWithoutExtension(replayFilePath)}",
-            FormatSummaryLine("Match:", $"{ToIsoOrUnknown(replay.Info?.Timestamp)}; Duration: {FormatDurationMmSs(durationSeconds)}; Mode: {GetGameMode(replay.GameData?.CurrentPlaylist)}"),
+            FormatSummaryLine("Match:", $"{ToIsoOrUnknown(replay.Info?.Timestamp)}; Duration: {FormatDurationMmSs(durationSeconds)}"),
+            $"       Mode         : {modeDetail}{teamsDetail}",
+            $"       Game Version : {gameVersion}",
+            $"       Session ID   : {replay.GameData?.GameSessionId ?? "unknown"}",
             $"       {totalPlayers} Total Players",
             $"       {realPlayers} Real Players ",
             $"       {botPlayers} BOT Players",
@@ -233,13 +249,35 @@ internal static class ReplayAnalyzer
                     killerIdOrName = "unknown";
                 }
 
-                lines.Add($"       Killed at {FormatDurationMmSs(deathTime.GetValueOrDefault())} by {killerType} ({killerIdOrName})");
+                var deathDist = ownerDeathEntry?.Distance is float dist and > 0
+                    ? $" | dist: {FormatDistanceMeters(dist)}"
+                    : string.Empty;
+                var deathWeapon = ExtractWeaponFromTags(ownerDeathEntry?.DeathTags);
+                var deathWeaponStr = deathWeapon is not null ? $" | via: {deathWeapon}" : string.Empty;
+                lines.Add($"       Killed at {FormatDurationMmSs(deathTime.GetValueOrDefault())} by {killerType} ({killerIdOrName}){deathDist}{deathWeaponStr}");
             }
 
             lines.Add($"       Accuracy {(ownerAccuracyPercent.HasValue ? $"{ownerAccuracyPercent.Value:F1}%" : "unknown")}; Assists {FormatCompactMetric(ownerAssists)}; Revives {FormatCompactMetric(ownerRevives)}; Damage: {(ownerDamageGiven.HasValue ? ownerDamageGiven.Value.ToString() : "unknown")} Given; {(ownerDamageReceived.HasValue ? ownerDamageReceived.Value.ToString() : "unknown")} Received");
+
+            if (replay.Stats is not null)
+            {
+                var traveled = replay.Stats.TotalTraveled > 0 ? $"{replay.Stats.TotalTraveled / 100.0:F0} m" : "?";
+                lines.Add($"       Structures Dmg: {replay.Stats.DamageToStructures}; Materials: {replay.Stats.MaterialsGathered} gathered / {replay.Stats.MaterialsUsed} used; Travel: {traveled}");
+            }
+
             if (owner.HasCrown)
             {
                 lines.Add("       Owner has Crown");
+            }
+
+            // Owner cosmetics
+            if (owner.Cosmetics is not null)
+            {
+                var skin = owner.Cosmetics.Character ?? "?";
+                var pickaxe = owner.Cosmetics.Pickaxe ?? "?";
+                var glider = owner.Cosmetics.Glider ?? "?";
+                var backpack = owner.Cosmetics.Backpack ?? "-";
+                lines.Add($"       Skin: {skin} | Pickaxe: {pickaxe} | Glider: {glider} | Backpack: {backpack}");
             }
 
             lines.Add(string.Empty);
@@ -315,22 +353,26 @@ internal static class ReplayAnalyzer
                             : (entry.PlayerId.HasValue ? $"PlayerID:{entry.PlayerId.Value}" : "unknown"));
                     var time = GetNormalizedEventTimeSeconds(replay, entry);
                     var timeFmt = time.HasValue ? FormatDurationMmSs(time.Value) : "??:??";
-                    var victimRank = victimPlayer?.Placement.HasValue == true ? victimPlayer.Placement.Value.ToString() : "??";
-                    lines.Add($"  {i + 1,2}. [{timeFmt}] {action}: [{tag}] {victim.PadRight(killfeedVictimWidth)} | Rank: {victimRank}");
+                    var victimRankNum = victimPlayer?.Placement.HasValue == true ? (int?)victimPlayer.Placement.Value : null;
+                    var victimRankStr = victimRankNum.HasValue ? $"{victimRankNum.Value,2}" : "??";
+                    var feedDist = entry.Distance is float d and > 0 ? $" | {FormatDistanceMeters(d)}" : string.Empty;
+                    var feedWeapon = ExtractWeaponFromTags(entry.DeathTags);
+                    var feedWeaponStr = feedWeapon is not null ? $" | {feedWeapon}" : string.Empty;
+                    lines.Add($"  {i + 1,2}. [{timeFmt}] {action}: [{tag}] {victim.PadRight(killfeedVictimWidth)} | Rank: {victimRankStr}{feedDist}{feedWeaponStr}");
                 }
             }
 
             lines.Add(string.Empty);
         }
 
-        AppendRanking(lines, "Team-Ranking", teamRankedPlayers, teamUnrankedAliveRealPlayers);
+        AppendRanking(lines, "Team-Ranking", teamRankedPlayers, teamUnrankedAliveRealPlayers, isTeamRanking: true);
         lines.Add(string.Empty);
-        AppendRanking(lines, "Ranking", normalRankedPlayers, normalUnrankedAliveRealPlayers);
+        AppendRanking(lines, "Ranking", normalRankedPlayers, normalUnrankedAliveRealPlayers, isTeamRanking: false);
 
         return string.Join(Environment.NewLine, lines);
     }
 
-    private static void AppendRanking(List<string> lines, string title, List<PlayerData> rankedPlayers, List<PlayerData> unrankedAliveRealPlayers)
+    private static void AppendRanking(List<string> lines, string title, List<PlayerData> rankedPlayers, List<PlayerData> unrankedAliveRealPlayers, bool isTeamRanking)
     {
         lines.Add(title);
 
@@ -351,7 +393,8 @@ internal static class ReplayAnalyzer
                 var seasonLevel = FormatLevel(player.SeasonLevelUIDisplay);
                 var platform = string.IsNullOrWhiteSpace(player.Platform) ? "unknown" : player.Platform;
                 var teamPrefix = player.TeamIndex.HasValue ? $"[T{player.TeamIndex.Value:00}]" : "[T??]";
-                var line = $"#?? * {teamPrefix} {baseDisplayId.PadRight(idWidth)} | Real  | Kills: {kills,2} | Level: {level} ({seasonLevel}) | Platform: {platform}";
+                var rebootStr = isTeamRanking && player.RebootCounter.HasValue ? $" | Reboots: {player.RebootCounter.Value}" : string.Empty;
+                var line = $"#?? * {teamPrefix} {baseDisplayId.PadRight(idWidth)} | Real  | Kills: {kills,2} | Level: {level} ({seasonLevel}) | Platform: {platform}{rebootStr}";
                 lines.Add(line);
             }
 
@@ -360,6 +403,7 @@ internal static class ReplayAnalyzer
                 var baseDisplayId = FormatDisplayNameWithCrown(player);
                 var kills = player.Kills ?? 0;
                 var teamPrefix = player.TeamIndex.HasValue ? $"[T{player.TeamIndex.Value:00}]" : "[T??]";
+                var rebootStr = isTeamRanking && player.RebootCounter.HasValue ? $" | Reboots: {player.RebootCounter.Value}" : string.Empty;
                 string line;
 
                 if (player.IsReplayOwner)
@@ -367,14 +411,16 @@ internal static class ReplayAnalyzer
                     var level = FormatLevel(player.Level);
                     var seasonLevel = FormatLevel(player.SeasonLevelUIDisplay);
                     var platform = string.IsNullOrWhiteSpace(player.Platform) ? "unknown" : player.Platform;
-                    line = $"#{player.Placement.GetValueOrDefault(),2:00} * {teamPrefix} {baseDisplayId.PadRight(idWidth)} * OWNER * Kills: {kills,2} | Level: {level} ({seasonLevel}) | Platform: {platform}";
+                    var skin = FormatCosmeticShort(player.Cosmetics?.Character);
+                    line = $"#{player.Placement.GetValueOrDefault(),2:00} * {teamPrefix} {baseDisplayId.PadRight(idWidth)} * OWNER * Kills: {kills,2} | Level: {level} ({seasonLevel}) | Platform: {platform} | Skin: {skin}{rebootStr}";
                 }
                 else if (!player.IsBot)
                 {
                     var level = FormatLevel(player.Level);
                     var seasonLevel = FormatLevel(player.SeasonLevelUIDisplay);
                     var platform = string.IsNullOrWhiteSpace(player.Platform) ? "unknown" : player.Platform;
-                    line = $"#{player.Placement.GetValueOrDefault(),2:00} * {teamPrefix} {baseDisplayId.PadRight(idWidth)} | Real  | Kills: {kills,2} | Level: {level} ({seasonLevel}) | Platform: {platform}";
+                    var skin = FormatCosmeticShort(player.Cosmetics?.Character);
+                    line = $"#{player.Placement.GetValueOrDefault(),2:00} * {teamPrefix} {baseDisplayId.PadRight(idWidth)} | Real  | Kills: {kills,2} | Level: {level} ({seasonLevel}) | Platform: {platform} | Skin: {skin}{rebootStr}";
                 }
                 else
                 {
@@ -385,6 +431,74 @@ internal static class ReplayAnalyzer
                 lines.Add(line);
             }
         }
+    }
+
+    /// <summary>Formats a distance from Unreal Units (cm) to meters with XXX.X m layout.</summary>
+    private static string FormatDistanceMeters(float unrUnits)
+    {
+        var meters = unrUnits / 100.0f;
+        return $"{meters,5:F1} m";
+    }
+
+    /// <summary>Strips common prefixes from cosmetic asset names for compact display.</summary>
+    private static string FormatCosmeticShort(string? assetName)
+    {
+        if (string.IsNullOrWhiteSpace(assetName)) return "-";
+        // Strip common prefixes like CID_XXX_Athena_Commando_M_ / CID_A_XXX_...
+        var stripped = System.Text.RegularExpressions.Regex.Replace(assetName,
+            @"^(CID_[A-Z]?_?\d+_Athena_Commando_[MF]_)",
+            "", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+        return stripped.Length > 0 ? stripped : assetName;
+    }
+
+    /// <summary>Attempts to extract a human-readable weapon name from DeathTags gameplay tags.</summary>
+    private static string? ExtractWeaponFromTags(IEnumerable<string>? tags)
+    {
+        if (tags is null) return null;
+
+        // Priority: look for item.weapon or Item.Weapon tags first (most specific)
+        foreach (var tag in tags)
+        {
+            if (tag.StartsWith("item.weapon.ranged.", StringComparison.OrdinalIgnoreCase))
+            {
+                var parts = tag.Split('.');
+                // e.g. item.weapon.ranged.assault.SunRose → "Assault: SunRose"
+                if (parts.Length >= 5) return $"{Capitalize(parts[3])}: {parts[4]}";
+                if (parts.Length >= 4) return Capitalize(parts[3]);
+            }
+            if (tag.StartsWith("Item.Weapon.Ranged.", StringComparison.OrdinalIgnoreCase))
+            {
+                var parts = tag.Split('.');
+                // e.g. Item.Weapon.Ranged.SMG.DragonCart → "SMG: DragonCart"
+                if (parts.Length >= 5) return $"{parts[3]}: {parts[4]}";
+                if (parts.Length >= 4) return parts[3];
+            }
+        }
+
+        // Fallback: Weapon.Ranged.XXX
+        foreach (var tag in tags)
+        {
+            if (tag.StartsWith("Weapon.Ranged.", StringComparison.OrdinalIgnoreCase))
+            {
+                var parts = tag.Split('.');
+                if (parts.Length >= 3) return Capitalize(parts[2]);
+            }
+        }
+
+        // Storm/environment damage
+        foreach (var tag in tags)
+        {
+            if (tag.Contains("OutsideSafeZone", StringComparison.OrdinalIgnoreCase)) return "Storm";
+            if (tag.Contains("FallDamage", StringComparison.OrdinalIgnoreCase)) return "Fall Damage";
+        }
+
+        return null;
+    }
+
+    private static string Capitalize(string s)
+    {
+        if (string.IsNullOrEmpty(s)) return s;
+        return char.ToUpperInvariant(s[0]) + s[1..];
     }
 
     private static double? GetNormalizedEventTimeSeconds(FortniteReplay replay, KillFeedEntry entry)
@@ -565,6 +679,17 @@ internal static class ReplayAnalyzer
         if (lower.Contains("creative")) return "CREATIVE";
         if (lower.Contains("respawn")) return "TEAM RUMBLE";
         return playlist; // fallback
+    }
+
+    private static int GetPlayersPerTeam(string? playlist)
+    {
+        if (string.IsNullOrWhiteSpace(playlist)) return 0;
+        var lower = playlist.ToLowerInvariant();
+        if (lower.Contains("solo")) return 1;
+        if (lower.Contains("duo")) return 2;
+        if (lower.Contains("trio")) return 3;
+        if (lower.Contains("squad")) return 4;
+        return 0; // unknown / large-team modes
     }
 
     private static AppOptions ParseOptions(string[] args)
