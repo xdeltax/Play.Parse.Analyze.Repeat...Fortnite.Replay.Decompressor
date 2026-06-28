@@ -123,6 +123,10 @@ const App = () => {
   // Data processing
   const { Info, GameData, Stats, PlayerData, KillFeed, TeamData } = currentReplayData || {};
   const owner = PlayerData?.find(p => p.IsReplayOwner);
+  const skin = owner?.Cosmetics?.Character ? formatCosmeticShort(owner.Cosmetics.Character) : '?';
+  const pickaxe = owner?.Cosmetics?.Pickaxe ? formatCosmeticShort(owner.Cosmetics.Pickaxe) : '?';
+  const glider = owner?.Cosmetics?.Glider ? formatCosmeticShort(owner.Cosmetics.Glider) : '?';
+  const backpack = owner?.Cosmetics?.Backpack ? formatCosmeticShort(owner.Cosmetics.Backpack) : '-';
   const ownerKills = owner?.Kills || 0;
   const ownerKnocks = KillFeed?.filter(k => k.FinisherOrDowner === owner?.Id && k.IsDowned).length || 0;
   const ownerFeed = owner?.Id ? (KillFeed || []).filter(k => k.FinisherOrDowner === owner.Id && !k.IsRevived) : [];
