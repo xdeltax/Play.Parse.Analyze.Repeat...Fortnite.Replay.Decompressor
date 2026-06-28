@@ -23,7 +23,7 @@ internal static class Program
         DateTime? lastMissingDirLog = null;
         var nextScanUtc = DateTime.UtcNow;
 
-        Console.WriteLine($"--- ReplayWatcher v5.0.0 ---");
+        Console.WriteLine($"--- ReplayWatcher v5.0.1 ---");
         Console.WriteLine("Watching Fortnite replay directories:");
         foreach (var dir in options.ReplayDirectories) Console.WriteLine($" - {dir}");
         Console.WriteLine($"Output subdirectory: {options.OutputSubdirectory}");

@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using FortniteReplayReader.Models;
@@ -62,6 +62,17 @@ public class FortniteReplayBuilder
     /// <returns>FortniteReplay</returns>
     public FortniteReplay Build(FortniteReplay replay)
     {
+        if (GameData.RecorderId.HasValue)
+        {
+            foreach (var kvp in _players)
+            {
+                if (_channelToActor.TryGetValue(kvp.Key, out var actorId) && actorId == GameData.RecorderId.Value)
+                {
+                    kvp.Value.IsReplayOwner = true;
+                }
+            }
+        }
+
         UpdateTeamData();
         replay.GameData = GameData;
         replay.MapData = MapData;

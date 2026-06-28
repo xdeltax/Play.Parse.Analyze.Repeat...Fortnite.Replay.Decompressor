@@ -159,6 +159,9 @@ If you wish to modify the React code, you can find the source in `ReplayDashboar
 
 ## Version History
 
+- **v5.0.1**
+  - Fixed "404 Not Found - React Dashboard missing" by automating React client builds inside MSBuild compilation.
+  - Fixed owner and match statistics detection for latest Fortnite update by resolving owner details at the end of the replay parse.
 - **v5.0.0**
   - Added the embedded **React Web Dashboard** (`ReplayDashboard.Client`).
   - `ReplayWatcher` now automatically acts as an HTTP server and opens the browser on launch.

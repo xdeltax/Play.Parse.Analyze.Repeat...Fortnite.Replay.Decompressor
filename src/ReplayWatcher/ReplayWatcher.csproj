@@ -14,10 +14,26 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="10.0.0" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="..\..\ReplayDashboard.Client\dist\**\*.*">
-      <Link>wwwroot\%(RecursiveDir)%(Filename)%(Extension)</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
+  <Target Name="BuildReactApp" BeforeTargets="BeforeBuild" Condition="!Exists('..\..\ReplayDashboard.Client\dist') Or '$(Configuration)' == 'Release'">
+    <Exec Command="node -e &quot;const cp = require('child_process'); const realPath = require('fs').realpathSync('..\\..\\ReplayDashboard.Client'); if (!require('fs').existsSync(require('path').join(realPath, 'node_modules'))) { cp.execSync('npm install', { cwd: realPath, stdio: 'inherit' }); }&quot;" />
+    <Exec Command="node -e &quot;const cp = require('child_process'); const realPath = require('fs').realpathSync('..\\..\\ReplayDashboard.Client'); cp.execSync('npm run build', { cwd: realPath, stdio: 'inherit' });&quot;" />
+  </Target>
+
+  <Target Name="CopyReactAppFiles" AfterTargets="BuildReactApp" BeforeTargets="Build">
+    <ItemGroup>
+      <ReactDistFiles Include="..\..\ReplayDashboard.Client\dist\**\*.*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(ReactDistFiles)"
+          DestinationFiles="@(ReactDistFiles->'$(OutDir)wwwroot\%(RecursiveDir)%(Filename)%(Extension)')"
+          SkipUnchangedFiles="true" />
+  </Target>
+
+  <Target Name="CopyReactAppFilesToPublish" AfterTargets="Publish">
+    <ItemGroup>
+      <ReactDistFiles Include="..\..\ReplayDashboard.Client\dist\**\*.*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(ReactDistFiles)"
+          DestinationFiles="@(ReactDistFiles->'$(PublishDir)wwwroot\%(RecursiveDir)%(Filename)%(Extension)')"
+          SkipUnchangedFiles="true" />
+  </Target>
 </Project>
