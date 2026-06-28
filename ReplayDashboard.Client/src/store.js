@@ -34,10 +34,13 @@ export const useStore = create((set, get) => ({
           if (!newSelected) {
             newSelected = replays[0].filename;
           } else {
-            // Check if the newest available game is newer than what we currently have selected
-            const currentSelectedIndex = replays.findIndex(r => r.filename === newSelected);
-            if (currentSelectedIndex > 0) {
-              // Wait, if a new replay was just parsed, it will be at index 0. We should select it!
+            // Respect the user's manual selection and only auto-switch to a new replay if:
+            // 1. A new replay finishes parsing (it's not present in the old replays list)
+            // 2. The user was previously looking at the latest replay
+            const wasNewestAlreadyPresent = state.replays.some(r => r.filename === replays[0].filename);
+            const wasViewingLatest = state.replays.length > 0 && state.selectedReplay === state.replays[0].filename;
+            
+            if (!wasNewestAlreadyPresent && wasViewingLatest) {
               newSelected = replays[0].filename;
             }
           }
