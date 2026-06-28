@@ -159,6 +159,11 @@ If you wish to modify the React code, you can find the source in `ReplayDashboar
 
 ## Version History
 
+- **v5.1.0**
+  - Added player-specific death details and killfeeds in both console/txt reports and the web dashboard.
+  - Added expandable ranking rows in the React dashboard to collapse/expand detailed statistics of any player.
+  - Fixed console output to hide rankings during active live-scan monitoring (only printed on 'D' keypress).
+  - Improved process lifecycles on Windows using Start-Process decoupling.
 - **v5.0.1**
   - Fixed "404 Not Found - React Dashboard missing" by automating React client builds inside MSBuild compilation.
   - Fixed owner and match statistics detection for latest Fortnite update by resolving owner details at the end of the replay parse.
