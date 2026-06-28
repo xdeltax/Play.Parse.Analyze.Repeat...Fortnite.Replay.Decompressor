@@ -39,204 +39,654 @@ Owner Killfeed:
 
 Team-Ranking
 #01 * [T03] NoahytGGG- (Crown)   | Real  | Kills:  9 | Level: ??? ( 41) | Platform: PS5 | Skin: Lateral_K8XD9
+	[04:33] knocked: [BOT ] LilGrande56 | Rank: 24 |   2,5 m | Assault: OrangeRemote
+	[04:51] killed!: [BOT ] Overtime46 | Rank: 24 |   1,7 m | Shotgun: Flavor
+	[09:14] knocked: [BOT ] TopDanger28 | Rank: 13 |   8,1 m | SMG
+	[09:16] knocked: [BOT ] TermiteMuscles | Rank: 13 |   6,5 m | Shotgun: Flavor
+	[09:21] knocked: [BOT ] QuadAlex13 | Rank: 13 |   3,7 m | Shotgun: Flavor
+	[09:28] killed!: [BOT ] Gloriainfinita | Rank: 13 |   2,0 m | Shotgun: Flavor
+	[14:54] killed!: [Real] stoic_lid03 | Rank:  5 |  22,7 m | Assault: SunRose
+	[15:42] knocked: [Real] Mehrsam_killer | Rank:  4 |  34,7 m | Assault: SunRose
+	[16:02] knocked: [Real] Mehrsam_killer | Rank:  4 |   5,0 m | Shotgun: Flavor
+	[18:18] knocked: [BOT ] FlawlessGame | Rank:  3 |  37,1 m | Assault: SunRose
+	[18:23] killed!: [BOT ] MarathonWalker | Rank:  3 |   1,1 m | Shotgun: Flavor
 #01 * [T03] Kofra2004 (Crown)    | Real  | Kills:  3 | Level: ??? (???) | Platform: PSN | Skin: Prime
+	[03:24] killed!: [NPC ] Wache | Rank: ?? |   4,3 m | Assault: SunRose
+	[03:28] killed!: [NPC ] Wache | Rank: ?? |  13,9 m | Assault: SunRose
+	[09:24] killed!: [BOT ] TopDanger28 | Rank: 13 |   3,3 m | Shotgun
+	[09:28] killed!: [BOT ] QuadAlex13 | Rank: 13 |   3,0 m | Shotgun
+	[14:16] knocked: [BOT ] Warning1496 | Rank:  7 |  21,0 m | Assault: SunRose
+	[14:40] killed!: [BOT ] L4mboZ3ta | Rank:  7 |   1,6 m | Assault: SunRose
+	[19:43] killed!: [Real] xdx2k7 | Rank:  2 |   8,2 m | Shotgun: MusterAuto
 #01 * [T03] Foxpvp85 (Crown)     | Real  | Kills:  3 | Level: ??? (147) | Platform: WIN | Skin: Character_FunkyFeather_Cap
+	[Death] Killed at 16:39 by Real Player (unknown)
+	[03:06] killed!: [NPC ] Wache | Rank: ?? |   3,9 m | SMG: DragonCart
+	[03:19] killed!: [NPC ] Wache | Rank: ?? |   1,4 m | SMG: DragonCart
+	[03:23] killed!: [NPC ] Wache | Rank: ?? |   4,1 m | Shotgun
+	[03:57] killed!: [NPC ] Wache | Rank: ?? |   1,7 m | SMG: DragonCart
+	[04:23] knocked: [BOT ] Apricot661 | Rank: 25 |  52,5 m | Pistol: FillerGrunt
+	[04:28] knocked: [BOT ] İnşaatMühendisi1 | Rank: 25 |  41,2 m | Pistol: FillerGrunt
+	[04:32] killed!: [BOT ] 1Такой | Rank: 25 |  55,6 m | Pistol: FillerGrunt
 #01 * [T03] Silzim (Crown)       | Real  | Kills:  2 | Level:  46 ( 46) | Platform: PS5 | Skin: TreasureHunterFashion
+	[Death] Killed at 15:40 by Real Player (unknown)
+	[03:18] killed!: [NPC ] Wache | Rank: ?? |  13,2 m | SMG: DragonCart
+	[03:31] killed!: [NPC ] Wache | Rank: ?? |  20,6 m | SMG: DragonCart
+	[14:28] knocked: [BOT ] anton1_51 | Rank:  7 |  78,2 m | Assault: OrangeRemote
+	[16:07] killed!: [Real] Fortniteluan6309 | Rank:  4 |  39,8 m | SMG
 #02 * [T07] xdx2k7               * OWNER * Kills: 14 | Level:  50 ( 50) | Platform: WIN | Skin: Character_LivelySugar_Syrup
+	[Death] Killed at 19:43 by Real Player (Kofra2004) | dist:   8,2 m | via: Shotgun: MusterAuto
+	[03:15] knocked: [BOT ] BigBuddy15 | Rank: 21 |   1,9 m | Pistol: CorePistol
+	[03:36] knocked: [BOT ] Titi_Parisien75561 | Rank: 21 |   2,6 m | Pistol: CorePistol
+	[04:38] knocked: [BOT ] IrritatedIris | Rank: 23 |  30,6 m | Pistol: CorePistol
+	[04:53] knocked: [BOT ] tuparlifrancese | Rank: 21 |   3,2 m | Shotgun
+	[05:14] killed!: [BOT ] Stinger85 | Rank: 23 |   1,8 m | Shotgun
+	[06:12] killed!: [BOT ] ДайПять | Rank: 21 |  16,2 m | Pistol: CorePistol
+	[08:43] knocked: [BOT ] wektor77 | Rank: 16 |  30,6 m | Assault: SunRose
+	[08:51] knocked: [BOT ] Poule_d0 | Rank: 16 |   5,9 m | Shotgun
+	[09:00] killed!: [BOT ] Сибирская Кошка | Rank: 16 |  42,3 m | Assault: SunRose
+	[09:57] knocked: [Real] Lanet_kel0 | Rank:  9 |  52,4 m | Assault: SunRose
+	[10:13] knocked: [BOT ] سالم24 | Rank: 12 |  29,0 m | Assault: SunRose
+	[10:23] knocked: [BOT ] SomethingFishy3 | Rank: 12 |  24,5 m | Assault: SunRose
+	[12:12] knocked: [BOT ] Brainshocked0 | Rank:  7 |   4,1 m | Shotgun
+	[15:47] killed!: [Real] ClearAphid2119 | Rank:  5 |   4,1 m | Shotgun
 #03 | [T23] MarathonWalker       | BOT   | Kills:  2
+	[Death] Killed at 18:23 by Real Player (NoahytGGG-) | dist:   1,1 m | via: Shotgun: Flavor
+	[06:01] knocked: [BOT ] Wdar71353 | Rank: 20 |   5,5 m | Pistol: CorePistol
+	[06:13] killed!: [BOT ] BlinkImGone44 | Rank: 20 |   3,9 m | Pistol: CorePistol
+	[06:23] killed!: [BOT ] AplastaBravas | Rank: 20 |  19,2 m | Pistol: CorePistol
 #03 | [T23] FlawlessGame         | BOT   | Kills:  2
+	[Death] Killed at 18:23 by Real Player (unknown) | via: Assault: SunRose
+	[05:59] knocked: [BOT ] BlinkImGone44 | Rank: 20 |  16,4 m | SMG
+	[06:17] knocked: [BOT ] أكمل | Rank: 20 |  16,6 m | SMG
 #03 | [T23] MsFroggy123          | BOT   | Kills:  0
+	[Death] Killed at 13:25 by BOT Player (anton1_51) | dist:  13,7 m | via: Shotgun: Flavor
 #03 | [T23] HotelBlankets        | BOT   | Kills:  0
+	[Death] Killed at 06:10 by Real Player (unknown) | dist:  24,7 m | via: SMG: DragonCart
 #04 * [T04] Fortniteluan6309     | Real  | Kills: 11 | Level: ??? (113) | Platform: IOS | Skin: Character_LivelySugar_Syrup
+	[Death] Killed at 16:07 by Real Player (Silzim) | dist:  39,8 m | via: SMG
+	[02:27] knocked: [BOT ] HyenaBrigade | Rank: 26 |   1,2 m | Shotgun: Flavor
+	[02:28] knocked: [BOT ] JungleProwler25 | Rank: 26 |   5,0 m | Shotgun: Flavor
+	[02:32] knocked: [BOT ] Frostbitten86 | Rank: 26 |  13,4 m | Shotgun: Flavor
+	[02:38] killed!: [BOT ] Crypt1c60 | Rank: 26 |   8,9 m | Shotgun: Flavor
+	[09:05] knocked: [BOT ] StringCheese15 | Rank: 14 |  17,6 m | Pistol: CorePistol
+	[09:11] knocked: [BOT ] LaidBackBeats | Rank: 14 |  13,1 m | Assault: OrangeRemote
+	[09:16] killed!: [BOT ] FriendlySniper27 | Rank: 14 |   6,1 m | Pistol: CorePistol
+	[10:47] knocked: [BOT ] GreatGriffin28 | Rank: 10 |  24,0 m | Assault: OrangeRemote
+	[12:33] knocked: [BOT ] StrangePlant87 | Rank:  8 |  33,4 m | Assault: OrangeRemote
+	[12:47] killed!: [BOT ] Nashtyboy67 | Rank:  8 |  24,3 m | Assault: OrangeRemote
+	[14:48] killed!: [Real] Naim.mddn (Crown) | Rank:  6 |   7,5 m | Assault: OrangeRemote
+	[16:05] knocked: [Real] Foxpvp85 (Crown) | Rank:  1 |  30,2 m | Assault: OrangeRemote
 #04 * [T04] Mehrsam_killer       | Real  | Kills:  3 | Level: ??? ( 64) | Platform: PS5 | Skin: Character_FunkyFeather_Cap
+	[Death] Killed at 16:07 by Real Player (unknown) | via: Shotgun: Flavor
+	[10:33] knocked: [BOT ] VeggieBurger24 | Rank: 10 |   9,1 m | Assault: SunRose
+	[10:54] killed!: [BOT ] DoublePlusGood | Rank: 10 |   5,1 m | Pistol: CorePistol
+	[12:51] knocked: [Real] ClearAphid2119 | Rank:  5 |  69,7 m | Sniper: HuntingRifle
+	[13:24] knocked: [Real] stoic_lid03 | Rank:  5 |  87,2 m | Sniper: HuntingRifle
+	[14:49] knocked: [Real] stoic_lid03 | Rank:  5 |  73,1 m | Sniper: HuntingRifle
+	[15:06] knocked: [Real] Foxpvp85 (Crown) | Rank:  1 |  69,4 m | Sniper: HuntingRifle
+	[15:21] knocked: [Real] Silzim (Crown) | Rank:  1 |  13,7 m | Pistol: CorePistol
 #04 * [T04] MersadWonroy (Crown) | Real  | Kills:  2 | Level: ??? (???) | Platform: PS5 | Skin: Temple
+	[Death] Killed at 14:50 by Real Player (stoic_lid03) | dist:   9,1 m | via: Assault: OrangeRemote
+	[10:36] knocked: [BOT ] Othello54 | Rank: 10 |   3,2 m | SMG
+	[13:51] knocked: [Real] lOYD812 (Crown) | Rank:  5 |   1,5 m | Assault: OrangeRemote
 #04 * [T04] viknikit             | Real  | Kills:  8 | Level: ??? (???) | Platform: WIN | Skin: Character_TideKing_Regal
+	[Death] Killed at 14:35 by Real Player (unknown) | dist:   1,9 m | via: Shotgun
+	[08:14] knocked: [BOT ] M_I_E_T_3_K | Rank: 15 |   7,9 m | SMG
+	[08:56] knocked: [BOT ] l4hm4cun1 | Rank: 15 |   7,3 m | Shotgun
+	[09:06] killed!: [BOT ] BillyBrilliant23 | Rank: 15 |  18,9 m | Shotgun
+	[10:08] knocked: [BOT ] Chronicled5 | Rank: 11 |  50,2 m | Assault: SunRose
+	[10:29] knocked: [BOT ] DrPlants40 | Rank: 11 |   2,0 m | Shotgun
+	[10:32] knocked: [BOT ] iAteMySpacebar | Rank: 11 |   8,2 m | Shotgun
+	[10:45] killed!: [BOT ] KeepScrolling95 | Rank: 11 |  16,9 m | Shotgun
+	[13:22] knocked: [Real] king_von123ytt | Rank:  6 |  23,7 m | Sniper: HuntingRifle
 #05 * [T06] ClearAphid2119       | Real  | Kills:  2 | Level: ??? (197) | Platform: XSX | Skin: Character_WaterfallCharm_B
+	[Death] Killed at 15:47 by Real Player (xdx2k7) | dist:   4,1 m | via: Shotgun
+	[05:10] killed!: [BOT ] Swabbie23 | Rank: 22 |   6,7 m | SMG: DragonCart
+	[05:29] killed!: [BOT ] GetitGotitGood | Rank: 22 |   2,5 m | SMG: DragonCart
+	[14:45] knocked: [Real] MersadWonroy (Crown) | Rank:  4 |  25,1 m | SMG
 #05 * [T06] stoic_lid03          | Real  | Kills:  1 | Level: ??? (???) | Platform: PS5 | Skin: Character_PixieParts_Lava
+	[Death] Killed at 14:54 by Real Player (NoahytGGG-) | dist:  22,7 m | via: Assault: SunRose
+	[05:00] knocked: [BOT ] Swabbie23 | Rank: 22 |   0,8 m | Pistol: CorePistol
+	[14:50] killed!: [Real] MersadWonroy (Crown) | Rank:  4 |   9,1 m | Assault: OrangeRemote
 #05 * [T06] lOYD812 (Crown)      | Real  | Kills:  3 | Level: ??? (129) | Platform: SWT2 | Skin: StreetFashionRed
+	[Death] Killed at 13:51 by Real Player (unknown) | dist:   4,9 m
+	[07:15] knocked: [Real] Naim.mddn (Crown) | Rank:  6 |  29,1 m | SMG
+	[07:20] knocked: [Real] ReadyMeerkat8747 | Rank: 17 |  22,3 m | SMG
+	[10:26] killed!: [BOT ] BrokenRecord26 | Rank: 12 |  10,1 m | SMG
 #06 * [T05] Naim.mddn (Crown)    | Real  | Kills:  2 | Level: ??? (???) | Platform: PSN | Skin: Character_ClaimReflect
+	[Death] Killed at 14:48 by Real Player (Fortniteluan6309) | dist:   7,5 m | via: Assault: OrangeRemote
+	[03:30] knocked: [Real] stoic_lid03 | Rank:  5 |   5,2 m | Shotgun
+	[14:32] knocked: [Real] viknikit | Rank:  4 |  17,8 m | Pistol: CorePistol
 #06 * [T05] king_von123ytt       | Real  | Kills:  0 | Level: ??? ( 49) | Platform: PS5 | Skin: Character_RowLiaison_Cafe
+	[Death] Killed at 13:30 by Real Player (unknown) | via: Assault: OrangeRemote
+	[13:21] knocked: [Real] Fortniteluan6309 | Rank:  4 |   4,7 m | Assault: OrangeRemote
 #07 | [T21] anton1_51            | BOT   | Kills:  0
+	[Death] Killed at 14:40 by Real Player (unknown) | via: Assault: OrangeRemote
+	[13:25] killed!: [BOT ] MsFroggy123 | Rank:  3 |  13,7 m | Shotgun: Flavor
 #07 | [T21] L4mboZ3ta            | BOT   | Kills:  1
+	[Death] Killed at 14:40 by Real Player (Kofra2004) | dist:   1,6 m | via: Assault: SunRose
+	[13:19] knocked: [BOT ] MsFroggy123 | Rank:  3 |   9,1 m | SMG
 #07 | [T21] Warning1496          | BOT   | Kills:  0
+	[Death] Killed at 14:38 by Real Player (unknown) | via: Assault: SunRose
 #07 | [T21] Brainshocked0        | BOT   | Kills:  0
+	[Death] Killed at 12:14 by Real Player (unknown) | dist:   2,7 m | via: Shotgun
 #08 | [T24] StrangePlant87       | BOT   | Kills:  1
+	[Death] Killed at 12:47 by Real Player (unknown) | via: Assault: OrangeRemote
+	[08:04] knocked: [BOT ] SpectrumKnight13 | Rank: 17 |   3,1 m | SMG: DragonCart
 #08 | [T24] Nashtyboy67          | BOT   | Kills:  2
+	[Death] Killed at 12:47 by Real Player (Fortniteluan6309) | dist:  24,3 m | via: Assault: OrangeRemote
+	[08:24] knocked: [BOT ] BumbleB3ar | Rank: 17 |   6,7 m | Pistol: CorePistol
+	[08:41] killed!: [BOT ] V3rnichter | Rank: 17 |   1,5 m | Pistol: CorePistol
 #08 | [T24] كونراد               | BOT   | Kills:  0
+	[Death] Killed at 08:16 by Real Player (unknown) | dist:  17,2 m
 #08 | [T24] ForeverCacciucco     | BOT   | Kills:  1
+	[Death] Killed at 08:05 by BOT Player (BumbleB3ar) | dist:  17,5 m | via: Shotgun
+	[07:38] knocked: [BOT ] Maczetaaa30552 | Rank: 17 |  12,6 m | SMG
 #09 * [T06] Lanet_kel0           | Real  | Kills:  3 | Level: ??? ( 92) | Platform: PS5 | Skin: Character_ChewyStaveCurve
+	[Death] Killed at 10:04 by Real Player (unknown) | dist:  61,9 m | via: Pistol: CorePistol
+	[05:21] knocked: [BOT ] GoodRobin6 | Rank: 22 |   1,5 m | SMG
+	[05:25] knocked: [BOT ] SilverySliver | Rank: 22 |   3,2 m | Assault: OrangeRemote
+	[08:30] knocked: [BOT ] Phorgas | Rank: 16 |   3,2 m
 #09 | [T14] BeefSupreme35        | BOT   | Kills:  0
+	[Death] Killed at 12:20 by BOT Player (BeefSupreme35) | via: Storm
+	[12:20] killed!: [BOT ] BeefSupreme35 | Rank:  9 | Storm
 #09 | [T14] Laserfrog44          | BOT   | Kills:  0
+	[Death] Killed at 05:58 by Real Player (unknown) | dist:  28,7 m
 #09 | [T14] Fictionpoint         | BOT   | Kills:  1
+	[Death] Killed at 03:29 by Real Player (unknown) | dist:  29,4 m
+	[02:55] knocked: [BOT ] roi_priam_ultra | Rank: 15 |   2,3 m | Shotgun: Flavor
+	[03:25] knocked: [BOT ] M_I_E_T_3_K | Rank: 15 |   1,0 m | Shotgun: Flavor
 #09 | [T14] 90sRunner            | BOT   | Kills:  0
+	[Death] Killed at 03:03 by BOT Player (l4hm4cun1) | dist:   8,5 m | via: SMG
 #10 | [T10] DoublePlusGood       | BOT   | Kills:  0
+	[Death] Killed at 10:54 by Real Player (Mehrsam_killer) | dist:   5,1 m | via: Pistol: CorePistol
 #10 | [T10] GreatGriffin28       | BOT   | Kills:  0
+	[Death] Killed at 10:54 by Real Player (unknown) | via: Assault: OrangeRemote
 #10 | [T10] VeggieBurger24       | BOT   | Kills:  0
+	[Death] Killed at 10:54 by Real Player (unknown) | via: Assault: SunRose
 #10 | [T10] Othello54            | BOT   | Kills:  0
+	[Death] Killed at 10:42 by Real Player (unknown) | dist:   2,1 m | via: SMG
 #11 | [T17] Chronicled5          | BOT   | Kills:  0
+	[Death] Killed at 10:45 by Real Player (unknown) | via: Assault: SunRose
 #11 | [T17] KeepScrolling95      | BOT   | Kills:  0
+	[Death] Killed at 10:45 by Real Player (viknikit) | dist:  16,9 m | via: Shotgun
 #11 | [T17] iAteMySpacebar       | BOT   | Kills:  0
+	[Death] Killed at 10:45 by Real Player (unknown) | via: Shotgun
 #11 | [T17] DrPlants40           | BOT   | Kills:  0
+	[Death] Killed at 10:45 by Real Player (unknown) | via: Shotgun
 #12 | [T09] SomethingFishy3      | BOT   | Kills:  0
+	[Death] Killed at 10:26 by Real Player (unknown) | via: Assault: SunRose
 #12 | [T09] BrokenRecord26       | BOT   | Kills:  0
+	[Death] Killed at 10:26 by Real Player (lOYD812) | dist:  10,1 m | via: SMG
 #12 | [T09] سالم24               | BOT   | Kills:  0
+	[Death] Killed at 10:25 by Real Player (unknown) | via: Assault: SunRose
 #12 | [T09] NarEşkisi1           | BOT   | Kills:  1
+	[Death] Killed at 08:32 by Real Player (unknown)
+	[03:31] knocked: [Real] Ben1340hd | Rank: 25 |   4,0 m | Assault: OrangeRemote
+	[08:32] knocked: [BOT ] NarEşkisi1 | Rank: 12 | Storm
 #13 | [T08] TermiteMuscles       | BOT   | Kills:  2
+	[Death] Killed at 09:29 by Real Player (unknown) | via: Shotgun: Flavor
+	[07:46] killed!: [BOT ] SandSpider2000 | Rank: 19 |   0,9 m | Pistol: CorePistol
+	[07:55] killed!: [BOT ] mojamama6 | Rank: 18 |  26,5 m | Pistol: CorePistol
 #13 | [T08] Gloriainfinita       | BOT   | Kills:  0
+	[Death] Killed at 09:28 by Real Player (NoahytGGG-) | dist:   2,0 m | via: Shotgun: Flavor
 #13 | [T08] QuadAlex13           | BOT   | Kills:  0
+	[Death] Killed at 09:28 by Real Player (Kofra2004) | dist:   3,0 m | via: Shotgun
 #13 | [T08] TopDanger28          | BOT   | Kills:  0
+	[Death] Killed at 09:24 by Real Player (Kofra2004) | dist:   3,3 m | via: Shotgun
 #14 | [T28] StringCheese15       | BOT   | Kills:  0
+	[Death] Killed at 09:16 by Real Player (unknown) | via: Pistol: CorePistol
 #14 | [T28] LaidBackBeats        | BOT   | Kills:  0
+	[Death] Killed at 09:16 by Real Player (unknown) | via: Assault: OrangeRemote
 #14 | [T28] FriendlySniper27     | BOT   | Kills:  0
+	[Death] Killed at 09:16 by Real Player (Fortniteluan6309) | dist:   6,1 m | via: Pistol: CorePistol
 #15 | [T19] BillyBrilliant23     | BOT   | Kills:  0
+	[Death] Killed at 09:06 by Real Player (viknikit) | dist:  18,9 m | via: Shotgun
 #15 | [T19] l4hm4cun1            | BOT   | Kills:  2
+	[Death] Killed at 09:05 by Real Player (unknown) | via: Shotgun
+	[03:03] killed!: [BOT ] 90sRunner | Rank:  9 |   8,5 m | SMG
+	[03:29] knocked: [BOT ] Fictionpoint | Rank:  9 |  11,3 m | SMG
+	[05:58] knocked: [BOT ] Laserfrog44 | Rank:  9 |  27,2 m | SMG
 #15 | [T19] M_I_E_T_3_K          | BOT   | Kills:  1
+	[Death] Killed at 08:18 by Real Player (unknown) | dist:   4,8 m | via: Shotgun
+	[03:00] knocked: [BOT ] 90sRunner | Rank:  9 |  13,1 m | Assault: SunRose
 #15 | [T19] roi_priam_ultra      | BOT   | Kills:  0
+	[Death] Killed at 03:04 by Real Player (unknown) | dist:   8,2 m | via: Shotgun: Flavor
 #16 | [T13] wektor77             | BOT   | Kills:  0
+	[Death] Killed at 09:01 by Real Player (unknown) | via: Assault: SunRose
 #16 | [T13] Poule_d0             | BOT   | Kills:  1
+	[Death] Killed at 09:01 by Real Player (unknown) | via: Shotgun
+	[05:04] knocked: [BOT ] TooManyBeets | Rank: 23 |  32,2 m | Assault: OrangeRemote
 #16 | [T13] Phorgas              | BOT   | Kills:  0
+	[Death] Killed at 09:01 by Real Player (unknown)
+	[05:12] killed!: [BOT ] TooManyBeets | Rank: 23 |  37,0 m | Assault: OrangeRemote
 #16 | [T13] Сибирская Кошка      | BOT   | Kills:  0
+	[Death] Killed at 09:00 by Real Player (xdx2k7) | dist:  42,3 m | via: Assault: SunRose
 #17 * [T05] ReadyMeerkat8747     | Real  | Kills:  0 | Level: ??? (???) | Platform: SWT | Skin: Character_Sparrow
+	[Death] Killed at 07:25 by Real Player (unknown) | dist:   3,9 m | via: SMG
 #17 | [T16] V3rnichter           | BOT   | Kills:  1
+	[Death] Killed at 08:41 by BOT Player (Nashtyboy67) | dist:   1,5 m | via: Pistol: CorePistol
+	[07:50] knocked: [BOT ] ForeverCacciucco | Rank:  8 |  18,3 m | Shotgun: MusterAuto
 #17 | [T16] BumbleB3ar           | BOT   | Kills:  1
+	[Death] Killed at 08:32 by Real Player (unknown) | dist:  22,8 m | via: Pistol: CorePistol
+	[08:05] killed!: [BOT ] ForeverCacciucco | Rank:  8 |  17,5 m | Shotgun
+	[08:16] knocked: [BOT ] كونراد | Rank:  8 |  12,3 m | Pistol: CorePistol
 #17 | [T16] Maczetaaa30552       | BOT   | Kills:  0
+	[Death] Killed at 08:31 by Real Player (unknown) | via: Shotgun: Flavor
 #17 | [T16] SpectrumKnight13     | BOT   | Kills:  0
+	[Death] Killed at 08:16 by Real Player (unknown) | via: Shotgun
 #18 | [T22] mojamama6            | BOT   | Kills:  2
+	[Death] Killed at 07:55 by BOT Player (TermiteMuscles) | dist:  26,5 m | via: Pistol: CorePistol
+	[06:40] knocked: [BOT ] PureBacon94 | Rank: 19 |   1,0 m | Shotgun
+	[07:11] knocked: [BOT ] JaiFaimJaiSoif | Rank: 19 |   2,2 m | SMG
 #18 | [T22] Anonymutt            | BOT   | Kills:  1
+	[Death] Killed at 07:24 by Real Player (unknown) | via: Assault: OrangeRemote
+	[06:11] knocked: [BOT ] JasioKlucha | Rank: 19 |  25,1 m | Assault: OrangeRemote
 #18 | [T22] Waschbrettbauch01    | BOT   | Kills:  0
+	[Death] Killed at 07:10 by Real Player (unknown) | via: Assault: SunRose
 #18 | [T22] BossBoi20            | BOT   | Kills:  0
+	[Death] Killed at 07:06 by Real Player (unknown) | via: Pistol: CorePistol
 #19 | [T18] SandSpider2000       | BOT   | Kills:  0
+	[Death] Killed at 07:46 by BOT Player (TermiteMuscles) | dist:   0,9 m | via: Pistol: CorePistol
 #19 | [T18] JaiFaimJaiSoif       | BOT   | Kills:  0
+	[Death] Killed at 07:20 by Real Player (unknown) | dist:  11,4 m | via: SMG
 #19 | [T18] PureBacon94          | BOT   | Kills:  3
+	[Death] Killed at 07:18 by Real Player (unknown) | via: Shotgun: Flavor
+	[06:05] knocked: [BOT ] BossBoi20 | Rank: 18 |  32,4 m | Shotgun: Flavor
+	[06:26] knocked: [BOT ] Waschbrettbauch01 | Rank: 18 |  10,7 m | Shotgun: Flavor
+	[06:33] knocked: [BOT ] Anonymutt | Rank: 18 |   8,1 m | Shotgun: Flavor
 #19 | [T18] JasioKlucha          | BOT   | Kills:  0
+	[Death] Killed at 07:13 by Real Player (unknown) | via: SMG: DragonCart
 #20 | [T27] AplastaBravas        | BOT   | Kills:  1
+	[Death] Killed at 06:23 by BOT Player (MarathonWalker) | dist:  19,2 m | via: Pistol: CorePistol
+	[05:56] knocked: [BOT ] HotelBlankets | Rank:  3 |  19,7 m | SMG: DragonCart
 #20 | [T27] أكمل                 | BOT   | Kills:  0
+	[Death] Killed at 06:23 by Real Player (unknown) | via: SMG
 #20 | [T27] BlinkImGone44        | BOT   | Kills:  0
+	[Death] Killed at 06:13 by BOT Player (MarathonWalker) | dist:   3,9 m | via: Pistol: CorePistol
 #20 | [T27] Wdar71353            | BOT   | Kills:  0
+	[Death] Killed at 06:04 by Real Player (unknown) | dist:  14,8 m | via: Pistol: CorePistol
 #21 | [T11] ДайПять              | BOT   | Kills:  1
+	[Death] Killed at 06:12 by Real Player (xdx2k7) | dist:  16,2 m | via: Pistol: CorePistol
+	[04:59] killed!: [BOT ] IrritatedIris | Rank: 23 |  22,5 m | SMG: DragonCart
+	[05:11] knocked: [BOT ] Dreamdunker | Rank: 23 |  17,4 m | SMG: DragonCart
 #21 | [T11] tuparlifrancese      | BOT   | Kills:  0
+	[Death] Killed at 04:53 by Real Player (unknown) | dist:   6,7 m
 #21 | [T11] Titi_Parisien75561   | BOT   | Kills:  0
+	[Death] Killed at 03:39 by Real Player (unknown) | dist:   1,0 m | via: Shotgun
 #21 | [T11] BigBuddy15           | BOT   | Kills:  0
+	[Death] Killed at 03:18 by Real Player (unknown) | dist:   1,0 m | via: Shotgun: Flavor
 #22 | [T15] SilverySliver        | BOT   | Kills:  0
+	[Death] Killed at 05:30 by Real Player (unknown) | via: Assault: OrangeRemote
 #22 | [T15] GoodRobin6           | BOT   | Kills:  0
+	[Death] Killed at 05:30 by Real Player (unknown) | via: SMG
 #22 | [T15] GetitGotitGood       | BOT   | Kills:  0
+	[Death] Killed at 05:29 by Real Player (ClearAphid2119) | dist:   2,5 m | via: SMG: DragonCart
 #22 | [T15] Swabbie23            | BOT   | Kills:  0
+	[Death] Killed at 05:10 by Real Player (ClearAphid2119) | dist:   6,7 m | via: SMG: DragonCart
 #23 | [T26] Dreamdunker          | BOT   | Kills:  0
+	[Death] Killed at 05:14 by Real Player (unknown) | via: SMG: DragonCart
 #23 | [T26] Stinger85            | BOT   | Kills:  0
+	[Death] Killed at 05:14 by Real Player (xdx2k7) | dist:   1,8 m | via: Shotgun
 #23 | [T26] TooManyBeets         | BOT   | Kills:  0
+	[Death] Killed at 05:12 by BOT Player (Phorgas) | dist:  37,0 m | via: Assault: OrangeRemote
 #23 | [T26] IrritatedIris        | BOT   | Kills:  0
+	[Death] Killed at 04:59 by BOT Player (ДайПять) | dist:  22,5 m | via: SMG: DragonCart
 #24 | [T12] Overtime46           | BOT   | Kills:  0
+	[Death] Killed at 04:51 by Real Player (NoahytGGG-) | dist:   1,7 m | via: Shotgun: Flavor
+	[04:07] killed!: [BOT ] Primetime71 | Rank: 25 |   2,8 m | Shotgun: Flavor
 #24 | [T12] LilGrande56          | BOT   | Kills:  1
+	[Death] Killed at 04:43 by Real Player (unknown) | dist:   6,2 m | via: Shotgun: Flavor
+	[03:52] knocked: [BOT ] Primetime71 | Rank: 25 |   3,1 m | SMG
 #24 | [T12] Time2Go80            | BOT   | Kills:  0
+	[Death] Killed at 04:03 by BOT Player (1Такой) | dist:  27,6 m | via: Assault: OrangeRemote
 #24 | [T12] Freylis21            | BOT   | Kills:  0
+	[Death] Killed at 03:38 by Real Player (unknown) | dist:   7,2 m | via: SMG
 #25 * [T05] Ben1340hd            | Real  | Kills:  0 | Level: ??? ( 55) | Platform: PS5 | Skin: Biker
+	[Death] Killed at 03:31 by BOT Player (NarEşkisi1) | dist:   4,0 m | via: Assault: OrangeRemote
 #25 | [T25] 1Такой               | BOT   | Kills:  0
+	[Death] Killed at 04:32 by Real Player (Foxpvp85) | dist:  55,6 m | via: Pistol: FillerGrunt
+	[04:03] killed!: [BOT ] Time2Go80 | Rank: 24 |  27,6 m | Assault: OrangeRemote
 #25 | [T25] Apricot661           | BOT   | Kills:  2
+	[Death] Killed at 04:31 by Real Player (unknown) | via: Pistol: FillerGrunt
+	[03:27] knocked: [BOT ] Freylis21 | Rank: 24 |  43,8 m | SMG
+	[03:54] knocked: [BOT ] Time2Go80 | Rank: 24 |   2,7 m | SMG
 #25 | [T25] İnşaatMühendisi1     | BOT   | Kills:  0
+	[Death] Killed at 04:30 by Real Player (unknown) | via: Pistol: FillerGrunt
 #25 | [T25] Primetime71          | BOT   | Kills:  0
+	[Death] Killed at 04:07 by BOT Player (Overtime46) | dist:   2,8 m | via: Shotgun: Flavor
 #26 | [T20] Crypt1c60            | BOT   | Kills:  0
+	[Death] Killed at 02:38 by Real Player (Fortniteluan6309) | dist:   8,9 m | via: Shotgun: Flavor
 #26 | [T20] JungleProwler25      | BOT   | Kills:  0
+	[Death] Killed at 02:36 by Real Player (unknown) | via: Shotgun: Flavor
 #26 | [T20] HyenaBrigade         | BOT   | Kills:  0
+	[Death] Killed at 02:36 by Real Player (unknown) | via: Shotgun: Flavor
 #26 | [T20] Frostbitten86        | BOT   | Kills:  0
+	[Death] Killed at 02:36 by Real Player (unknown) | via: Shotgun: Flavor
 
 Ranking
 #01 * [T03] NoahytGGG- (Crown)   | Real  | Kills:  9 | Level: ??? ( 41) | Platform: PS5 | Skin: Lateral_K8XD9
+	[04:33] knocked: [BOT ] LilGrande56 | Rank: 24 |   2,5 m | Assault: OrangeRemote
+	[04:51] killed!: [BOT ] Overtime46 | Rank: 24 |   1,7 m | Shotgun: Flavor
+	[09:14] knocked: [BOT ] TopDanger28 | Rank: 13 |   8,1 m | SMG
+	[09:16] knocked: [BOT ] TermiteMuscles | Rank: 13 |   6,5 m | Shotgun: Flavor
+	[09:21] knocked: [BOT ] QuadAlex13 | Rank: 13 |   3,7 m | Shotgun: Flavor
+	[09:28] killed!: [BOT ] Gloriainfinita | Rank: 13 |   2,0 m | Shotgun: Flavor
+	[14:54] killed!: [Real] stoic_lid03 | Rank:  5 |  22,7 m | Assault: SunRose
+	[15:42] knocked: [Real] Mehrsam_killer | Rank:  4 |  34,7 m | Assault: SunRose
+	[16:02] knocked: [Real] Mehrsam_killer | Rank:  4 |   5,0 m | Shotgun: Flavor
+	[18:18] knocked: [BOT ] FlawlessGame | Rank:  3 |  37,1 m | Assault: SunRose
+	[18:23] killed!: [BOT ] MarathonWalker | Rank:  3 |   1,1 m | Shotgun: Flavor
 #01 * [T03] Foxpvp85 (Crown)     | Real  | Kills:  3 | Level: ??? (147) | Platform: WIN | Skin: Character_FunkyFeather_Cap
+	[Death] Killed at 16:39 by Real Player (unknown)
+	[03:06] killed!: [NPC ] Wache | Rank: ?? |   3,9 m | SMG: DragonCart
+	[03:19] killed!: [NPC ] Wache | Rank: ?? |   1,4 m | SMG: DragonCart
+	[03:23] killed!: [NPC ] Wache | Rank: ?? |   4,1 m | Shotgun
+	[03:57] killed!: [NPC ] Wache | Rank: ?? |   1,7 m | SMG: DragonCart
+	[04:23] knocked: [BOT ] Apricot661 | Rank: 25 |  52,5 m | Pistol: FillerGrunt
+	[04:28] knocked: [BOT ] İnşaatMühendisi1 | Rank: 25 |  41,2 m | Pistol: FillerGrunt
+	[04:32] killed!: [BOT ] 1Такой | Rank: 25 |  55,6 m | Pistol: FillerGrunt
 #01 * [T03] Kofra2004 (Crown)    | Real  | Kills:  3 | Level: ??? (???) | Platform: PSN | Skin: Prime
+	[03:24] killed!: [NPC ] Wache | Rank: ?? |   4,3 m | Assault: SunRose
+	[03:28] killed!: [NPC ] Wache | Rank: ?? |  13,9 m | Assault: SunRose
+	[09:24] killed!: [BOT ] TopDanger28 | Rank: 13 |   3,3 m | Shotgun
+	[09:28] killed!: [BOT ] QuadAlex13 | Rank: 13 |   3,0 m | Shotgun
+	[14:16] knocked: [BOT ] Warning1496 | Rank:  7 |  21,0 m | Assault: SunRose
+	[14:40] killed!: [BOT ] L4mboZ3ta | Rank:  7 |   1,6 m | Assault: SunRose
+	[19:43] killed!: [Real] xdx2k7 | Rank:  2 |   8,2 m | Shotgun: MusterAuto
 #01 * [T03] Silzim (Crown)       | Real  | Kills:  2 | Level:  46 ( 46) | Platform: PS5 | Skin: TreasureHunterFashion
+	[Death] Killed at 15:40 by Real Player (unknown)
+	[03:18] killed!: [NPC ] Wache | Rank: ?? |  13,2 m | SMG: DragonCart
+	[03:31] killed!: [NPC ] Wache | Rank: ?? |  20,6 m | SMG: DragonCart
+	[14:28] knocked: [BOT ] anton1_51 | Rank:  7 |  78,2 m | Assault: OrangeRemote
+	[16:07] killed!: [Real] Fortniteluan6309 | Rank:  4 |  39,8 m | SMG
 #02 * [T07] xdx2k7               * OWNER * Kills: 14 | Level:  50 ( 50) | Platform: WIN | Skin: Character_LivelySugar_Syrup
+	[Death] Killed at 19:43 by Real Player (Kofra2004) | dist:   8,2 m | via: Shotgun: MusterAuto
+	[03:15] knocked: [BOT ] BigBuddy15 | Rank: 21 |   1,9 m | Pistol: CorePistol
+	[03:36] knocked: [BOT ] Titi_Parisien75561 | Rank: 21 |   2,6 m | Pistol: CorePistol
+	[04:38] knocked: [BOT ] IrritatedIris | Rank: 23 |  30,6 m | Pistol: CorePistol
+	[04:53] knocked: [BOT ] tuparlifrancese | Rank: 21 |   3,2 m | Shotgun
+	[05:14] killed!: [BOT ] Stinger85 | Rank: 23 |   1,8 m | Shotgun
+	[06:12] killed!: [BOT ] ДайПять | Rank: 21 |  16,2 m | Pistol: CorePistol
+	[08:43] knocked: [BOT ] wektor77 | Rank: 16 |  30,6 m | Assault: SunRose
+	[08:51] knocked: [BOT ] Poule_d0 | Rank: 16 |   5,9 m | Shotgun
+	[09:00] killed!: [BOT ] Сибирская Кошка | Rank: 16 |  42,3 m | Assault: SunRose
+	[09:57] knocked: [Real] Lanet_kel0 | Rank:  9 |  52,4 m | Assault: SunRose
+	[10:13] knocked: [BOT ] سالم24 | Rank: 12 |  29,0 m | Assault: SunRose
+	[10:23] knocked: [BOT ] SomethingFishy3 | Rank: 12 |  24,5 m | Assault: SunRose
+	[12:12] knocked: [BOT ] Brainshocked0 | Rank:  7 |   4,1 m | Shotgun
+	[15:47] killed!: [Real] ClearAphid2119 | Rank:  5 |   4,1 m | Shotgun
 #03 | [T23] FlawlessGame         | BOT   | Kills:  2
+	[Death] Killed at 18:23 by Real Player (unknown) | via: Assault: SunRose
+	[05:59] knocked: [BOT ] BlinkImGone44 | Rank: 20 |  16,4 m | SMG
+	[06:17] knocked: [BOT ] أكمل | Rank: 20 |  16,6 m | SMG
 #03 | [T23] MarathonWalker       | BOT   | Kills:  2
+	[Death] Killed at 18:23 by Real Player (NoahytGGG-) | dist:   1,1 m | via: Shotgun: Flavor
+	[06:01] knocked: [BOT ] Wdar71353 | Rank: 20 |   5,5 m | Pistol: CorePistol
+	[06:13] killed!: [BOT ] BlinkImGone44 | Rank: 20 |   3,9 m | Pistol: CorePistol
+	[06:23] killed!: [BOT ] AplastaBravas | Rank: 20 |  19,2 m | Pistol: CorePistol
 #03 | [T23] MsFroggy123          | BOT   | Kills:  0
+	[Death] Killed at 13:25 by BOT Player (anton1_51) | dist:  13,7 m | via: Shotgun: Flavor
 #03 | [T23] HotelBlankets        | BOT   | Kills:  0
+	[Death] Killed at 06:10 by Real Player (unknown) | dist:  24,7 m | via: SMG: DragonCart
 #04 * [T04] Fortniteluan6309     | Real  | Kills: 11 | Level: ??? (113) | Platform: IOS | Skin: Character_LivelySugar_Syrup
+	[Death] Killed at 16:07 by Real Player (Silzim) | dist:  39,8 m | via: SMG
+	[02:27] knocked: [BOT ] HyenaBrigade | Rank: 26 |   1,2 m | Shotgun: Flavor
+	[02:28] knocked: [BOT ] JungleProwler25 | Rank: 26 |   5,0 m | Shotgun: Flavor
+	[02:32] knocked: [BOT ] Frostbitten86 | Rank: 26 |  13,4 m | Shotgun: Flavor
+	[02:38] killed!: [BOT ] Crypt1c60 | Rank: 26 |   8,9 m | Shotgun: Flavor
+	[09:05] knocked: [BOT ] StringCheese15 | Rank: 14 |  17,6 m | Pistol: CorePistol
+	[09:11] knocked: [BOT ] LaidBackBeats | Rank: 14 |  13,1 m | Assault: OrangeRemote
+	[09:16] killed!: [BOT ] FriendlySniper27 | Rank: 14 |   6,1 m | Pistol: CorePistol
+	[10:47] knocked: [BOT ] GreatGriffin28 | Rank: 10 |  24,0 m | Assault: OrangeRemote
+	[12:33] knocked: [BOT ] StrangePlant87 | Rank:  8 |  33,4 m | Assault: OrangeRemote
+	[12:47] killed!: [BOT ] Nashtyboy67 | Rank:  8 |  24,3 m | Assault: OrangeRemote
+	[14:48] killed!: [Real] Naim.mddn (Crown) | Rank:  6 |   7,5 m | Assault: OrangeRemote
+	[16:05] knocked: [Real] Foxpvp85 (Crown) | Rank:  1 |  30,2 m | Assault: OrangeRemote
 #04 * [T04] viknikit             | Real  | Kills:  8 | Level: ??? (???) | Platform: WIN | Skin: Character_TideKing_Regal
+	[Death] Killed at 14:35 by Real Player (unknown) | dist:   1,9 m | via: Shotgun
+	[08:14] knocked: [BOT ] M_I_E_T_3_K | Rank: 15 |   7,9 m | SMG
+	[08:56] knocked: [BOT ] l4hm4cun1 | Rank: 15 |   7,3 m | Shotgun
+	[09:06] killed!: [BOT ] BillyBrilliant23 | Rank: 15 |  18,9 m | Shotgun
+	[10:08] knocked: [BOT ] Chronicled5 | Rank: 11 |  50,2 m | Assault: SunRose
+	[10:29] knocked: [BOT ] DrPlants40 | Rank: 11 |   2,0 m | Shotgun
+	[10:32] knocked: [BOT ] iAteMySpacebar | Rank: 11 |   8,2 m | Shotgun
+	[10:45] killed!: [BOT ] KeepScrolling95 | Rank: 11 |  16,9 m | Shotgun
+	[13:22] knocked: [Real] king_von123ytt | Rank:  6 |  23,7 m | Sniper: HuntingRifle
 #04 * [T04] Mehrsam_killer       | Real  | Kills:  3 | Level: ??? ( 64) | Platform: PS5 | Skin: Character_FunkyFeather_Cap
+	[Death] Killed at 16:07 by Real Player (unknown) | via: Shotgun: Flavor
+	[10:33] knocked: [BOT ] VeggieBurger24 | Rank: 10 |   9,1 m | Assault: SunRose
+	[10:54] killed!: [BOT ] DoublePlusGood | Rank: 10 |   5,1 m | Pistol: CorePistol
+	[12:51] knocked: [Real] ClearAphid2119 | Rank:  5 |  69,7 m | Sniper: HuntingRifle
+	[13:24] knocked: [Real] stoic_lid03 | Rank:  5 |  87,2 m | Sniper: HuntingRifle
+	[14:49] knocked: [Real] stoic_lid03 | Rank:  5 |  73,1 m | Sniper: HuntingRifle
+	[15:06] knocked: [Real] Foxpvp85 (Crown) | Rank:  1 |  69,4 m | Sniper: HuntingRifle
+	[15:21] knocked: [Real] Silzim (Crown) | Rank:  1 |  13,7 m | Pistol: CorePistol
 #04 * [T04] MersadWonroy (Crown) | Real  | Kills:  2 | Level: ??? (???) | Platform: PS5 | Skin: Temple
+	[Death] Killed at 14:50 by Real Player (stoic_lid03) | dist:   9,1 m | via: Assault: OrangeRemote
+	[10:36] knocked: [BOT ] Othello54 | Rank: 10 |   3,2 m | SMG
+	[13:51] knocked: [Real] lOYD812 (Crown) | Rank:  5 |   1,5 m | Assault: OrangeRemote
 #05 * [T06] lOYD812 (Crown)      | Real  | Kills:  3 | Level: ??? (129) | Platform: SWT2 | Skin: StreetFashionRed
+	[Death] Killed at 13:51 by Real Player (unknown) | dist:   4,9 m
+	[07:15] knocked: [Real] Naim.mddn (Crown) | Rank:  6 |  29,1 m | SMG
+	[07:20] knocked: [Real] ReadyMeerkat8747 | Rank: 17 |  22,3 m | SMG
+	[10:26] killed!: [BOT ] BrokenRecord26 | Rank: 12 |  10,1 m | SMG
 #05 * [T06] ClearAphid2119       | Real  | Kills:  2 | Level: ??? (197) | Platform: XSX | Skin: Character_WaterfallCharm_B
+	[Death] Killed at 15:47 by Real Player (xdx2k7) | dist:   4,1 m | via: Shotgun
+	[05:10] killed!: [BOT ] Swabbie23 | Rank: 22 |   6,7 m | SMG: DragonCart
+	[05:29] killed!: [BOT ] GetitGotitGood | Rank: 22 |   2,5 m | SMG: DragonCart
+	[14:45] knocked: [Real] MersadWonroy (Crown) | Rank:  4 |  25,1 m | SMG
 #05 * [T06] stoic_lid03          | Real  | Kills:  1 | Level: ??? (???) | Platform: PS5 | Skin: Character_PixieParts_Lava
+	[Death] Killed at 14:54 by Real Player (NoahytGGG-) | dist:  22,7 m | via: Assault: SunRose
+	[05:00] knocked: [BOT ] Swabbie23 | Rank: 22 |   0,8 m | Pistol: CorePistol
+	[14:50] killed!: [Real] MersadWonroy (Crown) | Rank:  4 |   9,1 m | Assault: OrangeRemote
 #06 * [T05] Naim.mddn (Crown)    | Real  | Kills:  2 | Level: ??? (???) | Platform: PSN | Skin: Character_ClaimReflect
+	[Death] Killed at 14:48 by Real Player (Fortniteluan6309) | dist:   7,5 m | via: Assault: OrangeRemote
+	[03:30] knocked: [Real] stoic_lid03 | Rank:  5 |   5,2 m | Shotgun
+	[14:32] knocked: [Real] viknikit | Rank:  4 |  17,8 m | Pistol: CorePistol
 #06 * [T05] king_von123ytt       | Real  | Kills:  0 | Level: ??? ( 49) | Platform: PS5 | Skin: Character_RowLiaison_Cafe
+	[Death] Killed at 13:30 by Real Player (unknown) | via: Assault: OrangeRemote
+	[13:21] knocked: [Real] Fortniteluan6309 | Rank:  4 |   4,7 m | Assault: OrangeRemote
 #07 | [T21] L4mboZ3ta            | BOT   | Kills:  1
+	[Death] Killed at 14:40 by Real Player (Kofra2004) | dist:   1,6 m | via: Assault: SunRose
+	[13:19] knocked: [BOT ] MsFroggy123 | Rank:  3 |   9,1 m | SMG
 #07 | [T21] Brainshocked0        | BOT   | Kills:  0
+	[Death] Killed at 12:14 by Real Player (unknown) | dist:   2,7 m | via: Shotgun
 #07 | [T21] Warning1496          | BOT   | Kills:  0
+	[Death] Killed at 14:38 by Real Player (unknown) | via: Assault: SunRose
 #07 | [T21] anton1_51            | BOT   | Kills:  0
+	[Death] Killed at 14:40 by Real Player (unknown) | via: Assault: OrangeRemote
+	[13:25] killed!: [BOT ] MsFroggy123 | Rank:  3 |  13,7 m | Shotgun: Flavor
 #08 | [T24] Nashtyboy67          | BOT   | Kills:  2
+	[Death] Killed at 12:47 by Real Player (Fortniteluan6309) | dist:  24,3 m | via: Assault: OrangeRemote
+	[08:24] knocked: [BOT ] BumbleB3ar | Rank: 17 |   6,7 m | Pistol: CorePistol
+	[08:41] killed!: [BOT ] V3rnichter | Rank: 17 |   1,5 m | Pistol: CorePistol
 #08 | [T24] ForeverCacciucco     | BOT   | Kills:  1
+	[Death] Killed at 08:05 by BOT Player (BumbleB3ar) | dist:  17,5 m | via: Shotgun
+	[07:38] knocked: [BOT ] Maczetaaa30552 | Rank: 17 |  12,6 m | SMG
 #08 | [T24] StrangePlant87       | BOT   | Kills:  1
+	[Death] Killed at 12:47 by Real Player (unknown) | via: Assault: OrangeRemote
+	[08:04] knocked: [BOT ] SpectrumKnight13 | Rank: 17 |   3,1 m | SMG: DragonCart
 #08 | [T24] كونراد               | BOT   | Kills:  0
+	[Death] Killed at 08:16 by Real Player (unknown) | dist:  17,2 m
 #09 * [T06] Lanet_kel0           | Real  | Kills:  3 | Level: ??? ( 92) | Platform: PS5 | Skin: Character_ChewyStaveCurve
+	[Death] Killed at 10:04 by Real Player (unknown) | dist:  61,9 m | via: Pistol: CorePistol
+	[05:21] knocked: [BOT ] GoodRobin6 | Rank: 22 |   1,5 m | SMG
+	[05:25] knocked: [BOT ] SilverySliver | Rank: 22 |   3,2 m | Assault: OrangeRemote
+	[08:30] knocked: [BOT ] Phorgas | Rank: 16 |   3,2 m
 #09 | [T14] Fictionpoint         | BOT   | Kills:  1
+	[Death] Killed at 03:29 by Real Player (unknown) | dist:  29,4 m
+	[02:55] knocked: [BOT ] roi_priam_ultra | Rank: 15 |   2,3 m | Shotgun: Flavor
+	[03:25] knocked: [BOT ] M_I_E_T_3_K | Rank: 15 |   1,0 m | Shotgun: Flavor
 #09 | [T14] BeefSupreme35        | BOT   | Kills:  0
+	[Death] Killed at 12:20 by BOT Player (BeefSupreme35) | via: Storm
+	[12:20] killed!: [BOT ] BeefSupreme35 | Rank:  9 | Storm
 #09 | [T14] 90sRunner            | BOT   | Kills:  0
+	[Death] Killed at 03:03 by BOT Player (l4hm4cun1) | dist:   8,5 m | via: SMG
 #09 | [T14] Laserfrog44          | BOT   | Kills:  0
+	[Death] Killed at 05:58 by Real Player (unknown) | dist:  28,7 m
 #10 | [T10] DoublePlusGood       | BOT   | Kills:  0
+	[Death] Killed at 10:54 by Real Player (Mehrsam_killer) | dist:   5,1 m | via: Pistol: CorePistol
 #10 | [T10] GreatGriffin28       | BOT   | Kills:  0
+	[Death] Killed at 10:54 by Real Player (unknown) | via: Assault: OrangeRemote
 #10 | [T10] Othello54            | BOT   | Kills:  0
+	[Death] Killed at 10:42 by Real Player (unknown) | dist:   2,1 m | via: SMG
 #10 | [T10] VeggieBurger24       | BOT   | Kills:  0
+	[Death] Killed at 10:54 by Real Player (unknown) | via: Assault: SunRose
 #11 | [T17] Chronicled5          | BOT   | Kills:  0
+	[Death] Killed at 10:45 by Real Player (unknown) | via: Assault: SunRose
 #11 | [T17] iAteMySpacebar       | BOT   | Kills:  0
+	[Death] Killed at 10:45 by Real Player (unknown) | via: Shotgun
 #11 | [T17] KeepScrolling95      | BOT   | Kills:  0
+	[Death] Killed at 10:45 by Real Player (viknikit) | dist:  16,9 m | via: Shotgun
 #11 | [T17] DrPlants40           | BOT   | Kills:  0
+	[Death] Killed at 10:45 by Real Player (unknown) | via: Shotgun
 #12 | [T09] NarEşkisi1           | BOT   | Kills:  1
+	[Death] Killed at 08:32 by Real Player (unknown)
+	[03:31] knocked: [Real] Ben1340hd | Rank: 25 |   4,0 m | Assault: OrangeRemote
+	[08:32] knocked: [BOT ] NarEşkisi1 | Rank: 12 | Storm
 #12 | [T09] SomethingFishy3      | BOT   | Kills:  0
+	[Death] Killed at 10:26 by Real Player (unknown) | via: Assault: SunRose
 #12 | [T09] سالم24               | BOT   | Kills:  0
+	[Death] Killed at 10:25 by Real Player (unknown) | via: Assault: SunRose
 #12 | [T09] BrokenRecord26       | BOT   | Kills:  0
+	[Death] Killed at 10:26 by Real Player (lOYD812) | dist:  10,1 m | via: SMG
 #13 | [T08] TermiteMuscles       | BOT   | Kills:  2
+	[Death] Killed at 09:29 by Real Player (unknown) | via: Shotgun: Flavor
+	[07:46] killed!: [BOT ] SandSpider2000 | Rank: 19 |   0,9 m | Pistol: CorePistol
+	[07:55] killed!: [BOT ] mojamama6 | Rank: 18 |  26,5 m | Pistol: CorePistol
 #13 | [T08] TopDanger28          | BOT   | Kills:  0
+	[Death] Killed at 09:24 by Real Player (Kofra2004) | dist:   3,3 m | via: Shotgun
 #13 | [T08] Gloriainfinita       | BOT   | Kills:  0
+	[Death] Killed at 09:28 by Real Player (NoahytGGG-) | dist:   2,0 m | via: Shotgun: Flavor
 #13 | [T08] QuadAlex13           | BOT   | Kills:  0
+	[Death] Killed at 09:28 by Real Player (Kofra2004) | dist:   3,0 m | via: Shotgun
 #14 | [T28] LaidBackBeats        | BOT   | Kills:  0
+	[Death] Killed at 09:16 by Real Player (unknown) | via: Assault: OrangeRemote
 #14 | [T28] FriendlySniper27     | BOT   | Kills:  0
+	[Death] Killed at 09:16 by Real Player (Fortniteluan6309) | dist:   6,1 m | via: Pistol: CorePistol
 #14 | [T28] StringCheese15       | BOT   | Kills:  0
+	[Death] Killed at 09:16 by Real Player (unknown) | via: Pistol: CorePistol
 #15 | [T19] l4hm4cun1            | BOT   | Kills:  2
+	[Death] Killed at 09:05 by Real Player (unknown) | via: Shotgun
+	[03:03] killed!: [BOT ] 90sRunner | Rank:  9 |   8,5 m | SMG
+	[03:29] knocked: [BOT ] Fictionpoint | Rank:  9 |  11,3 m | SMG
+	[05:58] knocked: [BOT ] Laserfrog44 | Rank:  9 |  27,2 m | SMG
 #15 | [T19] M_I_E_T_3_K          | BOT   | Kills:  1
+	[Death] Killed at 08:18 by Real Player (unknown) | dist:   4,8 m | via: Shotgun
+	[03:00] knocked: [BOT ] 90sRunner | Rank:  9 |  13,1 m | Assault: SunRose
 #15 | [T19] BillyBrilliant23     | BOT   | Kills:  0
+	[Death] Killed at 09:06 by Real Player (viknikit) | dist:  18,9 m | via: Shotgun
 #15 | [T19] roi_priam_ultra      | BOT   | Kills:  0
+	[Death] Killed at 03:04 by Real Player (unknown) | dist:   8,2 m | via: Shotgun: Flavor
 #16 | [T13] Poule_d0             | BOT   | Kills:  1
+	[Death] Killed at 09:01 by Real Player (unknown) | via: Shotgun
+	[05:04] knocked: [BOT ] TooManyBeets | Rank: 23 |  32,2 m | Assault: OrangeRemote
 #16 | [T13] Сибирская Кошка      | BOT   | Kills:  0
+	[Death] Killed at 09:00 by Real Player (xdx2k7) | dist:  42,3 m | via: Assault: SunRose
 #16 | [T13] Phorgas              | BOT   | Kills:  0
+	[Death] Killed at 09:01 by Real Player (unknown)
+	[05:12] killed!: [BOT ] TooManyBeets | Rank: 23 |  37,0 m | Assault: OrangeRemote
 #16 | [T13] wektor77             | BOT   | Kills:  0
+	[Death] Killed at 09:01 by Real Player (unknown) | via: Assault: SunRose
 #17 | [T16] V3rnichter           | BOT   | Kills:  1
+	[Death] Killed at 08:41 by BOT Player (Nashtyboy67) | dist:   1,5 m | via: Pistol: CorePistol
+	[07:50] knocked: [BOT ] ForeverCacciucco | Rank:  8 |  18,3 m | Shotgun: MusterAuto
 #17 | [T16] BumbleB3ar           | BOT   | Kills:  1
+	[Death] Killed at 08:32 by Real Player (unknown) | dist:  22,8 m | via: Pistol: CorePistol
+	[08:05] killed!: [BOT ] ForeverCacciucco | Rank:  8 |  17,5 m | Shotgun
+	[08:16] knocked: [BOT ] كونراد | Rank:  8 |  12,3 m | Pistol: CorePistol
 #17 * [T05] ReadyMeerkat8747     | Real  | Kills:  0 | Level: ??? (???) | Platform: SWT | Skin: Character_Sparrow
+	[Death] Killed at 07:25 by Real Player (unknown) | dist:   3,9 m | via: SMG
 #17 | [T16] SpectrumKnight13     | BOT   | Kills:  0
+	[Death] Killed at 08:16 by Real Player (unknown) | via: Shotgun
 #17 | [T16] Maczetaaa30552       | BOT   | Kills:  0
+	[Death] Killed at 08:31 by Real Player (unknown) | via: Shotgun: Flavor
 #18 | [T22] mojamama6            | BOT   | Kills:  2
+	[Death] Killed at 07:55 by BOT Player (TermiteMuscles) | dist:  26,5 m | via: Pistol: CorePistol
+	[06:40] knocked: [BOT ] PureBacon94 | Rank: 19 |   1,0 m | Shotgun
+	[07:11] knocked: [BOT ] JaiFaimJaiSoif | Rank: 19 |   2,2 m | SMG
 #18 | [T22] Anonymutt            | BOT   | Kills:  1
+	[Death] Killed at 07:24 by Real Player (unknown) | via: Assault: OrangeRemote
+	[06:11] knocked: [BOT ] JasioKlucha | Rank: 19 |  25,1 m | Assault: OrangeRemote
 #18 | [T22] Waschbrettbauch01    | BOT   | Kills:  0
+	[Death] Killed at 07:10 by Real Player (unknown) | via: Assault: SunRose
 #18 | [T22] BossBoi20            | BOT   | Kills:  0
+	[Death] Killed at 07:06 by Real Player (unknown) | via: Pistol: CorePistol
 #19 | [T18] PureBacon94          | BOT   | Kills:  3
+	[Death] Killed at 07:18 by Real Player (unknown) | via: Shotgun: Flavor
+	[06:05] knocked: [BOT ] BossBoi20 | Rank: 18 |  32,4 m | Shotgun: Flavor
+	[06:26] knocked: [BOT ] Waschbrettbauch01 | Rank: 18 |  10,7 m | Shotgun: Flavor
+	[06:33] knocked: [BOT ] Anonymutt | Rank: 18 |   8,1 m | Shotgun: Flavor
 #19 | [T18] SandSpider2000       | BOT   | Kills:  0
+	[Death] Killed at 07:46 by BOT Player (TermiteMuscles) | dist:   0,9 m | via: Pistol: CorePistol
 #19 | [T18] JaiFaimJaiSoif       | BOT   | Kills:  0
+	[Death] Killed at 07:20 by Real Player (unknown) | dist:  11,4 m | via: SMG
 #19 | [T18] JasioKlucha          | BOT   | Kills:  0
+	[Death] Killed at 07:13 by Real Player (unknown) | via: SMG: DragonCart
 #20 | [T27] AplastaBravas        | BOT   | Kills:  1
+	[Death] Killed at 06:23 by BOT Player (MarathonWalker) | dist:  19,2 m | via: Pistol: CorePistol
+	[05:56] knocked: [BOT ] HotelBlankets | Rank:  3 |  19,7 m | SMG: DragonCart
 #20 | [T27] Wdar71353            | BOT   | Kills:  0
+	[Death] Killed at 06:04 by Real Player (unknown) | dist:  14,8 m | via: Pistol: CorePistol
 #20 | [T27] أكمل                 | BOT   | Kills:  0
+	[Death] Killed at 06:23 by Real Player (unknown) | via: SMG
 #20 | [T27] BlinkImGone44        | BOT   | Kills:  0
+	[Death] Killed at 06:13 by BOT Player (MarathonWalker) | dist:   3,9 m | via: Pistol: CorePistol
 #21 | [T11] ДайПять              | BOT   | Kills:  1
+	[Death] Killed at 06:12 by Real Player (xdx2k7) | dist:  16,2 m | via: Pistol: CorePistol
+	[04:59] killed!: [BOT ] IrritatedIris | Rank: 23 |  22,5 m | SMG: DragonCart
+	[05:11] knocked: [BOT ] Dreamdunker | Rank: 23 |  17,4 m | SMG: DragonCart
 #21 | [T11] BigBuddy15           | BOT   | Kills:  0
+	[Death] Killed at 03:18 by Real Player (unknown) | dist:   1,0 m | via: Shotgun: Flavor
 #21 | [T11] Titi_Parisien75561   | BOT   | Kills:  0
+	[Death] Killed at 03:39 by Real Player (unknown) | dist:   1,0 m | via: Shotgun
 #21 | [T11] tuparlifrancese      | BOT   | Kills:  0
+	[Death] Killed at 04:53 by Real Player (unknown) | dist:   6,7 m
 #22 | [T15] GoodRobin6           | BOT   | Kills:  0
+	[Death] Killed at 05:30 by Real Player (unknown) | via: SMG
 #22 | [T15] GetitGotitGood       | BOT   | Kills:  0
+	[Death] Killed at 05:29 by Real Player (ClearAphid2119) | dist:   2,5 m | via: SMG: DragonCart
 #22 | [T15] Swabbie23            | BOT   | Kills:  0
+	[Death] Killed at 05:10 by Real Player (ClearAphid2119) | dist:   6,7 m | via: SMG: DragonCart
 #22 | [T15] SilverySliver        | BOT   | Kills:  0
+	[Death] Killed at 05:30 by Real Player (unknown) | via: Assault: OrangeRemote
 #23 | [T26] Dreamdunker          | BOT   | Kills:  0
+	[Death] Killed at 05:14 by Real Player (unknown) | via: SMG: DragonCart
 #23 | [T26] TooManyBeets         | BOT   | Kills:  0
+	[Death] Killed at 05:12 by BOT Player (Phorgas) | dist:  37,0 m | via: Assault: OrangeRemote
 #23 | [T26] Stinger85            | BOT   | Kills:  0
+	[Death] Killed at 05:14 by Real Player (xdx2k7) | dist:   1,8 m | via: Shotgun
 #23 | [T26] IrritatedIris        | BOT   | Kills:  0
+	[Death] Killed at 04:59 by BOT Player (ДайПять) | dist:  22,5 m | via: SMG: DragonCart
 #24 | [T12] LilGrande56          | BOT   | Kills:  1
+	[Death] Killed at 04:43 by Real Player (unknown) | dist:   6,2 m | via: Shotgun: Flavor
+	[03:52] knocked: [BOT ] Primetime71 | Rank: 25 |   3,1 m | SMG
 #24 | [T12] Time2Go80            | BOT   | Kills:  0
+	[Death] Killed at 04:03 by BOT Player (1Такой) | dist:  27,6 m | via: Assault: OrangeRemote
 #24 | [T12] Freylis21            | BOT   | Kills:  0
+	[Death] Killed at 03:38 by Real Player (unknown) | dist:   7,2 m | via: SMG
 #24 | [T12] Overtime46           | BOT   | Kills:  0
+	[Death] Killed at 04:51 by Real Player (NoahytGGG-) | dist:   1,7 m | via: Shotgun: Flavor
+	[04:07] killed!: [BOT ] Primetime71 | Rank: 25 |   2,8 m | Shotgun: Flavor
 #25 | [T25] Apricot661           | BOT   | Kills:  2
+	[Death] Killed at 04:31 by Real Player (unknown) | via: Pistol: FillerGrunt
+	[03:27] knocked: [BOT ] Freylis21 | Rank: 24 |  43,8 m | SMG
+	[03:54] knocked: [BOT ] Time2Go80 | Rank: 24 |   2,7 m | SMG
 #25 | [T25] Primetime71          | BOT   | Kills:  0
+	[Death] Killed at 04:07 by BOT Player (Overtime46) | dist:   2,8 m | via: Shotgun: Flavor
 #25 | [T25] 1Такой               | BOT   | Kills:  0
+	[Death] Killed at 04:32 by Real Player (Foxpvp85) | dist:  55,6 m | via: Pistol: FillerGrunt
+	[04:03] killed!: [BOT ] Time2Go80 | Rank: 24 |  27,6 m | Assault: OrangeRemote
 #25 | [T25] İnşaatMühendisi1     | BOT   | Kills:  0
+	[Death] Killed at 04:30 by Real Player (unknown) | via: Pistol: FillerGrunt
 #25 * [T05] Ben1340hd            | Real  | Kills:  0 | Level: ??? ( 55) | Platform: PS5 | Skin: Biker
+	[Death] Killed at 03:31 by BOT Player (NarEşkisi1) | dist:   4,0 m | via: Assault: OrangeRemote
 #26 | [T20] JungleProwler25      | BOT   | Kills:  0
+	[Death] Killed at 02:36 by Real Player (unknown) | via: Shotgun: Flavor
 #26 | [T20] HyenaBrigade         | BOT   | Kills:  0
+	[Death] Killed at 02:36 by Real Player (unknown) | via: Shotgun: Flavor
 #26 | [T20] Frostbitten86        | BOT   | Kills:  0
+	[Death] Killed at 02:36 by Real Player (unknown) | via: Shotgun: Flavor
 #26 | [T20] Crypt1c60            | BOT   | Kills:  0
+	[Death] Killed at 02:38 by Real Player (Fortniteluan6309) | dist:   8,9 m | via: Shotgun: Flavor
