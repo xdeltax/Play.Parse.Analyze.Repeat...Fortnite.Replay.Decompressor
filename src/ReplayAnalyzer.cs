@@ -487,10 +487,6 @@ internal static class ReplayAnalyzer
 
             lines.Add($"\t[Death] Killed at {timeStr} by {killerType} ({killerIdOrName}){deathDist}{deathWeaponStr}");
         }
-        else
-        {
-            lines.Add("\t[Death] Alive");
-        }
 
         var feedEvents = player.Id.HasValue
             ? killFeed.Where(k => k.FinisherOrDowner == player.Id.Value && !k.IsRevived).ToList()
@@ -498,7 +494,6 @@ internal static class ReplayAnalyzer
 
         if (feedEvents.Count > 0)
         {
-            lines.Add("\t[Killfeed]");
             for (var j = 0; j < feedEvents.Count; j++)
             {
                 var entry = feedEvents[j];
@@ -527,7 +522,7 @@ internal static class ReplayAnalyzer
                 var feedDist = entry.Distance is float d and > 0 ? $" | {FormatDistanceMeters(d)}" : string.Empty;
                 var feedWeapon = ExtractWeaponFromTags(entry.DeathTags);
                 var feedWeaponStr = feedWeapon is not null ? $" | {feedWeapon}" : string.Empty;
-                lines.Add($"\t  {j + 1,2}. [{timeFmt}] {action}: [{tag}] {victimName} | Rank: {victimRankStr}{feedDist}{feedWeaponStr}");
+                lines.Add($"\t[{timeFmt}] {action}: [{tag}] {victimName} | Rank: {victimRankStr}{feedDist}{feedWeaponStr}");
             }
         }
     }
