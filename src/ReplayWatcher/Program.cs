@@ -458,11 +458,26 @@ internal static class Program
 
     private static string GetSummaryAndOwnerOnly(string fullText)
     {
-        var rankingHeader = $"{Environment.NewLine}Ranking";
-        var index = fullText.IndexOf(rankingHeader, StringComparison.Ordinal);
+        var teamIndex = fullText.IndexOf($"{Environment.NewLine}Team-Ranking", StringComparison.Ordinal);
+        var normalIndex = fullText.IndexOf($"{Environment.NewLine}Ranking", StringComparison.Ordinal);
+
+        var index = -1;
+        if (teamIndex >= 0 && normalIndex >= 0)
+        {
+            index = Math.Min(teamIndex, normalIndex);
+        }
+        else if (teamIndex >= 0)
+        {
+            index = teamIndex;
+        }
+        else if (normalIndex >= 0)
+        {
+            index = normalIndex;
+        }
+
         if (index < 0)
         {
-            if (fullText.StartsWith("Ranking", StringComparison.Ordinal))
+            if (fullText.StartsWith("Team-Ranking", StringComparison.Ordinal) || fullText.StartsWith("Ranking", StringComparison.Ordinal))
             {
                 return string.Empty;
             }
