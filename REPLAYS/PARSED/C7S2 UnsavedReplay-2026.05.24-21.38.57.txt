@@ -12,7 +12,7 @@ Match: 2026-05-24T19:38:57.0510000Z; Duration: 19:06
 Owner: xdx2k7 (634311A416164074906752232C0DC6D2)
        Rank#: #01
        killed 8 / knocked 1; 
-       Accuracy 23.4%; Assists 0; Revives 0; Damage: 1505 Given; 765 Received
+       Accuracy 23,4%; Assists 0; Revives 0; Damage: 1505 Given; 765 Received
        Structures Dmg: 2904; Materials: 2850 gathered / 1520 used; Travel: 6911 m
        Owner has Crown
        Skin: Character_SoloSnooze | Pickaxe: Pickaxe_ID_020_Keg | Glider: Glider_ID_308_VividMale_H8JAS | Backpack: -
@@ -22,14 +22,14 @@ Owner Team (Team 12):
        - xdx2k7 (Crown)       | Kills:  8 | Knocks:  1 | Dmg: 1505 | Alive
 
 Owner Killfeed:
-   1. [02:47] killed!: [BOT ] Dessloch52     | Rank: 95 |   4.7 m | Shotgun: Dual
-   2. [03:28] killed!: [BOT ] BoldPrediction | Rank: 80 |   6.4 m | Shotgun: Dual
-   3. [06:44] killed!: [BOT ] Gloriainfinita | Rank: 37 |  10.6 m | Shotgun: Dual
-   4. [07:35] killed!: [BOT ] Bohun15        | Rank: 34 |   3.1 m | Shotgun: Dual
-   5. [12:52] killed!: [BOT ] EndlessMike52  | Rank:  5 |  34.2 m | Assault: Combat
-   6. [14:03] killed!: [BOT ] MintElephant26 | Rank:  4 |   2.9 m | Assault: Combat
-   7. [18:16] killed!: [Real] Ringer_Cat     | Rank:  3 |  24.7 m | Assault: Combat
-   8. [19:37] knocked: [Real] Tanjirolovve   | Rank:  2 |  22.2 m | Shotgun: TeaCake
+   1. [02:47] killed!: [BOT ] Dessloch52     | Rank: 95 |   4,7 m | Shotgun: Dual
+   2. [03:28] killed!: [BOT ] BoldPrediction | Rank: 80 |   6,4 m | Shotgun: Dual
+   3. [06:44] killed!: [BOT ] Gloriainfinita | Rank: 37 |  10,6 m | Shotgun: Dual
+   4. [07:35] killed!: [BOT ] Bohun15        | Rank: 34 |   3,1 m | Shotgun: Dual
+   5. [12:52] killed!: [BOT ] EndlessMike52  | Rank:  5 |  34,2 m | Assault: Combat
+   6. [14:03] killed!: [BOT ] MintElephant26 | Rank:  4 |   2,9 m | Assault: Combat
+   7. [18:16] killed!: [Real] Ringer_Cat     | Rank:  3 |  24,7 m | Assault: Combat
+   8. [19:37] knocked: [Real] Tanjirolovve   | Rank:  2 |  22,2 m | Shotgun: TeaCake
 
 Team-Ranking
 #01 * [T12] xdx2k7 (Crown)     * OWNER * Kills:  8 | Level: 154 (154) | Platform: WIN | Skin: Character_SoloSnooze

@@ -12,7 +12,7 @@ Match: 2026-06-20T10:11:41.2880000Z; Duration: 23:02
 Owner: xdx2k7 (634311A416164074906752232C0DC6D2)
        Rank#: #01
        killed 6 / knocked 4; 
-       Accuracy 12.0%; Assists 3; Revives 0; Damage: 1063 Given; 699 Received
+       Accuracy 12,0%; Assists 3; Revives 0; Damage: 1063 Given; 699 Received
        Structures Dmg: 4702; Materials: 1606 gathered / 1580 used; Travel: 6119 m
        Owner has Crown
        Skin: Character_LivelySugar_Syrup | Pickaxe: Pickaxe_ID_020_Keg | Glider: Glider_ID_308_VividMale_H8JAS | Backpack: -
@@ -22,12 +22,12 @@ Owner Team (Team 03):
        - xdx2k7 (Crown)       | Kills:  6 | Knocks:  4 | Dmg: 1063 | Alive
 
 Owner Killfeed:
-   1. [03:54] knocked: [BOT ] RudeAwaken1ngz   | Rank: 19 |   7.6 m | Shotgun
-   2. [04:09] knocked: [BOT ] Strider0728      | Rank: 19 |   2.8 m | SMG
-   3. [05:20] knocked: [BOT ] Quack4Bread      | Rank: 19 |  21.9 m | SMG
-   4. [05:40] killed!: [BOT ] UltraDavid26     | Rank: 19 |   3.4 m | Shotgun
-   5. [19:36] knocked: [Real] tob1978 (Crown)  | Rank:  2 |  52.0 m | Assault: SunRose
-   6. [23:13] killed!: [Real] hymnisch-Beiname | Rank:  2 |   1.6 m | SMG
+   1. [03:54] knocked: [BOT ] RudeAwaken1ngz   | Rank: 19 |   7,6 m | Shotgun
+   2. [04:09] knocked: [BOT ] Strider0728      | Rank: 19 |   2,8 m | SMG
+   3. [05:20] knocked: [BOT ] Quack4Bread      | Rank: 19 |  21,9 m | SMG
+   4. [05:40] killed!: [BOT ] UltraDavid26     | Rank: 19 |   3,4 m | Shotgun
+   5. [19:36] knocked: [Real] tob1978 (Crown)  | Rank:  2 |  52,0 m | Assault: SunRose
+   6. [23:13] killed!: [Real] hymnisch-Beiname | Rank:  2 |   1,6 m | SMG
 
 Team-Ranking
 #01 * [T03] xdx2k7 (Crown)        * OWNER * Kills:  6 | Level:  29 ( 29) | Platform: WIN | Skin: Character_LivelySugar_Syrup

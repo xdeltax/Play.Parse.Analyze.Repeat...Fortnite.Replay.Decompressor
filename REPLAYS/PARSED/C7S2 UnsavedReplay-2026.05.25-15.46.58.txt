@@ -12,8 +12,8 @@ Match: 2026-05-25T13:46:58.1120000Z; Duration: 20:26
 Owner: xdx2k7 (634311A416164074906752232C0DC6D2)
        Rank#: #02
        killed 7 / knocked 0; 
-       Killed at 21:36 by Real Player (C2_ciardosimo) | dist:   2.2 m | via: Shotgun: Pump
-       Accuracy 30.3%; Assists 0; Revives 0; Damage: 1018 Given; 663 Received
+       Killed at 21:36 by Real Player (C2_ciardosimo) | dist:   2,2 m | via: Shotgun: Pump
+       Accuracy 30,3%; Assists 0; Revives 0; Damage: 1018 Given; 663 Received
        Structures Dmg: 1482; Materials: 2740 gathered / 1360 used; Travel: 7311 m
        Owner has Crown
        Skin: Character_SoloSnooze | Pickaxe: Pickaxe_ID_020_Keg | Glider: Glider_ID_308_VividMale_H8JAS | Backpack: -
@@ -23,13 +23,13 @@ Owner Team (Team 18):
        - xdx2k7 (Crown)       | Kills:  7 | Knocks:  0 | Dmg: 1018 | Dead 
 
 Owner Killfeed:
-   1. [03:24] killed!: [BOT ] JaiFaimJaiSoif           | Rank: 93 |   4.6 m | Shotgun: Dual
-   2. [04:24] killed!: [Real] Galea016                 | Rank: 68 |   1.9 m | Shotgun: Dual
-   3. [09:23] killed!: [BOT ] FortniteKid34558         | Rank: 26 |  20.6 m | Assault: Combat
-   4. [10:17] killed!: [BOT ] Maciek11PL               | Rank: 20 |   2.9 m | Assault: Combat
-   5. [13:19] killed!: [Real] Topless666               | Rank: 11 |   2.6 m | Shotgun: Pump
-   6. [13:40] killed!: [BOT ] HeliumHog                | Rank: 10 |   1.2 m | Assault: Combat
-   7. [21:07] killed!: [Real] Kreutergertner17 (Crown) | Rank:  3 |   2.6 m | Assault: Combat
+   1. [03:24] killed!: [BOT ] JaiFaimJaiSoif           | Rank: 93 |   4,6 m | Shotgun: Dual
+   2. [04:24] killed!: [Real] Galea016                 | Rank: 68 |   1,9 m | Shotgun: Dual
+   3. [09:23] killed!: [BOT ] FortniteKid34558         | Rank: 26 |  20,6 m | Assault: Combat
+   4. [10:17] killed!: [BOT ] Maciek11PL               | Rank: 20 |   2,9 m | Assault: Combat
+   5. [13:19] killed!: [Real] Topless666               | Rank: 11 |   2,6 m | Shotgun: Pump
+   6. [13:40] killed!: [BOT ] HeliumHog                | Rank: 10 |   1,2 m | Assault: Combat
+   7. [21:07] killed!: [Real] Kreutergertner17 (Crown) | Rank:  3 |   2,6 m | Assault: Combat
 
 Team-Ranking
 #01 * [T19] C2_ciardosimo (Crown)    | Real  | Kills:  7 | Level: ??? (???) | Platform: PSN | Skin: HolidaySweater

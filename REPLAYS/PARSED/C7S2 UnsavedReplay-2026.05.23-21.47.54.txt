@@ -12,8 +12,8 @@ Match: 2026-05-23T19:47:54.9890000Z; Duration: 07:16
 Owner: xdx2k7 (634311A416164074906752232C0DC6D2)
        Rank#: #24
        killed 3 / knocked 0; 
-       Killed at 08:49 by BOT Player (xXMariAnnieXx) | dist:   3.4 m | via: Area51Gun
-       Accuracy 33.9%; Assists 0; Revives 0; Damage: 455 Given; 391 Received
+       Killed at 08:49 by BOT Player (xXMariAnnieXx) | dist:   3,4 m | via: Area51Gun
+       Accuracy 33,9%; Assists 0; Revives 0; Damage: 455 Given; 391 Received
        Structures Dmg: 220; Materials: 1139 gathered / 180 used; Travel: 2421 m
        Skin: Character_SoloSnooze | Pickaxe: Pickaxe_ID_020_Keg | Glider: Glider_ID_308_VividMale_H8JAS | Backpack: -
 
@@ -22,9 +22,9 @@ Owner Team (Team 08):
        - xdx2k7               | Kills:  3 | Knocks:  0 | Dmg:  455 | Dead 
 
 Owner Killfeed:
-   1. [04:39] killed!: [BOT ] MorninWaffles | Rank: 68 |  12.6 m | Shotgun: Dual
-   2. [05:33] killed!: [BOT ] Carcrusher94  | Rank: 54 |   7.1 m | Shotgun: Dual
-   3. [08:04] killed!: [BOT ] NeoHero4      | Rank: 27 |   6.4 m | SMG: MusterQuickMag
+   1. [04:39] killed!: [BOT ] MorninWaffles | Rank: 68 |  12,6 m | Shotgun: Dual
+   2. [05:33] killed!: [BOT ] Carcrusher94  | Rank: 54 |   7,1 m | Shotgun: Dual
+   3. [08:04] killed!: [BOT ] NeoHero4      | Rank: 27 |   6,4 m | SMG: MusterQuickMag
 
 Team-Ranking
 #?? * [T03] break_ombroso     | Real  | Kills:  2 | Level: ??? (187) | Platform: PSN

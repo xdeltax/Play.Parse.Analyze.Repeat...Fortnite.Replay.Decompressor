@@ -12,7 +12,7 @@ Match: 2026-05-24T22:47:39.0430000Z; Duration: 23:28
 Owner: xdx2k7 (634311A416164074906752232C0DC6D2)
        Rank#: #01
        killed 8 / knocked 0; 
-       Accuracy 16.0%; Assists 0; Revives 0; Damage: 1400 Given; 648 Received
+       Accuracy 16,0%; Assists 0; Revives 0; Damage: 1400 Given; 648 Received
        Structures Dmg: 3545; Materials: 2050 gathered / 1660 used; Travel: 9608 m
        Owner has Crown
        Skin: Character_SoloSnooze | Pickaxe: Pickaxe_ID_020_Keg | Glider: Glider_ID_308_VividMale_H8JAS | Backpack: -
@@ -22,14 +22,14 @@ Owner Team (Team 13):
        - xdx2k7 (Crown)       | Kills:  8 | Knocks:  0 | Dmg: 1400 | Alive
 
 Owner Killfeed:
-   1. [05:16] killed!: [BOT ] Питбуль1         | Rank: 59 |   5.6 m | Shotgun: Dual
-   2. [06:44] killed!: [BOT ] lepszyodciebie1  | Rank: 41 |   2.5 m | Shotgun: Dual
-   3. [07:44] killed!: [BOT ] NocturnePatrol   | Rank: 37 |   1.2 m | Shotgun: Dual
-   4. [07:56] killed!: [Real] Ryanfoley54      | Rank: 35 |  35.2 m | Assault: PastaRipper
-   5. [09:52] killed!: [BOT ] OnetrickWonder64 | Rank: 22 |  36.7 m | Assault: PastaRipper
-   6. [10:46] killed!: [BOT ] SweetPenguin16   | Rank: 18 |   7.1 m | Shotgun: Dual
-   7. [24:12] killed!: [Real] M8MerguezCharbon | Rank:  4 |   6.2 m | Shotgun: Dual
-   8. [24:30] killed!: [Real] riskinS          | Rank:  2 |   6.3 m | Shotgun: Dual
+   1. [05:16] killed!: [BOT ] Питбуль1         | Rank: 59 |   5,6 m | Shotgun: Dual
+   2. [06:44] killed!: [BOT ] lepszyodciebie1  | Rank: 41 |   2,5 m | Shotgun: Dual
+   3. [07:44] killed!: [BOT ] NocturnePatrol   | Rank: 37 |   1,2 m | Shotgun: Dual
+   4. [07:56] killed!: [Real] Ryanfoley54      | Rank: 35 |  35,2 m | Assault: PastaRipper
+   5. [09:52] killed!: [BOT ] OnetrickWonder64 | Rank: 22 |  36,7 m | Assault: PastaRipper
+   6. [10:46] killed!: [BOT ] SweetPenguin16   | Rank: 18 |   7,1 m | Shotgun: Dual
+   7. [24:12] killed!: [Real] M8MerguezCharbon | Rank:  4 |   6,2 m | Shotgun: Dual
+   8. [24:30] killed!: [Real] riskinS          | Rank:  2 |   6,3 m | Shotgun: Dual
 
 Team-Ranking
 #01 * [T13] xdx2k7 (Crown)           * OWNER * Kills:  8 | Level: 156 (156) | Platform: WIN | Skin: Character_SoloSnooze

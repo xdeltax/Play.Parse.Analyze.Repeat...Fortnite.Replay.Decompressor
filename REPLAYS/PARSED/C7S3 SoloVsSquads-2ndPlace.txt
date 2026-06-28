@@ -1,0 +1,242 @@
+File : C7S3 SoloVsSquads-2ndPlace
+Match: 2026-06-28T11:18:11.5950000Z; Duration: 19:21
+       Mode         : SQUADS  (4v4) | 26 Teams
+       Game Version : v41.10
+       Session ID   : 03f9361c886d4961aaabdd01f818e4ba
+       100 Total Players
+       17 Real Players 
+       83 BOT Players
+       24 NPCs
+       124 in Sum
+       7 Players with Crown
+Owner: xdx2k7 (634311A416164074906752232C0DC6D2)
+       Rank#: #02
+       killed 14 / knocked 10; 
+       Killed at 19:43 by Real Player (Kofra2004) | dist:   8,2 m | via: Shotgun: MusterAuto
+       Accuracy 19,6%; Assists 1; Revives 0; Damage: 2843 Given; 728 Received
+       Structures Dmg: 3698; Materials: 2600 gathered / 1610 used; Travel: 4950 m
+       Skin: Character_LivelySugar_Syrup | Pickaxe: Pickaxe_ID_020_Keg | Glider: Glider_ID_308_VividMale_H8JAS | Backpack: -
+
+Owner Team (Team 07):
+       1 Players | Team Kills: 14 | Team Knocks: 10 | Team Revives: 0
+       - xdx2k7               | Kills: 14 | Knocks: 10 | Dmg: 2843 | Dead 
+
+Owner Killfeed:
+   1. [03:15] knocked: [BOT ] BigBuddy15         | Rank: 21 |   1,9 m | Pistol: CorePistol
+   2. [03:36] knocked: [BOT ] Titi_Parisien75561 | Rank: 21 |   2,6 m | Pistol: CorePistol
+   3. [04:38] knocked: [BOT ] IrritatedIris      | Rank: 23 |  30,6 m | Pistol: CorePistol
+   4. [04:53] knocked: [BOT ] tuparlifrancese    | Rank: 21 |   3,2 m | Shotgun
+   5. [05:14] killed!: [BOT ] Stinger85          | Rank: 23 |   1,8 m | Shotgun
+   6. [06:12] killed!: [BOT ] ДайПять            | Rank: 21 |  16,2 m | Pistol: CorePistol
+   7. [08:43] knocked: [BOT ] wektor77           | Rank: 16 |  30,6 m | Assault: SunRose
+   8. [08:51] knocked: [BOT ] Poule_d0           | Rank: 16 |   5,9 m | Shotgun
+   9. [09:00] killed!: [BOT ] Сибирская Кошка    | Rank: 16 |  42,3 m | Assault: SunRose
+  10. [09:57] knocked: [Real] Lanet_kel0         | Rank:  9 |  52,4 m | Assault: SunRose
+  11. [10:13] knocked: [BOT ] سالم24             | Rank: 12 |  29,0 m | Assault: SunRose
+  12. [10:23] knocked: [BOT ] SomethingFishy3    | Rank: 12 |  24,5 m | Assault: SunRose
+  13. [12:12] knocked: [BOT ] Brainshocked0      | Rank:  7 |   4,1 m | Shotgun
+  14. [15:47] killed!: [Real] ClearAphid2119     | Rank:  5 |   4,1 m | Shotgun
+
+Team-Ranking
+#01 * [T03] NoahytGGG- (Crown)   | Real  | Kills:  9 | Level: ??? ( 41) | Platform: PS5 | Skin: Lateral_K8XD9
+#01 * [T03] Kofra2004 (Crown)    | Real  | Kills:  3 | Level: ??? (???) | Platform: PSN | Skin: Prime
+#01 * [T03] Foxpvp85 (Crown)     | Real  | Kills:  3 | Level: ??? (147) | Platform: WIN | Skin: Character_FunkyFeather_Cap
+#01 * [T03] Silzim (Crown)       | Real  | Kills:  2 | Level:  46 ( 46) | Platform: PS5 | Skin: TreasureHunterFashion
+#02 * [T07] xdx2k7               * OWNER * Kills: 14 | Level:  50 ( 50) | Platform: WIN | Skin: Character_LivelySugar_Syrup
+#03 | [T23] MarathonWalker       | BOT   | Kills:  2
+#03 | [T23] FlawlessGame         | BOT   | Kills:  2
+#03 | [T23] MsFroggy123          | BOT   | Kills:  0
+#03 | [T23] HotelBlankets        | BOT   | Kills:  0
+#04 * [T04] Fortniteluan6309     | Real  | Kills: 11 | Level: ??? (113) | Platform: IOS | Skin: Character_LivelySugar_Syrup
+#04 * [T04] Mehrsam_killer       | Real  | Kills:  3 | Level: ??? ( 64) | Platform: PS5 | Skin: Character_FunkyFeather_Cap
+#04 * [T04] MersadWonroy (Crown) | Real  | Kills:  2 | Level: ??? (???) | Platform: PS5 | Skin: Temple
+#04 * [T04] viknikit             | Real  | Kills:  8 | Level: ??? (???) | Platform: WIN | Skin: Character_TideKing_Regal
+#05 * [T06] ClearAphid2119       | Real  | Kills:  2 | Level: ??? (197) | Platform: XSX | Skin: Character_WaterfallCharm_B
+#05 * [T06] stoic_lid03          | Real  | Kills:  1 | Level: ??? (???) | Platform: PS5 | Skin: Character_PixieParts_Lava
+#05 * [T06] lOYD812 (Crown)      | Real  | Kills:  3 | Level: ??? (129) | Platform: SWT2 | Skin: StreetFashionRed
+#06 * [T05] Naim.mddn (Crown)    | Real  | Kills:  2 | Level: ??? (???) | Platform: PSN | Skin: Character_ClaimReflect
+#06 * [T05] king_von123ytt       | Real  | Kills:  0 | Level: ??? ( 49) | Platform: PS5 | Skin: Character_RowLiaison_Cafe
+#07 | [T21] anton1_51            | BOT   | Kills:  0
+#07 | [T21] L4mboZ3ta            | BOT   | Kills:  1
+#07 | [T21] Warning1496          | BOT   | Kills:  0
+#07 | [T21] Brainshocked0        | BOT   | Kills:  0
+#08 | [T24] StrangePlant87       | BOT   | Kills:  1
+#08 | [T24] Nashtyboy67          | BOT   | Kills:  2
+#08 | [T24] كونراد               | BOT   | Kills:  0
+#08 | [T24] ForeverCacciucco     | BOT   | Kills:  1
+#09 * [T06] Lanet_kel0           | Real  | Kills:  3 | Level: ??? ( 92) | Platform: PS5 | Skin: Character_ChewyStaveCurve
+#09 | [T14] BeefSupreme35        | BOT   | Kills:  0
+#09 | [T14] Laserfrog44          | BOT   | Kills:  0
+#09 | [T14] Fictionpoint         | BOT   | Kills:  1
+#09 | [T14] 90sRunner            | BOT   | Kills:  0
+#10 | [T10] DoublePlusGood       | BOT   | Kills:  0
+#10 | [T10] GreatGriffin28       | BOT   | Kills:  0
+#10 | [T10] VeggieBurger24       | BOT   | Kills:  0
+#10 | [T10] Othello54            | BOT   | Kills:  0
+#11 | [T17] Chronicled5          | BOT   | Kills:  0
+#11 | [T17] KeepScrolling95      | BOT   | Kills:  0
+#11 | [T17] iAteMySpacebar       | BOT   | Kills:  0
+#11 | [T17] DrPlants40           | BOT   | Kills:  0
+#12 | [T09] SomethingFishy3      | BOT   | Kills:  0
+#12 | [T09] BrokenRecord26       | BOT   | Kills:  0
+#12 | [T09] سالم24               | BOT   | Kills:  0
+#12 | [T09] NarEşkisi1           | BOT   | Kills:  1
+#13 | [T08] TermiteMuscles       | BOT   | Kills:  2
+#13 | [T08] Gloriainfinita       | BOT   | Kills:  0
+#13 | [T08] QuadAlex13           | BOT   | Kills:  0
+#13 | [T08] TopDanger28          | BOT   | Kills:  0
+#14 | [T28] StringCheese15       | BOT   | Kills:  0
+#14 | [T28] LaidBackBeats        | BOT   | Kills:  0
+#14 | [T28] FriendlySniper27     | BOT   | Kills:  0
+#15 | [T19] BillyBrilliant23     | BOT   | Kills:  0
+#15 | [T19] l4hm4cun1            | BOT   | Kills:  2
+#15 | [T19] M_I_E_T_3_K          | BOT   | Kills:  1
+#15 | [T19] roi_priam_ultra      | BOT   | Kills:  0
+#16 | [T13] wektor77             | BOT   | Kills:  0
+#16 | [T13] Poule_d0             | BOT   | Kills:  1
+#16 | [T13] Phorgas              | BOT   | Kills:  0
+#16 | [T13] Сибирская Кошка      | BOT   | Kills:  0
+#17 * [T05] ReadyMeerkat8747     | Real  | Kills:  0 | Level: ??? (???) | Platform: SWT | Skin: Character_Sparrow
+#17 | [T16] V3rnichter           | BOT   | Kills:  1
+#17 | [T16] BumbleB3ar           | BOT   | Kills:  1
+#17 | [T16] Maczetaaa30552       | BOT   | Kills:  0
+#17 | [T16] SpectrumKnight13     | BOT   | Kills:  0
+#18 | [T22] mojamama6            | BOT   | Kills:  2
+#18 | [T22] Anonymutt            | BOT   | Kills:  1
+#18 | [T22] Waschbrettbauch01    | BOT   | Kills:  0
+#18 | [T22] BossBoi20            | BOT   | Kills:  0
+#19 | [T18] SandSpider2000       | BOT   | Kills:  0
+#19 | [T18] JaiFaimJaiSoif       | BOT   | Kills:  0
+#19 | [T18] PureBacon94          | BOT   | Kills:  3
+#19 | [T18] JasioKlucha          | BOT   | Kills:  0
+#20 | [T27] AplastaBravas        | BOT   | Kills:  1
+#20 | [T27] أكمل                 | BOT   | Kills:  0
+#20 | [T27] BlinkImGone44        | BOT   | Kills:  0
+#20 | [T27] Wdar71353            | BOT   | Kills:  0
+#21 | [T11] ДайПять              | BOT   | Kills:  1
+#21 | [T11] tuparlifrancese      | BOT   | Kills:  0
+#21 | [T11] Titi_Parisien75561   | BOT   | Kills:  0
+#21 | [T11] BigBuddy15           | BOT   | Kills:  0
+#22 | [T15] SilverySliver        | BOT   | Kills:  0
+#22 | [T15] GoodRobin6           | BOT   | Kills:  0
+#22 | [T15] GetitGotitGood       | BOT   | Kills:  0
+#22 | [T15] Swabbie23            | BOT   | Kills:  0
+#23 | [T26] Dreamdunker          | BOT   | Kills:  0
+#23 | [T26] Stinger85            | BOT   | Kills:  0
+#23 | [T26] TooManyBeets         | BOT   | Kills:  0
+#23 | [T26] IrritatedIris        | BOT   | Kills:  0
+#24 | [T12] Overtime46           | BOT   | Kills:  0
+#24 | [T12] LilGrande56          | BOT   | Kills:  1
+#24 | [T12] Time2Go80            | BOT   | Kills:  0
+#24 | [T12] Freylis21            | BOT   | Kills:  0
+#25 * [T05] Ben1340hd            | Real  | Kills:  0 | Level: ??? ( 55) | Platform: PS5 | Skin: Biker
+#25 | [T25] 1Такой               | BOT   | Kills:  0
+#25 | [T25] Apricot661           | BOT   | Kills:  2
+#25 | [T25] İnşaatMühendisi1     | BOT   | Kills:  0
+#25 | [T25] Primetime71          | BOT   | Kills:  0
+#26 | [T20] Crypt1c60            | BOT   | Kills:  0
+#26 | [T20] JungleProwler25      | BOT   | Kills:  0
+#26 | [T20] HyenaBrigade         | BOT   | Kills:  0
+#26 | [T20] Frostbitten86        | BOT   | Kills:  0
+
+Ranking
+#01 * [T03] NoahytGGG- (Crown)   | Real  | Kills:  9 | Level: ??? ( 41) | Platform: PS5 | Skin: Lateral_K8XD9
+#01 * [T03] Foxpvp85 (Crown)     | Real  | Kills:  3 | Level: ??? (147) | Platform: WIN | Skin: Character_FunkyFeather_Cap
+#01 * [T03] Kofra2004 (Crown)    | Real  | Kills:  3 | Level: ??? (???) | Platform: PSN | Skin: Prime
+#01 * [T03] Silzim (Crown)       | Real  | Kills:  2 | Level:  46 ( 46) | Platform: PS5 | Skin: TreasureHunterFashion
+#02 * [T07] xdx2k7               * OWNER * Kills: 14 | Level:  50 ( 50) | Platform: WIN | Skin: Character_LivelySugar_Syrup
+#03 | [T23] FlawlessGame         | BOT   | Kills:  2
+#03 | [T23] MarathonWalker       | BOT   | Kills:  2
+#03 | [T23] MsFroggy123          | BOT   | Kills:  0
+#03 | [T23] HotelBlankets        | BOT   | Kills:  0
+#04 * [T04] Fortniteluan6309     | Real  | Kills: 11 | Level: ??? (113) | Platform: IOS | Skin: Character_LivelySugar_Syrup
+#04 * [T04] viknikit             | Real  | Kills:  8 | Level: ??? (???) | Platform: WIN | Skin: Character_TideKing_Regal
+#04 * [T04] Mehrsam_killer       | Real  | Kills:  3 | Level: ??? ( 64) | Platform: PS5 | Skin: Character_FunkyFeather_Cap
+#04 * [T04] MersadWonroy (Crown) | Real  | Kills:  2 | Level: ??? (???) | Platform: PS5 | Skin: Temple
+#05 * [T06] lOYD812 (Crown)      | Real  | Kills:  3 | Level: ??? (129) | Platform: SWT2 | Skin: StreetFashionRed
+#05 * [T06] ClearAphid2119       | Real  | Kills:  2 | Level: ??? (197) | Platform: XSX | Skin: Character_WaterfallCharm_B
+#05 * [T06] stoic_lid03          | Real  | Kills:  1 | Level: ??? (???) | Platform: PS5 | Skin: Character_PixieParts_Lava
+#06 * [T05] Naim.mddn (Crown)    | Real  | Kills:  2 | Level: ??? (???) | Platform: PSN | Skin: Character_ClaimReflect
+#06 * [T05] king_von123ytt       | Real  | Kills:  0 | Level: ??? ( 49) | Platform: PS5 | Skin: Character_RowLiaison_Cafe
+#07 | [T21] L4mboZ3ta            | BOT   | Kills:  1
+#07 | [T21] Brainshocked0        | BOT   | Kills:  0
+#07 | [T21] Warning1496          | BOT   | Kills:  0
+#07 | [T21] anton1_51            | BOT   | Kills:  0
+#08 | [T24] Nashtyboy67          | BOT   | Kills:  2
+#08 | [T24] ForeverCacciucco     | BOT   | Kills:  1
+#08 | [T24] StrangePlant87       | BOT   | Kills:  1
+#08 | [T24] كونراد               | BOT   | Kills:  0
+#09 * [T06] Lanet_kel0           | Real  | Kills:  3 | Level: ??? ( 92) | Platform: PS5 | Skin: Character_ChewyStaveCurve
+#09 | [T14] Fictionpoint         | BOT   | Kills:  1
+#09 | [T14] BeefSupreme35        | BOT   | Kills:  0
+#09 | [T14] 90sRunner            | BOT   | Kills:  0
+#09 | [T14] Laserfrog44          | BOT   | Kills:  0
+#10 | [T10] DoublePlusGood       | BOT   | Kills:  0
+#10 | [T10] GreatGriffin28       | BOT   | Kills:  0
+#10 | [T10] Othello54            | BOT   | Kills:  0
+#10 | [T10] VeggieBurger24       | BOT   | Kills:  0
+#11 | [T17] Chronicled5          | BOT   | Kills:  0
+#11 | [T17] iAteMySpacebar       | BOT   | Kills:  0
+#11 | [T17] KeepScrolling95      | BOT   | Kills:  0
+#11 | [T17] DrPlants40           | BOT   | Kills:  0
+#12 | [T09] NarEşkisi1           | BOT   | Kills:  1
+#12 | [T09] SomethingFishy3      | BOT   | Kills:  0
+#12 | [T09] سالم24               | BOT   | Kills:  0
+#12 | [T09] BrokenRecord26       | BOT   | Kills:  0
+#13 | [T08] TermiteMuscles       | BOT   | Kills:  2
+#13 | [T08] TopDanger28          | BOT   | Kills:  0
+#13 | [T08] Gloriainfinita       | BOT   | Kills:  0
+#13 | [T08] QuadAlex13           | BOT   | Kills:  0
+#14 | [T28] LaidBackBeats        | BOT   | Kills:  0
+#14 | [T28] FriendlySniper27     | BOT   | Kills:  0
+#14 | [T28] StringCheese15       | BOT   | Kills:  0
+#15 | [T19] l4hm4cun1            | BOT   | Kills:  2
+#15 | [T19] M_I_E_T_3_K          | BOT   | Kills:  1
+#15 | [T19] BillyBrilliant23     | BOT   | Kills:  0
+#15 | [T19] roi_priam_ultra      | BOT   | Kills:  0
+#16 | [T13] Poule_d0             | BOT   | Kills:  1
+#16 | [T13] Сибирская Кошка      | BOT   | Kills:  0
+#16 | [T13] Phorgas              | BOT   | Kills:  0
+#16 | [T13] wektor77             | BOT   | Kills:  0
+#17 | [T16] V3rnichter           | BOT   | Kills:  1
+#17 | [T16] BumbleB3ar           | BOT   | Kills:  1
+#17 * [T05] ReadyMeerkat8747     | Real  | Kills:  0 | Level: ??? (???) | Platform: SWT | Skin: Character_Sparrow
+#17 | [T16] SpectrumKnight13     | BOT   | Kills:  0
+#17 | [T16] Maczetaaa30552       | BOT   | Kills:  0
+#18 | [T22] mojamama6            | BOT   | Kills:  2
+#18 | [T22] Anonymutt            | BOT   | Kills:  1
+#18 | [T22] Waschbrettbauch01    | BOT   | Kills:  0
+#18 | [T22] BossBoi20            | BOT   | Kills:  0
+#19 | [T18] PureBacon94          | BOT   | Kills:  3
+#19 | [T18] SandSpider2000       | BOT   | Kills:  0
+#19 | [T18] JaiFaimJaiSoif       | BOT   | Kills:  0
+#19 | [T18] JasioKlucha          | BOT   | Kills:  0
+#20 | [T27] AplastaBravas        | BOT   | Kills:  1
+#20 | [T27] Wdar71353            | BOT   | Kills:  0
+#20 | [T27] أكمل                 | BOT   | Kills:  0
+#20 | [T27] BlinkImGone44        | BOT   | Kills:  0
+#21 | [T11] ДайПять              | BOT   | Kills:  1
+#21 | [T11] BigBuddy15           | BOT   | Kills:  0
+#21 | [T11] Titi_Parisien75561   | BOT   | Kills:  0
+#21 | [T11] tuparlifrancese      | BOT   | Kills:  0
+#22 | [T15] GoodRobin6           | BOT   | Kills:  0
+#22 | [T15] GetitGotitGood       | BOT   | Kills:  0
+#22 | [T15] Swabbie23            | BOT   | Kills:  0
+#22 | [T15] SilverySliver        | BOT   | Kills:  0
+#23 | [T26] Dreamdunker          | BOT   | Kills:  0
+#23 | [T26] TooManyBeets         | BOT   | Kills:  0
+#23 | [T26] Stinger85            | BOT   | Kills:  0
+#23 | [T26] IrritatedIris        | BOT   | Kills:  0
+#24 | [T12] LilGrande56          | BOT   | Kills:  1
+#24 | [T12] Time2Go80            | BOT   | Kills:  0
+#24 | [T12] Freylis21            | BOT   | Kills:  0
+#24 | [T12] Overtime46           | BOT   | Kills:  0
+#25 | [T25] Apricot661           | BOT   | Kills:  2
+#25 | [T25] Primetime71          | BOT   | Kills:  0
+#25 | [T25] 1Такой               | BOT   | Kills:  0
+#25 | [T25] İnşaatMühendisi1     | BOT   | Kills:  0
+#25 * [T05] Ben1340hd            | Real  | Kills:  0 | Level: ??? ( 55) | Platform: PS5 | Skin: Biker
+#26 | [T20] JungleProwler25      | BOT   | Kills:  0
+#26 | [T20] HyenaBrigade         | BOT   | Kills:  0
+#26 | [T20] Frostbitten86        | BOT   | Kills:  0
+#26 | [T20] Crypt1c60            | BOT   | Kills:  0

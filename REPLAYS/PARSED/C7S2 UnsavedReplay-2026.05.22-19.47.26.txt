@@ -12,7 +12,7 @@ Match: 2026-05-22T17:47:26.6890000Z; Duration: 20:57
 Owner: xdx2k7 (634311A416164074906752232C0DC6D2)
        Rank#: #01
        killed 8 / knocked 3; 
-       Accuracy 20.7%; Assists 0; Revives 0; Damage: 1564 Given; 552 Received
+       Accuracy 20,7%; Assists 0; Revives 0; Damage: 1564 Given; 552 Received
        Structures Dmg: 2358; Materials: 2400 gathered / 1200 used; Travel: 7305 m
        Owner has Crown
        Skin: Character_SoloSnooze | Pickaxe: Pickaxe_ID_020_Keg | Glider: Glider_ID_308_VividMale_H8JAS | Backpack: -
@@ -22,15 +22,15 @@ Owner Team (Team 11):
        - xdx2k7 (Crown)       | Kills:  8 | Knocks:  3 | Dmg: 1564 | Alive
 
 Owner Killfeed:
-   1. [05:41] killed!: [BOT ] NomnomCarver     | Rank: 70 | 135.4 m | Assault: Heavy
-   2. [06:14] killed!: [Real] Nilser82         | Rank: 62 |  45.3 m | Assault: Heavy
-   3. [07:48] killed!: [BOT ] SilentRogue98    | Rank: 44 |  40.5 m | Assault: Heavy
-   4. [11:01] killed!: [BOT ] JustABitEpic     | Rank: 23 |   2.5 m | Assault: Combat
-   5. [17:04] killed!: [Real] Arwin2.4         | Rank:  6 |   7.1 m | Shotgun: Pump
-   6. [19:13] knocked: [Real] wolf922sblut     | Rank:  5 | 149.9 m | Assault: Combat
-   7. [19:52] killed!: [Real] enter to gaming1 | Rank:  4 |   0.9 m | Shotgun: Pump
-   8. [20:22] knocked: [Real] EntenKamerad     | Rank:  3 |  35.5 m | Assault: Combat
-   9. [22:35] knocked: [Real] knightmaren0ah   | Rank:  2 |   3.2 m | Shotgun: Pump
+   1. [05:41] killed!: [BOT ] NomnomCarver     | Rank: 70 | 135,4 m | Assault: Heavy
+   2. [06:14] killed!: [Real] Nilser82         | Rank: 62 |  45,3 m | Assault: Heavy
+   3. [07:48] killed!: [BOT ] SilentRogue98    | Rank: 44 |  40,5 m | Assault: Heavy
+   4. [11:01] killed!: [BOT ] JustABitEpic     | Rank: 23 |   2,5 m | Assault: Combat
+   5. [17:04] killed!: [Real] Arwin2.4         | Rank:  6 |   7,1 m | Shotgun: Pump
+   6. [19:13] knocked: [Real] wolf922sblut     | Rank:  5 | 149,9 m | Assault: Combat
+   7. [19:52] killed!: [Real] enter to gaming1 | Rank:  4 |   0,9 m | Shotgun: Pump
+   8. [20:22] knocked: [Real] EntenKamerad     | Rank:  3 |  35,5 m | Assault: Combat
+   9. [22:35] knocked: [Real] knightmaren0ah   | Rank:  2 |   3,2 m | Shotgun: Pump
 
 Team-Ranking
 #01 * [T11] xdx2k7 (Crown)       * OWNER * Kills:  8 | Level: 151 (151) | Platform: WIN | Skin: Character_SoloSnooze
