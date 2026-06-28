@@ -6,6 +6,15 @@ const App = () => {
   const { replays, sourceReplays, status, selectedReplay, parsingTarget, fetchData, setSelectedReplay, reparse } = useStore();
   const [currentReplayData, setCurrentReplayData] = useState(null);
   const [rankingTab, setRankingTab] = useState('team'); // 'team' or 'individual'
+  const [expandedPlayers, setExpandedPlayers] = useState({});
+
+  const toggleExpand = (playerId) => {
+    if (playerId === undefined || playerId === null) return;
+    setExpandedPlayers(prev => ({
+      ...prev,
+      [playerId]: !prev[playerId]
+    }));
+  };
 
   useEffect(() => {
     fetchData();
@@ -550,35 +559,142 @@ const App = () => {
                         const displaySeasonLevel = p.SeasonLevelUIDisplay !== null && p.SeasonLevelUIDisplay !== undefined ? p.SeasonLevelUIDisplay : '???';
 
                         return (
-                          <tr key={i} className={rowClass}>
-                            <td style={{ fontWeight: 'bold', color: p.Placement === 1 ? 'var(--warning)' : p.Placement === 2 ? '#94a3b8' : 'var(--text-secondary)' }}>
-                              {p.Placement ? `#${p.Placement.toString().padStart(2, '0')}` : '#??'}
-                            </td>
-                            <td>T{p.TeamIndex !== null && p.TeamIndex !== undefined ? p.TeamIndex.toString().padStart(2, '0') : '??'}</td>
-                            <td style={{ color: p.IsReplayOwner ? 'var(--accent)' : '#fff', fontWeight: (p.IsReplayOwner || isTeammate) ? 'bold' : 'normal' }}>
-                              {p.IsReplayOwner && <span style={{ color: 'var(--accent)', marginRight: '4px' }}>★</span>}
-                              {isTeammate && <span style={{ color: 'var(--purple)', marginRight: '4px' }}>•</span>}
-                              {getPlayerDisplayName(p)}
-                              {p.HasCrown && <span className="crown-icon">👑</span>}
-                              {p.IsReplayOwner && <span style={{ fontSize: '0.65rem', marginLeft: '6px', opacity: 0.8 }} className="owner-badge">Owner</span>}
-                            </td>
-                            <td>
-                              <span className={`type-badge ${pType.toLowerCase()}`}>
-                                {pType}
-                              </span>
-                            </td>
-                            <td style={{ fontWeight: 'bold' }}>{p.Kills ?? 0}</td>
-                            <td>{displayLevel} ({displaySeasonLevel})</td>
-                            <td>{p.Platform || '--'}</td>
-                            <td style={{ fontSize: '0.72rem', color: varColors(pType) }}>
-                              {p.Cosmetics?.Character ? formatCosmeticShort(p.Cosmetics.Character) : '-'}
-                            </td>
-                            {rankingTab === 'team' && (
-                              <td style={{ textAlign: 'center', fontWeight: 'bold', color: p.RebootCounter > 0 ? 'var(--success)' : 'var(--text-secondary)' }}>
-                                {p.RebootCounter ?? 0}
+                          <React.Fragment key={i}>
+                            <tr className={rowClass}>
+                              <td style={{ fontWeight: 'bold', color: p.Placement === 1 ? 'var(--warning)' : p.Placement === 2 ? '#94a3b8' : 'var(--text-secondary)', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                                {p.Id !== null && p.Id !== undefined && (
+                                  <button onClick={() => toggleExpand(p.Id)} className="expand-btn" style={{ fontSize: '0.8rem', padding: '0 4px', lineHeight: 1 }}>
+                                    {expandedPlayers[p.Id] ? '−' : '+'}
+                                  </button>
+                                )}
+                                {p.Placement ? `#${p.Placement.toString().padStart(2, '0')}` : '#??'}
                               </td>
+                              <td>T{p.TeamIndex !== null && p.TeamIndex !== undefined ? p.TeamIndex.toString().padStart(2, '0') : '??'}</td>
+                              <td style={{ color: p.IsReplayOwner ? 'var(--accent)' : '#fff', fontWeight: (p.IsReplayOwner || isTeammate) ? 'bold' : 'normal' }}>
+                                {p.IsReplayOwner && <span style={{ color: 'var(--accent)', marginRight: '4px' }}>★</span>}
+                                {isTeammate && <span style={{ color: 'var(--purple)', marginRight: '4px' }}>•</span>}
+                                {getPlayerDisplayName(p)}
+                                {p.HasCrown && <span className="crown-icon">👑</span>}
+                                {p.IsReplayOwner && <span style={{ fontSize: '0.65rem', marginLeft: '6px', opacity: 0.8 }} className="owner-badge">Owner</span>}
+                              </td>
+                              <td>
+                                <span className={`type-badge ${pType.toLowerCase()}`}>
+                                  {pType}
+                                </span>
+                              </td>
+                              <td style={{ fontWeight: 'bold' }}>{p.Kills ?? 0}</td>
+                              <td>{displayLevel} ({displaySeasonLevel})</td>
+                              <td>{p.Platform || '--'}</td>
+                              <td style={{ fontSize: '0.72rem', color: varColors(pType) }}>
+                                {p.Cosmetics?.Character ? formatCosmeticShort(p.Cosmetics.Character) : '-'}
+                              </td>
+                              {rankingTab === 'team' && (
+                                <td style={{ textAlign: 'center', fontWeight: 'bold', color: p.RebootCounter > 0 ? 'var(--success)' : 'var(--text-secondary)' }}>
+                                  {p.RebootCounter ?? 0}
+                                </td>
+                              )}
+                            </tr>
+                            {expandedPlayers[p.Id] && (
+                              <tr className="details-row">
+                                <td colSpan={rankingTab === 'team' ? 9 : 8}>
+                                  <div className="player-details-expanded">
+                                    {/* Death Info */}
+                                    {(() => {
+                                      const pDeathEntry = p.Id !== null ? (KillFeed || [])
+                                        .filter(k => k.PlayerId === p.Id && !k.IsRevived)
+                                        .sort((a, b) => (b.ReplicatedWorldTimeSecondsDouble || b.ReplicatedWorldTimeSeconds || 0) - (a.ReplicatedWorldTimeSecondsDouble || a.ReplicatedWorldTimeSeconds || 0))[0] : null;
+
+                                      let pDeathText = null;
+                                      const hasPDeathTime = p.DeathTimeDouble !== null && p.DeathTimeDouble !== undefined || p.DeathTime !== null && p.DeathTime !== undefined;
+                                      
+                                      if (hasPDeathTime || pDeathEntry) {
+                                        const normalizedTime = getNormalizedEventTimeSeconds(p.DeathTimeDouble ?? p.DeathTime);
+                                        const timeStr = formatTime(normalizedTime * 1000);
+                                        
+                                        if (pDeathEntry) {
+                                          const killerId = pDeathEntry.FinisherOrDowner;
+                                          const killerPlayer = killerId ? PlayerData?.find(pl => pl.Id === killerId) : null;
+                                          let killerName = pDeathEntry.FinisherOrDownerName || 'unknown';
+                                          let killerType = 'unknown';
+
+                                          if (killerPlayer) {
+                                            killerName = getPlayerDisplayName(killerPlayer);
+                                            const typeLabel = getPlayerType(killerPlayer);
+                                            killerType = typeLabel === 'Real' ? 'Real Player' : typeLabel === 'BOT' ? 'BOT Player' : 'NPC';
+                                          } else if (pDeathEntry.FinisherOrDownerIsBot) {
+                                            killerType = 'BOT Player';
+                                          } else {
+                                            killerType = 'Real Player';
+                                          }
+
+                                          const dist = pDeathEntry.Distance ? ` | dist: ${(pDeathEntry.Distance / 100).toFixed(1)} m` : '';
+                                          const weapon = extractWeaponFromTags(pDeathEntry.DeathTags);
+                                          const weaponStr = weapon ? ` | via: ${weapon}` : '';
+
+                                          pDeathText = `Killed at ${timeStr} by ${killerType} (${killerName})${dist}${weaponStr}`;
+                                        } else {
+                                          pDeathText = `Eliminated at ${timeStr}`;
+                                        }
+                                      } else {
+                                        pDeathText = 'Alive';
+                                      }
+
+                                      const isAlive = pDeathText === 'Alive';
+
+                                      return (
+                                        <div className={`expanded-death-info ${isAlive ? 'alive' : ''}`}>
+                                          <strong>[Death]</strong> {pDeathText}
+                                        </div>
+                                      );
+                                    })()}
+
+                                    {/* Killfeed */}
+                                    {(() => {
+                                      const pFeed = p.Id !== null ? (KillFeed || []).filter(k => k.FinisherOrDowner === p.Id && !k.IsRevived) : [];
+                                      if (pFeed.length === 0) return null;
+
+                                      return (
+                                        <div>
+                                          <div className="expanded-killfeed-title">[Killfeed]</div>
+                                          <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                                            {pFeed.map((k, idx) => {
+                                              const victim = PlayerData?.find(pl => pl.Id === k.PlayerId);
+                                              const victimName = getPlayerDisplayName(victim || { PlayerNameCustomOverride: k.PlayerName });
+                                              const victimRank = victim?.Placement ? `Rank: #${victim.Placement}` : 'Rank: ??';
+                                              const normalizedTime = getNormalizedEventTimeSeconds(k.ReplicatedWorldTimeSecondsDouble ?? k.ReplicatedWorldTimeSeconds ?? 0);
+                                              const timeStr = formatTime(normalizedTime * 1000);
+                                              const dist = k.Distance ? (k.Distance / 100).toFixed(1) + ' m' : '--';
+                                              const weapon = extractWeaponFromTags(k.DeathTags) || 'Weapon';
+                                              const feedTag = getKillfeedTag(victim, k);
+
+                                              return (
+                                                <div key={idx} className={`kill-entry ${k.IsDowned ? 'knock' : 'kill'}`} style={{ padding: '6px 12px', fontSize: '0.78rem' }}>
+                                                  <div>
+                                                    <span className="kill-time">[{timeStr}]</span>
+                                                    <span className={`kill-action-badge ${k.IsDowned ? 'knocked' : 'killed'}`} style={{ fontSize: '0.65rem' }}>
+                                                      {k.IsDowned ? 'knocked' : 'killed!'}
+                                                    </span>
+                                                    <span className={`type-badge ${feedTag.toLowerCase()}`} style={{ marginRight: '8px', transform: 'scale(0.8)', transformOrigin: 'left center' }}>
+                                                      {feedTag}
+                                                    </span>
+                                                    <span style={{ fontWeight: '600' }}>{victimName}</span>
+                                                    {victim?.HasCrown && <span className="crown-icon">👑</span>}
+                                                  </div>
+                                                  <div className="kill-weapon">
+                                                    <span style={{ color: 'var(--text-secondary)' }}>{victimRank}</span> | {dist} | <span style={{ color: '#fff', fontWeight: '500' }}>{weapon}</span>
+                                                  </div>
+                                                </div>
+                                              );
+                                            })}
+                                          </div>
+                                        </div>
+                                      );
+                                    })()}
+                                  </div>
+                                </td>
+                              </tr>
                             )}
-                          </tr>
+                          </React.Fragment>
                         );
                       })}
                       {activeRanking.length === 0 && (

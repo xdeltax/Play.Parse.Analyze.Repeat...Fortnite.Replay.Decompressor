@@ -413,3 +413,74 @@ h1 {
 .ranking-table tr.owner-row td:last-child { border-right: 1px solid rgba(56, 189, 248, 0.15); }
 .ranking-table tr.teammate-row td:first-child { border-left: 1px solid rgba(139, 92, 246, 0.1); }
 .ranking-table tr.teammate-row td:last-child { border-right: 1px solid rgba(139, 92, 246, 0.1); }
+
+/* Collapsible Row Styles */
+.expand-btn {
+  background: transparent;
+  border: none;
+  color: var(--accent);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 0;
+  line-height: 1;
+}
+
+.expand-btn:hover {
+  background: rgba(56, 189, 248, 0.15);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.details-row td {
+  background: rgba(0, 0, 0, 0.35) !important;
+  padding: 12px 20px !important;
+  border: 1px solid rgba(255, 255, 255, 0.03) !important;
+  border-top: none !important;
+  border-radius: 0 0 6px 6px !important;
+}
+
+.player-details-expanded {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.expanded-death-info {
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: #fca5a5;
+  border-left: 3px solid var(--danger);
+}
+
+.expanded-death-info.alive {
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  color: #a7f3d0;
+  border-left-color: var(--success);
+}
+
+.expanded-killfeed-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+

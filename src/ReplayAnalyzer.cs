@@ -365,14 +365,22 @@ internal static class ReplayAnalyzer
             lines.Add(string.Empty);
         }
 
-        AppendRanking(lines, "Team-Ranking", teamRankedPlayers, teamUnrankedAliveRealPlayers, isTeamRanking: true);
+        AppendRanking(lines, "Team-Ranking", teamRankedPlayers, teamUnrankedAliveRealPlayers, isTeamRanking: true, replay, playersById, killFeed);
         lines.Add(string.Empty);
-        AppendRanking(lines, "Ranking", normalRankedPlayers, normalUnrankedAliveRealPlayers, isTeamRanking: false);
+        AppendRanking(lines, "Ranking", normalRankedPlayers, normalUnrankedAliveRealPlayers, isTeamRanking: false, replay, playersById, killFeed);
 
         return string.Join(Environment.NewLine, lines);
     }
 
-    private static void AppendRanking(List<string> lines, string title, List<PlayerData> rankedPlayers, List<PlayerData> unrankedAliveRealPlayers, bool isTeamRanking)
+    private static void AppendRanking(
+        List<string> lines,
+        string title,
+        List<PlayerData> rankedPlayers,
+        List<PlayerData> unrankedAliveRealPlayers,
+        bool isTeamRanking,
+        FortniteReplay replay,
+        Dictionary<int, PlayerData> playersById,
+        List<KillFeedEntry> killFeed)
     {
         lines.Add(title);
 
@@ -396,6 +404,7 @@ internal static class ReplayAnalyzer
                 var rebootStr = isTeamRanking && player.RebootCounter.HasValue ? $" | Reboots: {player.RebootCounter.Value}" : string.Empty;
                 var line = $"#?? * {teamPrefix} {baseDisplayId.PadRight(idWidth)} | Real  | Kills: {kills,2} | Level: {level} ({seasonLevel}) | Platform: {platform}{rebootStr}";
                 lines.Add(line);
+                AppendPlayerDetails(lines, player, replay, playersById, killFeed);
             }
 
             foreach (var player in rankedPlayers)
@@ -429,6 +438,96 @@ internal static class ReplayAnalyzer
                 }
 
                 lines.Add(line);
+                AppendPlayerDetails(lines, player, replay, playersById, killFeed);
+            }
+        }
+    }
+
+    private static void AppendPlayerDetails(
+        List<string> lines,
+        PlayerData player,
+        FortniteReplay replay,
+        Dictionary<int, PlayerData> playersById,
+        List<KillFeedEntry> killFeed)
+    {
+        var hasDeathTime = player.DeathTimeDouble.HasValue || player.DeathTime.HasValue;
+        var deathEntry = player.Id.HasValue
+            ? killFeed
+                .Where(k => k.PlayerId == player.Id.Value && !k.IsRevived)
+                .OrderByDescending(k => GetNormalizedEventTimeSeconds(replay, k) ?? double.MinValue)
+                .FirstOrDefault()
+            : null;
+
+        if (hasDeathTime || deathEntry is not null)
+        {
+            var deathTime = GetNormalizedEventTimeSeconds(replay, player.DeathTimeDouble ?? player.DeathTime);
+            var killerType = "unknown";
+            var killerIdOrName = deathEntry?.FinisherOrDownerName;
+            if (deathEntry?.FinisherOrDowner is int killerId && playersById.TryGetValue(killerId, out var killerPlayer))
+            {
+                killerType = GetDeathTypeLabel(killerPlayer);
+                killerIdOrName = GetPlayerDisplayName(killerPlayer);
+            }
+            else if (deathEntry is not null)
+            {
+                killerType = deathEntry.FinisherOrDownerIsBot ? "BOT Player" : "Real Player";
+            }
+
+            if (string.IsNullOrWhiteSpace(killerIdOrName))
+            {
+                killerIdOrName = "unknown";
+            }
+
+            var deathDist = deathEntry?.Distance is float dist and > 0
+                ? $" | dist: {FormatDistanceMeters(dist)}"
+                : string.Empty;
+            var deathWeapon = ExtractWeaponFromTags(deathEntry?.DeathTags);
+            var deathWeaponStr = deathWeapon is not null ? $" | via: {deathWeapon}" : string.Empty;
+            var timeStr = deathTime.HasValue ? FormatDurationMmSs(deathTime.Value) : "??:??";
+
+            lines.Add($"\t[Death] Killed at {timeStr} by {killerType} ({killerIdOrName}){deathDist}{deathWeaponStr}");
+        }
+        else
+        {
+            lines.Add("\t[Death] Alive");
+        }
+
+        var feedEvents = player.Id.HasValue
+            ? killFeed.Where(k => k.FinisherOrDowner == player.Id.Value && !k.IsRevived).ToList()
+            : new List<KillFeedEntry>();
+
+        if (feedEvents.Count > 0)
+        {
+            lines.Add("\t[Killfeed]");
+            for (var j = 0; j < feedEvents.Count; j++)
+            {
+                var entry = feedEvents[j];
+                var tag = entry.PlayerIsBot ? "BOT " : "Real";
+                var action = entry.IsDowned ? "knocked" : "killed!";
+                PlayerData? victimPlayer = null;
+                if (entry.PlayerId.HasValue)
+                {
+                    playersById.TryGetValue(entry.PlayerId.Value, out victimPlayer);
+                }
+
+                if (victimPlayer is not null)
+                {
+                    tag = GetKillfeedTag(victimPlayer);
+                }
+
+                var victimName = victimPlayer is not null
+                    ? FormatDisplayNameWithCrown(victimPlayer)
+                    : (!string.IsNullOrWhiteSpace(entry.PlayerName)
+                        ? entry.PlayerName
+                        : (entry.PlayerId.HasValue ? $"PlayerID:{entry.PlayerId.Value}" : "unknown"));
+                var time = GetNormalizedEventTimeSeconds(replay, entry);
+                var timeFmt = time.HasValue ? FormatDurationMmSs(time.Value) : "??:??";
+                var victimRankNum = victimPlayer?.Placement.HasValue == true ? (int?)victimPlayer.Placement.Value : null;
+                var victimRankStr = victimRankNum.HasValue ? $"{victimRankNum.Value,2}" : "??";
+                var feedDist = entry.Distance is float d and > 0 ? $" | {FormatDistanceMeters(d)}" : string.Empty;
+                var feedWeapon = ExtractWeaponFromTags(entry.DeathTags);
+                var feedWeaponStr = feedWeapon is not null ? $" | {feedWeapon}" : string.Empty;
+                lines.Add($"\t  {j + 1,2}. [{timeFmt}] {action}: [{tag}] {victimName} | Rank: {victimRankStr}{feedDist}{feedWeaponStr}");
             }
         }
     }
