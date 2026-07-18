@@ -17,10 +17,6 @@ Owner: xdx2k7 (634311A416164074906752232C0DC6D2)
        Owner has Crown
        Skin: ? | Pickaxe: ? | Glider: ? | Backpack: -
 
-Owner Team (Team 05):
-       1 Players | Team Kills: 1 | Team Knocks: 0 | Team Revives: 0
-       - xdx2k7 (Crown)       | Kills:  1 | Knocks:  0 | Dmg:  323 | Alive
-
 Owner Killfeed:
    1. [20:02] killed!: [Real] Sanyi300 | Rank:  2 (9 kills) |   3,1 m | Shotgun: MusterAuto
 

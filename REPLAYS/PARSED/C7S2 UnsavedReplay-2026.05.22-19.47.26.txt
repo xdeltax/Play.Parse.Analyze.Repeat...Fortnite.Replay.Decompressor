@@ -17,10 +17,6 @@ Owner: xdx2k7 (634311A416164074906752232C0DC6D2)
        Owner has Crown
        Skin: Character_SoloSnooze | Pickaxe: Pickaxe_ID_020_Keg | Glider: Glider_ID_308_VividMale_H8JAS | Backpack: -
 
-Owner Team (Team 11):
-       1 Players | Team Kills: 8 | Team Knocks: 3 | Team Revives: 0
-       - xdx2k7 (Crown)       | Kills:  8 | Knocks:  3 | Dmg: 1564 | Alive
-
 Owner Killfeed:
    1. [03:12] killed!: [BOT ] NomnomCarver     | Rank: 70 (0 kills) | 135,4 m | Assault: Heavy
    2. [03:45] killed!: [Real] Nilser82         | Rank: 62 (1 kills) |  45,3 m | Assault: Heavy

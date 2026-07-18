@@ -17,10 +17,6 @@ Owner: xdx2k7 (634311A416164074906752232C0DC6D2)
        Owner has Crown
        Skin: Character_SoloSnooze | Pickaxe: Pickaxe_ID_020_Keg | Glider: Glider_ID_308_VividMale_H8JAS | Backpack: -
 
-Owner Team (Team 17):
-       1 Players | Team Kills: 10 | Team Knocks: 1 | Team Revives: 0
-       - xdx2k7 (Crown)       | Kills: 10 | Knocks:  1 | Dmg: 1457 | Alive
-
 Owner Killfeed:
    1. [03:22] killed!: [BOT ] WowerZower           | Rank: 70 (0 kills) |  38,4 m | SMG: LavaLeaf
    2. [05:14] killed!: [BOT ] GlassCannister       | Rank: 45 (0 kills) |   1,3 m | Pistol: TeaCake

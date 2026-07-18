@@ -17,10 +17,6 @@ Owner: xdx2k7 (634311A416164074906752232C0DC6D2)
        Owner has Crown
        Skin: ? | Pickaxe: ? | Glider: ? | Backpack: -
 
-Owner Team (Team 04):
-       1 Players | Team Kills: 5 | Team Knocks: 0 | Team Revives: 0
-       - xdx2k7 (Crown)       | Kills:  5 | Knocks:  0 | Dmg: 1141 | Alive
-
 Owner Killfeed:
    1. [06:46] killed!: [BOT ] LeTueurDesBois7  | Rank: 33 (0 kills) |   0,9 m | Pistol: CorePistol
    2. [07:15] killed!: [BOT ] Куць             | Rank: 30 (1 kills) |   4,5 m | Shotgun: MusterAuto

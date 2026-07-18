@@ -17,10 +17,6 @@ Owner: xdx2k7 (634311A416164074906752232C0DC6D2)
        Owner has Crown
        Skin: Character_SoloSnooze | Pickaxe: Pickaxe_ID_020_Keg | Glider: Glider_ID_308_VividMale_H8JAS | Backpack: -
 
-Owner Team (Team 12):
-       1 Players | Team Kills: 8 | Team Knocks: 1 | Team Revives: 0
-       - xdx2k7 (Crown)       | Kills:  8 | Knocks:  1 | Dmg: 1505 | Alive
-
 Owner Killfeed:
    1. [01:38] killed!: [BOT ] Dessloch52     | Rank: 95 (0 kills) |   4,7 m | Shotgun: Dual
    2. [02:19] killed!: [BOT ] BoldPrediction | Rank: 80 (3 kills) |   6,4 m | Shotgun: Dual

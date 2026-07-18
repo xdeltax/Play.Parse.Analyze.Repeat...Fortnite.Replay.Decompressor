@@ -18,10 +18,6 @@ Owner: xdx2k7 (634311A416164074906752232C0DC6D2)
        Owner has Crown
        Skin: Character_SoloSnooze | Pickaxe: Pickaxe_ID_020_Keg | Glider: Glider_ID_308_VividMale_H8JAS | Backpack: -
 
-Owner Team (Team 18):
-       1 Players | Team Kills: 7 | Team Knocks: 0 | Team Revives: 0
-       - xdx2k7 (Crown)       | Kills:  7 | Knocks:  0 | Dmg: 1018 | Dead 
-
 Owner Killfeed:
    1. [01:44] killed!: [BOT ] JaiFaimJaiSoif           | Rank: 93 (0 kills) |   4,6 m | Shotgun: Dual
    2. [02:43] killed!: [Real] Galea016                 | Rank: 68 (4 kills) |   1,9 m | Shotgun: Dual
