@@ -41072,7 +41072,178 @@
   ],
   "MapData": {
     "BattleBusFlightPaths": null,
-    "SafeZones": [],
+    "SafeZones": [
+      {
+        "Radius": 140000,
+        "StartShrinkTime": 294.6724,
+        "FinishShrinkTime": 379.6724,
+        "LastRadius": 0,
+        "LastCenter": null,
+        "NextRadius": 95000,
+        "NextCenter": {
+          "X": -10159.05,
+          "Y": 4019.13,
+          "Z": 0,
+          "ScaleFactor": 100,
+          "Bits": 21
+        },
+        "NextNextRadius": 0,
+        "NextNextCenter": null
+      },
+      {
+        "Radius": 95000,
+        "StartShrinkTime": 439.68774,
+        "FinishShrinkTime": 529.68774,
+        "LastRadius": 0,
+        "LastCenter": null,
+        "NextRadius": 75000,
+        "NextCenter": {
+          "X": 6963.88,
+          "Y": 2817.48,
+          "Z": 0,
+          "ScaleFactor": 100,
+          "Bits": 21
+        },
+        "NextNextRadius": 0,
+        "NextNextCenter": null
+      },
+      {
+        "Radius": 75000,
+        "StartShrinkTime": 609.7165,
+        "FinishShrinkTime": 709.7165,
+        "LastRadius": 0,
+        "LastCenter": null,
+        "NextRadius": 55000,
+        "NextCenter": {
+          "X": -11492.7,
+          "Y": -3675.45,
+          "Z": 0,
+          "ScaleFactor": 100,
+          "Bits": 22
+        },
+        "NextNextRadius": 0,
+        "NextNextCenter": null
+      },
+      {
+        "Radius": 55000,
+        "StartShrinkTime": 779.7478,
+        "FinishShrinkTime": 864.7478,
+        "LastRadius": 0,
+        "LastCenter": null,
+        "NextRadius": 44000,
+        "NextCenter": {
+          "X": -7804.2,
+          "Y": -7426.62,
+          "Z": 0,
+          "ScaleFactor": 100,
+          "Bits": 21
+        },
+        "NextNextRadius": 0,
+        "NextNextCenter": null
+      },
+      {
+        "Radius": 44000,
+        "StartShrinkTime": 904.74805,
+        "FinishShrinkTime": 979.74805,
+        "LastRadius": 0,
+        "LastCenter": null,
+        "NextRadius": 25000,
+        "NextCenter": {
+          "X": 6697.45,
+          "Y": -2289.59,
+          "Z": 0,
+          "ScaleFactor": 100,
+          "Bits": 21
+        },
+        "NextNextRadius": 0,
+        "NextNextCenter": null
+      },
+      {
+        "Radius": 25000,
+        "StartShrinkTime": 1019.7508,
+        "FinishShrinkTime": 1094.7507,
+        "LastRadius": 0,
+        "LastCenter": null,
+        "NextRadius": 12000,
+        "NextCenter": {
+          "X": 33805.57,
+          "Y": -20217.21,
+          "Z": 0,
+          "ScaleFactor": 100,
+          "Bits": 23
+        },
+        "NextNextRadius": 0,
+        "NextNextCenter": null
+      },
+      {
+        "Radius": 12000,
+        "StartShrinkTime": 1139.7722,
+        "FinishShrinkTime": 1214.7722,
+        "LastRadius": 0,
+        "LastCenter": null,
+        "NextRadius": 6000,
+        "NextCenter": {
+          "X": 38427.5,
+          "Y": -758.59,
+          "Z": 0,
+          "ScaleFactor": 100,
+          "Bits": 23
+        },
+        "NextNextRadius": 0,
+        "NextNextCenter": null
+      },
+      {
+        "Radius": 6000,
+        "StartShrinkTime": 1249.7998,
+        "FinishShrinkTime": 1309.7998,
+        "LastRadius": 0,
+        "LastCenter": null,
+        "NextRadius": 4000,
+        "NextCenter": {
+          "X": 48979.64,
+          "Y": 9902.19,
+          "Z": 0,
+          "ScaleFactor": 100,
+          "Bits": 24
+        },
+        "NextNextRadius": 0,
+        "NextNextCenter": null
+      },
+      {
+        "Radius": 4000,
+        "StartShrinkTime": 1329.8127,
+        "FinishShrinkTime": 1389.8127,
+        "LastRadius": 0,
+        "LastCenter": null,
+        "NextRadius": 2000,
+        "NextCenter": {
+          "X": 37168.47,
+          "Y": 12022.63,
+          "Z": 0,
+          "ScaleFactor": 100,
+          "Bits": 23
+        },
+        "NextNextRadius": 0,
+        "NextNextCenter": null
+      },
+      {
+        "Radius": 2000,
+        "StartShrinkTime": 1390.8303,
+        "FinishShrinkTime": 1445.8303,
+        "LastRadius": 0,
+        "LastCenter": null,
+        "NextRadius": 1350,
+        "NextCenter": {
+          "X": 47081.97,
+          "Y": 13335.11,
+          "Z": 0,
+          "ScaleFactor": 100,
+          "Bits": 24
+        },
+        "NextNextRadius": 0,
+        "NextNextCenter": null
+      }
+    ],
     "Llamas": [],
     "SupplyDrops": [],
     "RebootVans": [],

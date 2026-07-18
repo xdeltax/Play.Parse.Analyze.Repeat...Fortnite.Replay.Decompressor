@@ -12,7 +12,7 @@ Match: 2026-05-23T19:47:54.9890000Z; Duration: 07:16
 Owner: xdx2k7 (634311A416164074906752232C0DC6D2)
        Rank#: #24
        killed 3 / knocked 0; 
-       Killed at 08:49 by BOT Player (xXMariAnnieXx) | dist:   3,4 m | via: Area51Gun
+       Killed at 06:51 by BOT Player (xXMariAnnieXx) | dist:   3,4 m | via: Area51Gun
        Accuracy 33,9%; Assists 0; Revives 0; Damage: 455 Given; 391 Received
        Structures Dmg: 220; Materials: 1139 gathered / 180 used; Travel: 2421 m
        Skin: Character_SoloSnooze | Pickaxe: Pickaxe_ID_020_Keg | Glider: Glider_ID_308_VividMale_H8JAS | Backpack: -
@@ -22,180 +22,233 @@ Owner Team (Team 08):
        - xdx2k7               | Kills:  3 | Knocks:  0 | Dmg:  455 | Dead 
 
 Owner Killfeed:
-   1. [04:39] killed!: [BOT ] MorninWaffles | Rank: 68 |  12,6 m | Shotgun: Dual
-   2. [05:33] killed!: [BOT ] Carcrusher94  | Rank: 54 |   7,1 m | Shotgun: Dual
-   3. [08:04] killed!: [BOT ] NeoHero4      | Rank: 27 |   6,4 m | SMG: MusterQuickMag
-
-Team-Ranking
-#?? * [T03] break_ombroso     | Real  | Kills:  2 | Level: ??? (187) | Platform: PSN
-#?? * [T05] Aurora fan3689    | Real  | Kills:  2 | Level: 175 (175) | Platform: XSX
-#?? * [T09] ST4RT CROKS       | Real  | Kills:  2 | Level:  70 ( 70) | Platform: XSX
-#?? * [T11] Mansy9853 (Crown) | Real  | Kills: 10 | Level: ??? (109) | Platform: WIN
-#?? * [T18] Elvitronic        | Real  | Kills:  3 | Level: 226 (226) | Platform: WIN
-#?? * [T20] MrDepa_           | Real  | Kills:  2 | Level: ??? ( 98) | Platform: PS5
-#21 | [T46] SoSweaty63        | BOT   | Kills:  2
-#22 | [T61] xXMariAnnieXx     | BOT   | Kills:  5
-#23 | [T52] xXxjmarcinxXx     | BOT   | Kills:  2
-#24 * [T08] xdx2k7            * OWNER * Kills:  3 | Level: 154 (154) | Platform: WIN | Skin: Character_SoloSnooze
-#25 * [T13] m1kar1337228      | Real  | Kills:  1 | Level: 273 (273) | Platform: WIN | Skin: Character_HeavyRoar
-#26 | [T58] YourBestFriend63  | BOT   | Kills:  1
-#27 | [T56] NeoHero4          | BOT   | Kills:  1
-#28 | [T87] AngryDuck51       | BOT   | Kills:  0
-#29 | [T51] XxBenEfsaneimxX   | BOT   | Kills:  2
-#30 * [T24] TTVKyzen3446      | Real  | Kills:  2 | Level:  68 ( 68) | Platform: XSX | Skin: Tank
-#31 | [T41] BioDragoon        | BOT   | Kills:  0
-#32 | [T45] PrancingPwnee     | BOT   | Kills:  0
-#33 | [T50] biceps_1          | BOT   | Kills:  1
-#34 | [T44] PlzBeNiceToMe     | BOT   | Kills:  1
-#35 | [T68] TLDR4life         | BOT   | Kills:  0
-#36 | [T30] Сибирская Кошка   | BOT   | Kills:  1
-#37 | [T63] PaLyANChO         | BOT   | Kills:  0
-#38 | [T31] CounterMantra     | BOT   | Kills:  1
-#39 | [T82] UltimateZenith14  | BOT   | Kills:  0
-#40 | [T93] MrPatatafrita     | BOT   | Kills:  1
-#41 | [T92] Notatest22        | BOT   | Kills:  1
-#42 | [T70] Amanda9938643     | BOT   | Kills:  0
-#43 | [T85] Panzabirra98      | BOT   | Kills:  0
-#44 * [T04] Ivan71837         | Real  | Kills:  2 | Level: ??? (???) | Platform: XBL | Skin: Character_CozyMechanic_Hen
-#45 | [T84] Destrukteur03     | BOT   | Kills:  0
-#46 | [T91] RiskyDigits       | BOT   | Kills:  1
-#47 | [T33] ImGonnaWin2234    | BOT   | Kills:  0
-#48 | [T76] Greedy33          | BOT   | Kills:  0
-#49 * [T17] BBOYexe           | Real  | Kills:  0 | Level: ??? (301) | Platform: PSN | Skin: SunriseCastle_48TIZ
-#50 | [T77] Quack4Bread       | BOT   | Kills:  2
-#51 * [T21] NxG-Gh3San        | Real  | Kills:  0 | Level: ??? (???) | Platform: PSN | Skin: Cupid
-#52 * [T10] oo mr valle       | Real  | Kills:  1 | Level: ??? (200) | Platform: XBL | Skin: BannerRed
-#53 | [T71] Skelettosaure5    | BOT   | Kills:  0
-#54 | [T64] Carcrusher94      | BOT   | Kills:  1
-#55 | [T73] GiusyLove212      | BOT   | Kills:  0
-#56 | [T26] Nashtyboy67       | BOT   | Kills:  0
-#57 | [T54] FreeMinded49      | BOT   | Kills:  0
-#58 | [T49] فهر1              | BOT   | Kills:  1
-#59 | [T39] Питбуль1          | BOT   | Kills:  0
-#60 | [T97] Bongodrum010      | BOT   | Kills:  0
-#61 | [T96] Angrification     | BOT   | Kills:  1
-#62 | [T80] SickPapaya        | BOT   | Kills:  0
-#63 | [T90] OpenShutCase      | BOT   | Kills:  0
-#64 | [T36] Rrrrumba98        | BOT   | Kills:  0
-#65 * [T15] aliskebab11       | Real  | Kills:  1 | Level: 194 (194) | Platform: WIN | Skin: Character_IcicleCane_Bright
-#66 * [T19] nagibator_rabov   | Real  | Kills:  1 | Level: 117 (117) | Platform: WIN | Skin: Character_BriskReign
-#67 | [T78] ViciousPie44      | BOT   | Kills:  0
-#68 | [T81] MorninWaffles     | BOT   | Kills:  0
-#69 | [T69] XenoBotanist27    | BOT   | Kills:  0
-#70 | [T60] Wenawenaaaa       | BOT   | Kills:  0
-#71 | [T29] PatateCommode     | BOT   | Kills:  0
-#72 | [T59] TheFlopperKing    | BOT   | Kills:  0
-#73 | [T89] Kregore73         | BOT   | Kills:  0
-#74 | [T75] LazyLlama7        | BOT   | Kills:  1
-#75 | [T07] كول1              | BOT   | Kills:  0
-#76 * [T06] crshdcoupe        | Real  | Kills:  1 | Level: ??? ( 18) | Platform: WIN | Skin: Rider
-#77 | [T74] BlindCat47        | BOT   | Kills:  0
-#78 | [T57] SMGsRdaBest       | BOT   | Kills:  0
-#79 | [T28] eliteIt4li4       | BOT   | Kills:  0
-#80 * [T16] Alfiejrob0302     | Real  | Kills:  1 | Level: 458 (458) | Platform: PS5 | Skin: Character_WaterfallCharm_D
-#81 | [T98] Снова_хайп        | BOT   | Kills:  0
-#82 | [T27] SneakyBush9898    | BOT   | Kills:  1
-#83 | [T101] BoatRider10       | BOT   | Kills:  0
-#84 | [T42] ElderFly13        | BOT   | Kills:  0
-#85 * [T22] PrimeMarno        | Real  | Kills:  0 | Level: 228 (228) | Platform: PS5 | Skin: Character_IcicleCane_Bright
-#86 | [T86] ДинамитХ          | BOT   | Kills:  0
-#87 | [T53] CrazyPea96        | BOT   | Kills:  0
-#88 * [T23] PIKPRESJA         | Real  | Kills:  0 | Level: ??? (117) | Platform: WIN | Skin: Character_CozyMechanic_Hen
-#89 | [T72] Sm4tt0            | BOT   | Kills:  0
-#90 | [T25] KingOfFudge       | BOT   | Kills:  0
-#91 * [T12] Mosettig22        | Real  | Kills:  0 | Level: ??? (???) | Platform: XBL | Skin: Character_BoldDormRise
-#92 | [T47] Вернигора         | BOT   | Kills:  0
-#93 | [T88] Fall3nSlasher     | BOT   | Kills:  0
-#94 | [T34] OneMillionAnts24  | BOT   | Kills:  1
-#95 | [T38] آدم1              | BOT   | Kills:  0
-#96 | [T100] HandsomeLemon34   | BOT   | Kills:  0
-#97 | [T55] GrannyGunner3     | BOT   | Kills:  0
-#98 * [T14] onshore_cake91    | Real  | Kills:  0 | Level: 846 (846) | Platform: PS5 | Skin: SoccerGirlD
-#99 | [T43] SomethingFishy3   | BOT   | Kills:  0
+   1. [02:41] killed!: [BOT ] MorninWaffles | Rank: 68 (0 kills) |  12,6 m | Shotgun: Dual
+   2. [03:35] killed!: [BOT ] Carcrusher94  | Rank: 54 (1 kills) |   7,1 m | Shotgun: Dual
+   3. [06:05] killed!: [BOT ] NeoHero4      | Rank: 27 (1 kills) |   6,4 m | SMG: MusterQuickMag
 
 Ranking
 #?? * [T11] Mansy9853 (Crown) | Real  | Kills: 10 | Level: ??? (109) | Platform: WIN
+	[01:55] killed!: [Real] PrimeMarno | Rank: 85 |  11,1 m | SMG: MusterQuickMag
+	[02:11] killed!: [Real] Alfiejrob0302 | Rank: 80 |   7,0 m | Shotgun: Dual
+	[02:53] killed!: [Real] aliskebab11 | Rank: 65 |  11,8 m | SMG: MusterQuickMag
+	[03:51] killed!: [Real] NxG-Gh3San | Rank: 51 |   3,5 m | Shotgun: Dual
+	[03:56] killed!: [Real] BBOYexe | Rank: 49 |   3,2 m | Shotgun: Dual
+	[04:55] killed!: [BOT ] MrPatatafrita | Rank: 40 |   3,9 m | Shotgun: Dual
+	[05:03] killed!: [BOT ] UltimateZenith14 | Rank: 39 |   7,5 m | Shotgun: Dual
+	[05:16] killed!: [BOT ] PaLyANChO | Rank: 37 |   1,4 m
+	[06:57] killed!: [BOT ] xXMariAnnieXx | Rank: 22 |   9,0 m | Shotgun: Dual
+	[07:00] killed!: [BOT ] SoSweaty63 | Rank: 21 |  11,2 m | Shotgun: Dual
 #?? * [T18] Elvitronic        | Real  | Kills:  3 | Level: 226 (226) | Platform: WIN
+	[01:36] killed!: [BOT ] Fall3nSlasher | Rank: 93 |   2,3 m | Assault: PastaRipper
+	[04:28] killed!: [Real] Ivan71837 | Rank: 44 |   9,7 m | Area51Gun
+	[06:45] killed!: [NPC ] Zadie | Rank: ?? |   3,7 m | Shotgun: Dual
+	[06:50] killed!: [Real] m1kar1337228 | Rank: 25 |   4,5 m | Shotgun: Dual
 #?? * [T05] Aurora fan3689    | Real  | Kills:  2 | Level: 175 (175) | Platform: XSX
+	[05:54] killed!: [BOT ] XxBenEfsaneimxX | Rank: 29 |   7,7 m | Shotgun: Dual
+	[06:37] killed!: [BOT ] YourBestFriend63 | Rank: 26 |   4,6 m | Shotgun: Dual
 #?? * [T03] break_ombroso     | Real  | Kills:  2 | Level: ??? (187) | Platform: PSN
+	[01:34] killed!: [BOT ] OneMillionAnts24 | Rank: 94 |   7,7 m | Shotgun: Dual
+	[05:19] killed!: [BOT ] TLDR4life | Rank: 35 |   8,8 m | Assault: PastaRipper
 #?? * [T20] MrDepa_           | Real  | Kills:  2 | Level: ??? ( 98) | Platform: PS5
+	[02:21] killed!: [BOT ] TheFlopperKing | Rank: 72 |   5,7 m | Shotgun: Dual
+	[05:48] killed!: [Real] TTVKyzen3446 | Rank: 30 |   0,8 m | Shotgun: Dual
 #?? * [T09] ST4RT CROKS       | Real  | Kills:  2 | Level:  70 ( 70) | Platform: XSX
+	[02:56] killed!: [BOT ] Rrrrumba98 | Rank: 64 |   4,8 m | Shotgun: Sniper
+	[03:12] killed!: [BOT ] Nashtyboy67 | Rank: 56 |   9,2 m | Assault: Combat
 #21 | [T46] SoSweaty63        | BOT   | Kills:  2
+	[Death] Killed at 07:00 by Real Player (Mansy9853) | dist:  11,2 m | via: Shotgun: Dual
+	[02:20] killed!: [BOT ] LazyLlama7 | Rank: 74 |  11,7 m | Shotgun: Dual
+	[05:06] killed!: [BOT ] CounterMantra | Rank: 38 |   1,4 m | Shotgun: Dual
 #22 | [T61] xXMariAnnieXx     | BOT   | Kills:  5
+	[Death] Killed at 06:57 by Real Player (Mansy9853) | dist:   9,0 m | via: Shotgun: Dual
+	[02:20] killed!: [BOT ] Kregore73 | Rank: 73 |  19,6 m | Area51Gun
+	[02:42] killed!: [BOT ] ViciousPie44 | Rank: 67 |   7,1 m | Area51Gun
+	[04:44] killed!: [BOT ] Amanda9938643 | Rank: 42 |  18,1 m | Area51Gun
+	[04:48] killed!: [BOT ] Notatest22 | Rank: 41 |  12,0 m | Area51Gun
+	[06:51] killed!: [Real] xdx2k7 | Rank: 24 |   3,4 m | Area51Gun
 #23 | [T52] xXxjmarcinxXx     | BOT   | Kills:  2
+	[Death] Killed at 06:53 by BOT Player (Haszczak32) | dist:   9,1 m | via: Area51Gun
+	[02:18] killed!: [Real] crshdcoupe | Rank: 76 |   4,5 m | Shotgun: Dual
+	[02:59] killed!: [BOT ] SickPapaya | Rank: 62 |  10,5 m | Shotgun: Dual
 #24 * [T08] xdx2k7            * OWNER * Kills:  3 | Level: 154 (154) | Platform: WIN | Skin: Character_SoloSnooze
+	[Death] Killed at 06:51 by BOT Player (xXMariAnnieXx) | dist:   3,4 m | via: Area51Gun
+	[02:41] killed!: [BOT ] MorninWaffles | Rank: 68 |  12,6 m | Shotgun: Dual
+	[03:35] killed!: [BOT ] Carcrusher94 | Rank: 54 |   7,1 m | Shotgun: Dual
+	[06:05] killed!: [BOT ] NeoHero4 | Rank: 27 |   6,4 m | SMG: MusterQuickMag
 #25 * [T13] m1kar1337228      | Real  | Kills:  1 | Level: 273 (273) | Platform: WIN | Skin: Character_HeavyRoar
+	[Death] Killed at 06:50 by Real Player (Elvitronic) | dist:   4,5 m | via: Shotgun: Dual
+	[05:26] killed!: [BOT ] PrancingPwnee | Rank: 32 |   6,8 m | Shotgun: TeaCake
 #26 | [T58] YourBestFriend63  | BOT   | Kills:  1
+	[Death] Killed at 06:37 by Real Player (Aurora fan3689) | dist:   4,6 m | via: Shotgun: Dual
+	[01:40] killed!: [BOT ] Вернигора | Rank: 92 |  48,9 m | Bow: Metal
 #27 | [T56] NeoHero4          | BOT   | Kills:  1
+	[Death] Killed at 06:05 by Real Player (xdx2k7) | dist:   6,4 m | via: SMG: MusterQuickMag
+	[03:08] killed!: [BOT ] فهر1 | Rank: 58 |  59,1 m | DMR: TeaCake
 #28 | [T87] AngryDuck51       | BOT   | Kills:  0
+	[Death] Killed at 06:02 by BOT Player (Faraleth90) | dist:   8,8 m | via: Area51Gun
 #29 | [T51] XxBenEfsaneimxX   | BOT   | Kills:  2
+	[Death] Killed at 05:54 by Real Player (Aurora fan3689) | dist:   7,7 m | via: Shotgun: Dual
+	[05:23] killed!: [BOT ] biceps_1 | Rank: 33 |   7,7 m | Area51Gun
+	[05:33] killed!: [BOT ] BioDragoon | Rank: 31 |  12,8 m | Area51Gun
 #30 * [T24] TTVKyzen3446      | Real  | Kills:  2 | Level:  68 ( 68) | Platform: XSX | Skin: Tank
+	[Death] Killed at 05:48 by Real Player (MrDepa_) | dist:   0,8 m | via: Shotgun: Dual
+	[03:50] killed!: [BOT ] Quack4Bread | Rank: 50 |   8,8 m | SMG: Burst
+	[05:18] killed!: [BOT ] Сибирская Кошка | Rank: 36 |   5,1 m | Shotgun: Dual
 #31 | [T41] BioDragoon        | BOT   | Kills:  0
+	[Death] Killed at 05:33 by BOT Player (XxBenEfsaneimxX) | dist:  12,8 m | via: Area51Gun
 #32 | [T45] PrancingPwnee     | BOT   | Kills:  0
+	[Death] Killed at 05:26 by Real Player (m1kar1337228) | dist:   6,8 m | via: Shotgun: TeaCake
 #33 | [T50] biceps_1          | BOT   | Kills:  1
+	[Death] Killed at 05:23 by BOT Player (XxBenEfsaneimxX) | dist:   7,7 m | via: Area51Gun
+	[01:55] killed!: [BOT ] ДинамитХ | Rank: 86 |   3,6 m | Area51Gun
 #34 | [T44] PlzBeNiceToMe     | BOT   | Kills:  1
+	[Death] Killed at 05:21 by BOT Player (Sandra6000) | dist:   3,8 m | via: Shotgun: Dual
+	[03:00] killed!: [BOT ] Bongodrum010 | Rank: 60 |  20,1 m | SMG: Burst
 #35 | [T68] TLDR4life         | BOT   | Kills:  0
+	[Death] Killed at 05:19 by Real Player (break_ombroso) | dist:   8,8 m | via: Assault: PastaRipper
 #36 | [T30] Сибирская Кошка   | BOT   | Kills:  1
+	[Death] Killed at 05:18 by Real Player (TTVKyzen3446) | dist:   5,1 m | via: Shotgun: Dual
+	[02:18] killed!: [BOT ] كول1 | Rank: 75 |   5,4 m | Area51Gun
 #37 | [T63] PaLyANChO         | BOT   | Kills:  0
+	[Death] Killed at 05:16 by Real Player (Mansy9853) | dist:   1,4 m
 #38 | [T31] CounterMantra     | BOT   | Kills:  1
+	[Death] Killed at 05:06 by BOT Player (SoSweaty63) | dist:   1,4 m | via: Shotgun: Dual
+	[02:06] killed!: [BOT ] Снова_хайп | Rank: 81 |   5,3 m | Area51Gun
 #39 | [T82] UltimateZenith14  | BOT   | Kills:  0
+	[Death] Killed at 05:03 by Real Player (Mansy9853) | dist:   7,5 m | via: Shotgun: Dual
 #40 | [T93] MrPatatafrita     | BOT   | Kills:  1
+	[Death] Killed at 04:55 by Real Player (Mansy9853) | dist:   3,9 m | via: Shotgun: Dual
+	[01:33] killed!: [BOT ] آدم1 | Rank: 95 |  29,3 m | Area51Gun
 #41 | [T92] Notatest22        | BOT   | Kills:  1
+	[Death] Killed at 04:48 by BOT Player (xXMariAnnieXx) | dist:  12,0 m | via: Area51Gun
+	[02:58] killed!: [BOT ] OpenShutCase | Rank: 63 |  12,8 m | Area51Gun
 #42 | [T70] Amanda9938643     | BOT   | Kills:  0
+	[Death] Killed at 04:44 by BOT Player (xXMariAnnieXx) | dist:  18,1 m | via: Area51Gun
 #43 | [T85] Panzabirra98      | BOT   | Kills:  0
+	[Death] Killed at 04:36 by BOT Player (Scream4Poutine) | dist:   1,0 m | via: Pistol: TeaCake
 #44 * [T04] Ivan71837         | Real  | Kills:  2 | Level: ??? (???) | Platform: XBL | Skin: Character_CozyMechanic_Hen
+	[Death] Killed at 04:28 by Real Player (Elvitronic) | dist:   9,7 m | via: Area51Gun
+	[01:50] killed!: [Real] PIKPRESJA | Rank: 88 |  23,1 m | SMG: Burst
+	[02:43] killed!: [Real] nagibator_rabov | Rank: 66 |   3,4 m | SMG: Burst
 #45 | [T84] Destrukteur03     | BOT   | Kills:  0
+	[Death] Killed at 04:07 by BOT Player (Haszczak32) | dist:   3,7 m | via: Area51Gun
 #46 | [T91] RiskyDigits       | BOT   | Kills:  1
+	[Death] Killed at 04:04 by BOT Player (N0sc0pe1337) | dist:   6,0 m | via: Shotgun: Dual
+	[03:59] killed!: [BOT ] Greedy33 | Rank: 48 |   2,3 m | Area51Gun
 #47 | [T33] ImGonnaWin2234    | BOT   | Kills:  0
+	[Death] Killed at 04:03 by BOT Player (Channel2659) | dist:   1,1 m | via: Area51Gun
 #48 | [T76] Greedy33          | BOT   | Kills:  0
+	[Death] Killed at 03:59 by BOT Player (RiskyDigits) | dist:   2,3 m | via: Area51Gun
 #49 * [T17] BBOYexe           | Real  | Kills:  0 | Level: ??? (301) | Platform: PSN | Skin: SunriseCastle_48TIZ
+	[Death] Killed at 03:56 by Real Player (Mansy9853) | dist:   3,2 m | via: Shotgun: Dual
 #50 | [T77] Quack4Bread       | BOT   | Kills:  2
+	[Death] Killed at 03:50 by Real Player (TTVKyzen3446) | dist:   8,8 m | via: SMG: Burst
+	[02:18] killed!: [BOT ] BlindCat47 | Rank: 77 |   4,3 m | Bow: Metal
+	[03:36] killed!: [BOT ] Skelettosaure5 | Rank: 53 |   8,8 m | Shotgun: Dual
 #51 * [T21] NxG-Gh3San        | Real  | Kills:  0 | Level: ??? (???) | Platform: PSN | Skin: Cupid
+	[Death] Killed at 03:51 by Real Player (Mansy9853) | dist:   3,5 m | via: Shotgun: Dual
 #52 * [T10] oo mr valle       | Real  | Kills:  1 | Level: ??? (200) | Platform: XBL | Skin: BannerRed
+	[02:30] killed!: [BOT ] Wenawenaaaa | Rank: 70 |   2,2 m | Shotgun: Dual
 #53 | [T71] Skelettosaure5    | BOT   | Kills:  0
+	[Death] Killed at 03:36 by BOT Player (Quack4Bread) | dist:   8,8 m | via: Shotgun: Dual
 #54 | [T64] Carcrusher94      | BOT   | Kills:  1
+	[Death] Killed at 03:35 by Real Player (xdx2k7) | dist:   7,1 m | via: Shotgun: Dual
+	[03:16] killed!: [BOT ] GiusyLove212 | Rank: 55 |   3,9 m | Area51Gun
 #55 | [T73] GiusyLove212      | BOT   | Kills:  0
+	[Death] Killed at 03:16 by BOT Player (Carcrusher94) | dist:   3,9 m | via: Area51Gun
 #56 | [T26] Nashtyboy67       | BOT   | Kills:  0
+	[Death] Killed at 03:12 by Real Player (ST4RT CROKS) | dist:   9,2 m | via: Assault: Combat
 #57 | [T54] FreeMinded49      | BOT   | Kills:  0
+	[Death] Killed at 03:08 by BOT Player (M1st3r0wn3r) | dist:  20,7 m | via: Area51Gun
 #58 | [T49] فهر1              | BOT   | Kills:  1
+	[Death] Killed at 03:08 by BOT Player (NeoHero4) | dist:  59,1 m | via: DMR: TeaCake
+	[01:58] killed!: [BOT ] ElderFly13 | Rank: 84 |  18,1 m | Area51Gun
 #59 | [T39] Питбуль1          | BOT   | Kills:  0
+	[Death] Killed at 03:03 by BOT Player (Sandra6000) | dist:  25,7 m | via: Assault: PastaRipper
 #60 | [T97] Bongodrum010      | BOT   | Kills:  0
+	[Death] Killed at 03:00 by BOT Player (PlzBeNiceToMe) | dist:  20,1 m | via: SMG: Burst
 #61 | [T96] Angrification     | BOT   | Kills:  1
+	[Death] Killed at 03:00 by BOT Player (M1st3r0wn3r) | dist:  12,0 m | via: Area51Gun
+	[02:12] killed!: [BOT ] eliteIt4li4 | Rank: 79 |  27,6 m | Assault: PastaRipper
 #62 | [T80] SickPapaya        | BOT   | Kills:  0
+	[Death] Killed at 02:59 by BOT Player (xXxjmarcinxXx) | dist:  10,5 m | via: Shotgun: Dual
 #63 | [T90] OpenShutCase      | BOT   | Kills:  0
+	[Death] Killed at 02:58 by BOT Player (Notatest22) | dist:  12,8 m | via: Area51Gun
 #64 | [T36] Rrrrumba98        | BOT   | Kills:  0
+	[Death] Killed at 02:56 by Real Player (ST4RT CROKS) | dist:   4,8 m | via: Shotgun: Sniper
 #65 * [T15] aliskebab11       | Real  | Kills:  1 | Level: 194 (194) | Platform: WIN | Skin: Character_IcicleCane_Bright
+	[Death] Killed at 02:53 by Real Player (Mansy9853) | dist:  11,8 m | via: SMG: MusterQuickMag
+	[01:29] killed!: [BOT ] GrannyGunner3 | Rank: 97 |   2,8 m | Shotgun: Dual
 #66 * [T19] nagibator_rabov   | Real  | Kills:  1 | Level: 117 (117) | Platform: WIN | Skin: Character_BriskReign
+	[Death] Killed at 02:43 by Real Player (Ivan71837) | dist:   3,4 m | via: SMG: Burst
+	[01:17] killed!: [BOT ] SomethingFishy3 | Rank: 99 |  11,0 m | Area51Gun
 #67 | [T78] ViciousPie44      | BOT   | Kills:  0
+	[Death] Killed at 02:42 by BOT Player (xXMariAnnieXx) | dist:   7,1 m | via: Area51Gun
 #68 | [T81] MorninWaffles     | BOT   | Kills:  0
+	[Death] Killed at 02:41 by Real Player (xdx2k7) | dist:  12,6 m | via: Shotgun: Dual
 #69 | [T69] XenoBotanist27    | BOT   | Kills:  0
+	[Death] Killed at 02:32 by BOT Player (M1st3r0wn3r) | dist:  12,5 m | via: Area51Gun
 #70 | [T60] Wenawenaaaa       | BOT   | Kills:  0
+	[Death] Killed at 02:30 by Real Player (oo mr valle) | dist:   2,2 m | via: Shotgun: Dual
 #71 | [T29] PatateCommode     | BOT   | Kills:  0
+	[Death] Killed at 02:26 by BOT Player (Haszczak32) | dist:  15,5 m | via: Area51Gun
 #72 | [T59] TheFlopperKing    | BOT   | Kills:  0
+	[Death] Killed at 02:21 by Real Player (MrDepa_) | dist:   5,7 m | via: Shotgun: Dual
 #73 | [T89] Kregore73         | BOT   | Kills:  0
+	[Death] Killed at 02:20 by BOT Player (xXMariAnnieXx) | dist:  19,6 m | via: Area51Gun
 #74 | [T75] LazyLlama7        | BOT   | Kills:  1
+	[Death] Killed at 02:20 by BOT Player (SoSweaty63) | dist:  11,7 m | via: Shotgun: Dual
+	[02:16] killed!: [BOT ] SMGsRdaBest | Rank: 78 |   3,3 m | Assault: PastaRipper
 #75 | [T07] كول1              | BOT   | Kills:  0
+	[Death] Killed at 02:18 by BOT Player (Сибирская Кошка) | dist:   5,4 m | via: Area51Gun
 #76 * [T06] crshdcoupe        | Real  | Kills:  1 | Level: ??? ( 18) | Platform: WIN | Skin: Rider
+	[Death] Killed at 02:18 by BOT Player (xXxjmarcinxXx) | dist:   4,5 m | via: Shotgun: Dual
+	[01:42] killed!: [BOT ] KingOfFudge | Rank: 90 |  40,2 m | Assault: PastaRipper
 #77 | [T74] BlindCat47        | BOT   | Kills:  0
+	[Death] Killed at 02:18 by BOT Player (Quack4Bread) | dist:   4,3 m | via: Bow: Metal
 #78 | [T57] SMGsRdaBest       | BOT   | Kills:  0
+	[Death] Killed at 02:16 by BOT Player (LazyLlama7) | dist:   3,3 m | via: Assault: PastaRipper
 #79 | [T28] eliteIt4li4       | BOT   | Kills:  0
+	[Death] Killed at 02:12 by BOT Player (Angrification) | dist:  27,6 m | via: Assault: PastaRipper
 #80 * [T16] Alfiejrob0302     | Real  | Kills:  1 | Level: 458 (458) | Platform: PS5 | Skin: Character_WaterfallCharm_D
+	[Death] Killed at 02:11 by Real Player (Mansy9853) | dist:   7,0 m | via: Shotgun: Dual
+	[01:41] killed!: [Real] Mosettig22 | Rank: 91 |   6,0 m | Shotgun: Dual
 #81 | [T98] Снова_хайп        | BOT   | Kills:  0
+	[Death] Killed at 02:06 by BOT Player (CounterMantra) | dist:   5,3 m | via: Area51Gun
 #82 | [T27] SneakyBush9898    | BOT   | Kills:  1
+	[Death] Killed at 02:01 by BOT Player (Dziubas324) | dist:  27,6 m | via: Bow: Metal
+	[01:52] killed!: [BOT ] CrazyPea96 | Rank: 87 |  21,5 m | Shotgun: Dual
 #83 | [T101] BoatRider10       | BOT   | Kills:  0
+	[Death] Killed at 01:59 by BOT Player (Faraleth90) | dist:  26,8 m | via: Area51Gun
 #84 | [T42] ElderFly13        | BOT   | Kills:  0
+	[Death] Killed at 01:58 by BOT Player (فهر1) | dist:  18,1 m | via: Area51Gun
 #85 * [T22] PrimeMarno        | Real  | Kills:  0 | Level: 228 (228) | Platform: PS5 | Skin: Character_IcicleCane_Bright
+	[Death] Killed at 01:55 by Real Player (Mansy9853) | dist:  11,1 m | via: SMG: MusterQuickMag
 #86 | [T86] ДинамитХ          | BOT   | Kills:  0
+	[Death] Killed at 01:55 by BOT Player (biceps_1) | dist:   3,6 m | via: Area51Gun
 #87 | [T53] CrazyPea96        | BOT   | Kills:  0
+	[Death] Killed at 01:52 by BOT Player (SneakyBush9898) | dist:  21,5 m | via: Shotgun: Dual
 #88 * [T23] PIKPRESJA         | Real  | Kills:  0 | Level: ??? (117) | Platform: WIN | Skin: Character_CozyMechanic_Hen
+	[Death] Killed at 01:50 by Real Player (Ivan71837) | dist:  23,1 m | via: SMG: Burst
 #89 | [T72] Sm4tt0            | BOT   | Kills:  0
+	[Death] Killed at 01:45 by BOT Player (Nuotare_Via) | dist:  10,4 m | via: Area51Gun
 #90 | [T25] KingOfFudge       | BOT   | Kills:  0
+	[Death] Killed at 01:42 by Real Player (crshdcoupe) | dist:  40,2 m | via: Assault: PastaRipper
 #91 * [T12] Mosettig22        | Real  | Kills:  0 | Level: ??? (???) | Platform: XBL | Skin: Character_BoldDormRise
+	[Death] Killed at 01:41 by Real Player (Alfiejrob0302) | dist:   6,0 m | via: Shotgun: Dual
 #92 | [T47] Вернигора         | BOT   | Kills:  0
+	[Death] Killed at 01:40 by BOT Player (YourBestFriend63) | dist:  48,9 m | via: Bow: Metal
 #93 | [T88] Fall3nSlasher     | BOT   | Kills:  0
+	[Death] Killed at 01:36 by Real Player (Elvitronic) | dist:   2,3 m | via: Assault: PastaRipper
 #94 | [T34] OneMillionAnts24  | BOT   | Kills:  1
+	[Death] Killed at 01:34 by Real Player (break_ombroso) | dist:   7,7 m | via: Shotgun: Dual
+	[01:31] killed!: [BOT ] HandsomeLemon34 | Rank: 96 |   6,9 m | Area51Gun
 #95 | [T38] آدم1              | BOT   | Kills:  0
+	[Death] Killed at 01:33 by BOT Player (MrPatatafrita) | dist:  29,3 m | via: Area51Gun
 #96 | [T100] HandsomeLemon34   | BOT   | Kills:  0
+	[Death] Killed at 01:31 by BOT Player (OneMillionAnts24) | dist:   6,9 m | via: Area51Gun
 #97 | [T55] GrannyGunner3     | BOT   | Kills:  0
+	[Death] Killed at 01:29 by Real Player (aliskebab11) | dist:   2,8 m | via: Shotgun: Dual
 #98 * [T14] onshore_cake91    | Real  | Kills:  0 | Level: 846 (846) | Platform: PS5 | Skin: SoccerGirlD
 #99 | [T43] SomethingFishy3   | BOT   | Kills:  0
+	[Death] Killed at 01:17 by Real Player (nagibator_rabov) | dist:  11,0 m | via: Area51Gun

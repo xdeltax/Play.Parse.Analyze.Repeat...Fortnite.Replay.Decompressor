@@ -53,11 +53,7 @@ internal static class ReplayAnalyzer
         long total = 0;
         var hadFailure = false;
 
-#if DEBUG
         var reader = new ReplayReader(logger, ParseMode.Normal);
-#else
-        var reader = new ReplayReader(null, ParseMode.Minimal);
-#endif
 
         foreach (var replayFile in replayFiles)
         {
@@ -100,11 +96,7 @@ internal static class ReplayAnalyzer
 
     public static ReplayProcessResult ProcessReplayFile(string replayFilePath, string outputRoot)
     {
-#if DEBUG
         var reader = new ReplayReader(null, ParseMode.Normal);
-#else
-        var reader = new ReplayReader(null, ParseMode.Minimal);
-#endif
 
         var replay = reader.ReadReplay(replayFilePath);
         return WriteArtifacts(replay, replayFilePath, outputRoot);

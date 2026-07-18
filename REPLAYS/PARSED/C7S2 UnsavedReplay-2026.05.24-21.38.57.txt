@@ -22,211 +22,307 @@ Owner Team (Team 12):
        - xdx2k7 (Crown)       | Kills:  8 | Knocks:  1 | Dmg: 1505 | Alive
 
 Owner Killfeed:
-   1. [02:47] killed!: [BOT ] Dessloch52     | Rank: 95 |   4,7 m | Shotgun: Dual
-   2. [03:28] killed!: [BOT ] BoldPrediction | Rank: 80 |   6,4 m | Shotgun: Dual
-   3. [06:44] killed!: [BOT ] Gloriainfinita | Rank: 37 |  10,6 m | Shotgun: Dual
-   4. [07:35] killed!: [BOT ] Bohun15        | Rank: 34 |   3,1 m | Shotgun: Dual
-   5. [12:52] killed!: [BOT ] EndlessMike52  | Rank:  5 |  34,2 m | Assault: Combat
-   6. [14:03] killed!: [BOT ] MintElephant26 | Rank:  4 |   2,9 m | Assault: Combat
-   7. [18:16] killed!: [Real] Ringer_Cat     | Rank:  3 |  24,7 m | Assault: Combat
-   8. [19:37] knocked: [Real] Tanjirolovve   | Rank:  2 |  22,2 m | Shotgun: TeaCake
-
-Team-Ranking
-#01 * [T12] xdx2k7 (Crown)     * OWNER * Kills:  8 | Level: 154 (154) | Platform: WIN | Skin: Character_SoloSnooze
-#02 * [T04] Tanjirolovve       | Real  | Kills: 11 | Level: ??? ( 77) | Platform: WIN | Skin: Character_FrostIron
-#03 * [T15] Ringer_Cat         | Real  | Kills:  3 | Level: 144 (144) | Platform: PS5 | Skin: Character_SquibblySquid
-#04 | [T45] MintElephant26     | BOT   | Kills:  1
-#05 | [T19] EndlessMike52      | BOT   | Kills:  5
-#06 | [T55] MegaYeet98         | BOT   | Kills:  2
-#07 | [T51] SuperWygar         | BOT   | Kills:  1
-#08 | [T66] Chimuelopr0        | BOT   | Kills:  1
-#09 | [T24] WanderAgent        | BOT   | Kills:  1
-#10 * [T18] ImperatorPEKKA     | Real  | Kills:  5 | Level: ??? (170) | Platform: XSX | Skin: Character_SequinPie
-#11 | [T41] BubblyFalcon       | BOT   | Kills:  2
-#12 | [T85] MaximusIon59       | BOT   | Kills:  3
-#13 | [T56] PebbleSpider       | BOT   | Kills:  0
-#14 * [T11] alegrassi46        | Real  | Kills:  4 | Level:  64 ( 64) | Platform: WIN | Skin: VoyagerRemix
-#15 * [T03] greenfnBob         | Real  | Kills:  9 | Level:  34 ( 34) | Platform: WIN | Skin: Character_GlamClaws
-#16 | [T87] PizzaKetchupAnanas | BOT   | Kills:  2
-#17 | [T25] Gandolfoilbianco   | BOT   | Kills:  0
-#18 | [T70] Anonymutt          | BOT   | Kills:  1
-#19 | [T69] TamKafadannn       | BOT   | Kills:  0
-#20 | [T54] FuzzyPickl3s       | BOT   | Kills:  1
-#21 | [T33] PotatoCupid        | BOT   | Kills:  1
-#22 | [T52] Ambrosia0          | BOT   | Kills:  1
-#23 | [T89] Fußballfreak2003   | BOT   | Kills:  0
-#24 | [T49] JoyRJ6420          | BOT   | Kills:  0
-#25 | [T82] CherubTree         | BOT   | Kills:  1
-#26 | [T36] Перелесник         | BOT   | Kills:  0
-#27 | [T62] FeasibleWeasel80   | BOT   | Kills:  2
-#28 | [T84] HaHaHeeHee73       | BOT   | Kills:  1
-#29 | [T39] 25_wütende_Affen   | BOT   | Kills:  0
-#30 * [T06] papez_ales         | Real  | Kills:  1 | Level:  91 ( 91) | Platform: PS5 | Skin: Character_SwoopClaspPry
-#31 | [T100] ButchSquire        | BOT   | Kills:  1
-#32 | [T90] Овощебаза2019      | BOT   | Kills:  0
-#33 | [T26] Чиполлино41737     | BOT   | Kills:  2
-#34 | [T98] Bohun15            | BOT   | Kills:  0
-#35 | [T99] J005ek1            | BOT   | Kills:  0
-#36 * [T16] llmatmut88ll       | Real  | Kills:  2 | Level: ??? (???) | Platform: PSN | Skin: Character_QuicheLorraineCrisp
-#37 | [T78] Gloriainfinita     | BOT   | Kills:  0
-#38 | [T35] Vertigo70          | BOT   | Kills:  1
-#39 | [T46] NeoHero4           | BOT   | Kills:  1
-#40 | [T57] ThermalDragon39    | BOT   | Kills:  0
-#41 | [T93] Chug_Brigade       | BOT   | Kills:  0
-#42 | [T75] SoFastMan          | BOT   | Kills:  1
-#43 | [T47] Triangulated86     | BOT   | Kills:  1
-#44 | [T37] dönerci_MeMo       | BOT   | Kills:  3
-#45 * [T13] Devis216           | Real  | Kills:  1 | Level: ??? (186) | Platform: PS5 | Skin: Character_MustardToast
-#46 * [T09] Sharkich223        | Real  | Kills:  1 | Level: ??? ( 35) | Platform: WIN | Skin: Character_KelpLinenMagnesium
-#47 | [T94] Gooddoggo80        | BOT   | Kills:  1
-#48 | [T80] b4mb1r31s          | BOT   | Kills:  1
-#49 | [T59] Soytupadre87202    | BOT   | Kills:  0
-#50 | [T58] CrazyAlpaca98      | BOT   | Kills:  0
-#51 | [T91] aClassyGamer94     | BOT   | Kills:  0
-#52 | [T65] PurpleCrayon85     | BOT   | Kills:  0
-#53 | [T71] CantHearYou3       | BOT   | Kills:  0
-#54 | [T73] g0tmy3Y3onU        | BOT   | Kills:  0
-#55 | [T74] MisterMosquito0    | BOT   | Kills:  0
-#56 | [T32] GrumbleofPugs6     | BOT   | Kills:  0
-#57 | [T64] McLawnmower91      | BOT   | Kills:  0
-#58 * [T17] gabrieletiggiano   | Real  | Kills:  2 | Level: ??? ( 26) | Platform: PS5 | Skin: Prime_E
-#59 | [T42] DoubleRainbow96    | BOT   | Kills:  0
-#60 | [T67] WonszRzeczny81351  | BOT   | Kills:  0
-#61 | [T76] TryAgain49         | BOT   | Kills:  0
-#62 | [T22] ItsAlwaysMe        | BOT   | Kills:  0
-#63 | [T81] BlindCat47         | BOT   | Kills:  1
-#64 * [T14] markoosik_26       | Real  | Kills:  1 | Level: ??? (245) | Platform: PS5 | Skin: Character_DiamondHeart_Chic
-#65 | [T86] SickPapaya         | BOT   | Kills:  0
-#66 | [T48] CyborgWalrus6      | BOT   | Kills:  2
-#67 | [T92] Blueberry1002      | BOT   | Kills:  0
-#68 | [T38] Pembe_Örümcek      | BOT   | Kills:  0
-#69 | [T29] BlipBlap53         | BOT   | Kills:  0
-#70 | [T44] SilentRogue98      | BOT   | Kills:  0
-#71 | [T28] Про100 Отпад       | BOT   | Kills:  1
-#72 | [T63] InnoScent24        | BOT   | Kills:  0
-#73 | [T96] R0ckStar5          | BOT   | Kills:  0
-#74 | [T79] Krasser_Babo       | BOT   | Kills:  0
-#75 | [T40] aaaaaaaaalbert     | BOT   | Kills:  1
-#76 | [T88] نولان              | BOT   | Kills:  0
-#77 | [T05] كونور1             | BOT   | Kills:  0
-#78 | [T07] SPAL_2019          | BOT   | Kills:  0
-#79 | [T60] Mannara2000        | BOT   | Kills:  0
-#80 | [T53] BoldPrediction     | BOT   | Kills:  3
-#81 * [T10] Malak_308          | Real  | Kills:  1 | Level:  85 ( 85) | Platform: PS5 | Skin: -
-#82 | [T34] ThisSideUp87       | BOT   | Kills:  0
-#83 | [T95] Knowaguy           | BOT   | Kills:  0
-#84 | [T77] Whitman40          | BOT   | Kills:  0
-#85 | [T50] Bartolone811       | BOT   | Kills:  0
-#86 | [T68] إد1                | BOT   | Kills:  0
-#87 | [T97] WalkInThePark66    | BOT   | Kills:  0
-#88 | [T30] SadTroll94         | BOT   | Kills:  0
-#89 | [T21] KeyFlamingo        | BOT   | Kills:  1
-#90 | [T20] FlankTheTank       | BOT   | Kills:  0
-#91 | [T61] BananaPastrami     | BOT   | Kills:  0
-#92 | [T31] GigaWatt10k        | BOT   | Kills:  0
-#93 | [T27] RoyaleKing60953    | BOT   | Kills:  0
-#94 * [T08] blighthesecond     | Real  | Kills:  0 | Level: 140 (140) | Platform: PS5 | Skin: Character_GuideQuiz
-#95 | [T72] Dessloch52         | BOT   | Kills:  0
-#96 | [T43] Freylis21          | BOT   | Kills:  0
-#97 | [T83] Forbidden60        | BOT   | Kills:  0
-#98 | [T23] ShieldHorse63      | BOT   | Kills:  0
+   1. [01:38] killed!: [BOT ] Dessloch52     | Rank: 95 (0 kills) |   4,7 m | Shotgun: Dual
+   2. [02:19] killed!: [BOT ] BoldPrediction | Rank: 80 (3 kills) |   6,4 m | Shotgun: Dual
+   3. [05:35] killed!: [BOT ] Gloriainfinita | Rank: 37 (0 kills) |  10,6 m | Shotgun: Dual
+   4. [06:27] killed!: [BOT ] Bohun15        | Rank: 34 (0 kills) |   3,1 m | Shotgun: Dual
+   5. [11:44] killed!: [BOT ] EndlessMike52  | Rank:  5 (5 kills) |  34,2 m | Assault: Combat
+   6. [12:55] killed!: [BOT ] MintElephant26 | Rank:  4 (1 kills) |   2,9 m | Assault: Combat
+   7. [17:07] killed!: [Real] Ringer_Cat     | Rank:  3 (3 kills) |  24,7 m | Assault: Combat
+   8. [18:28] knocked: [Real] Tanjirolovve   | Rank:  2 (11 kills) |  22,2 m | Shotgun: TeaCake
 
 Ranking
 #01 * [T12] xdx2k7 (Crown)     * OWNER * Kills:  8 | Level: 154 (154) | Platform: WIN | Skin: Character_SoloSnooze
+	[01:38] killed!: [BOT ] Dessloch52 | Rank: 95 |   4,7 m | Shotgun: Dual
+	[02:19] killed!: [BOT ] BoldPrediction | Rank: 80 |   6,4 m | Shotgun: Dual
+	[05:35] killed!: [BOT ] Gloriainfinita | Rank: 37 |  10,6 m | Shotgun: Dual
+	[06:27] killed!: [BOT ] Bohun15 | Rank: 34 |   3,1 m | Shotgun: Dual
+	[11:44] killed!: [BOT ] EndlessMike52 | Rank:  5 |  34,2 m | Assault: Combat
+	[12:55] killed!: [BOT ] MintElephant26 | Rank:  4 |   2,9 m | Assault: Combat
+	[17:07] killed!: [Real] Ringer_Cat | Rank:  3 |  24,7 m | Assault: Combat
+	[18:28] knocked: [Real] Tanjirolovve | Rank:  2 |  22,2 m | Shotgun: TeaCake
 #02 * [T04] Tanjirolovve       | Real  | Kills: 11 | Level: ??? ( 77) | Platform: WIN | Skin: Character_FrostIron
+	[Death] Killed at 18:36 by Real Player (unknown) | dist:   2,4 m | via: Shotgun: TeaCake
+	[01:34] killed!: [BOT ] Forbidden60 | Rank: 97 |  13,5 m | Pistol: Standard
+	[03:55] killed!: [BOT ] CantHearYou3 | Rank: 53 |   6,1 m | Assault: PastaRipper
+	[04:15] killed!: [BOT ] b4mb1r31s | Rank: 48 |   1,3 m | Assault: PastaRipper
+	[05:17] killed!: [BOT ] NeoHero4 | Rank: 39 | 124,8 m | DMR: TeaCake
+	[06:25] killed!: [BOT ] J005ek1 | Rank: 35 |  17,0 m | Assault: PastaRipper
+	[07:17] killed!: [BOT ] 25_wütende_Affen | Rank: 29 |  18,4 m | SMG: LavaLeaf
+	[07:40] killed!: [BOT ] CherubTree | Rank: 25 |  14,6 m | SMG: LavaLeaf
+	[09:25] knocked: [Real] alegrassi46 | Rank: 14 | 196,6 m | DMR: TeaCake
+	[10:11] killed!: [BOT ] MaximusIon59 | Rank: 12 |   0,8 m | Assault: PastaRipper
+	[11:12] killed!: [BOT ] SuperWygar | Rank:  7 |  32,8 m | Assault: PastaRipper
+	[11:40] killed!: [BOT ] MegaYeet98 | Rank:  6 |  78,8 m | DMR: TeaCake
 #03 * [T15] Ringer_Cat         | Real  | Kills:  3 | Level: 144 (144) | Platform: PS5 | Skin: Character_SquibblySquid
+	[Death] Killed at 17:07 by Real Player (xdx2k7) | dist:  24,7 m | via: Assault: Combat
+	[03:15] killed!: [BOT ] TryAgain49 | Rank: 61 |  16,2 m | Assault: Combat
+	[08:40] killed!: [BOT ] Anonymutt | Rank: 18 |  11,0 m | Assault: Combat
+	[10:23] killed!: [BOT ] BubblyFalcon | Rank: 11 |  47,8 m | Assault: Combat
 #04 | [T45] MintElephant26     | BOT   | Kills:  1
+	[Death] Killed at 12:55 by Real Player (xdx2k7) | dist:   2,9 m | via: Assault: Combat
+	[03:37] killed!: [BOT ] DoubleRainbow96 | Rank: 59 |   2,2 m | Assault: Combat
 #05 | [T19] EndlessMike52      | BOT   | Kills:  5
+	[Death] Killed at 11:44 by Real Player (xdx2k7) | dist:  34,2 m | via: Assault: Combat
+	[01:58] killed!: [BOT ] BananaPastrami | Rank: 91 |   9,0 m | SMG: Burst
+	[02:40] killed!: [BOT ] BlipBlap53 | Rank: 69 |   7,8 m | Pistol: Standard
+	[06:46] killed!: [BOT ] Овощебаза2019 | Rank: 32 |   8,0 m | Assault: Combat
+	[08:21] killed!: [BOT ] FuzzyPickl3s | Rank: 20 |   5,8 m | SMG: Burst
+	[10:54] killed!: [BOT ] Chimuelopr0 | Rank:  8 |  12,3 m | SMG: Burst
 #06 | [T55] MegaYeet98         | BOT   | Kills:  2
+	[Death] Killed at 11:40 by Real Player (Tanjirolovve) | dist:  78,8 m | via: DMR: TeaCake
+	[03:44] killed!: [BOT ] GrumbleofPugs6 | Rank: 56 |   3,0 m | Assault: Heavy
+	[06:30] killed!: [BOT ] Чиполлино41737 | Rank: 33 |   4,9 m | Assault: Combat
 #07 | [T51] SuperWygar         | BOT   | Kills:  1
+	[Death] Killed at 11:12 by Real Player (Tanjirolovve) | dist:  32,8 m | via: Assault: PastaRipper
+	[03:43] killed!: [BOT ] McLawnmower91 | Rank: 57 |   4,8 m | SMG: Burst
 #08 | [T66] Chimuelopr0        | BOT   | Kills:  1
+	[Death] Killed at 10:54 by BOT Player (EndlessMike52) | dist:  12,3 m | via: SMG: Burst
+	[02:32] killed!: [BOT ] aaaaaaaaalbert | Rank: 75 |   2,9 m | Shotgun: TeaCake
 #09 | [T24] WanderAgent        | BOT   | Kills:  1
+	[Death] Killed at 10:28 by Real Player (ImperatorPEKKA) | dist:   5,1 m | via: Launcher: Rocket
+	[02:17] killed!: [BOT ] ThisSideUp87 | Rank: 82 |   1,3 m | Assault: Heavy
+	[10:15] knocked: [Real] ImperatorPEKKA | Rank: 10 |   1,9 m | SMG: LavaLeaf
 #10 * [T18] ImperatorPEKKA     | Real  | Kills:  5 | Level: ??? (170) | Platform: XSX | Skin: Character_SequinPie
+	[Death] Killed at 10:28 by Real Player (ImperatorPEKKA) | via: Launcher: Rocket
+	[03:41] killed!: [Real] gabrieletiggiano | Rank: 58 |   7,1 m | Shotgun: Dual
+	[05:13] killed!: [BOT ] ThermalDragon39 | Rank: 40 |  10,1 m | Assault: PastaRipper
+	[07:56] killed!: [BOT ] Ambrosia0 | Rank: 22 |  11,3 m | Assault: PastaRipper
+	[08:20] killed!: [BOT ] PotatoCupid | Rank: 21 |  16,9 m | Assault: PastaRipper
+	[10:28] killed!: [BOT ] WanderAgent | Rank:  9 |   5,1 m | Launcher: Rocket
+	[10:28] killed!: [Real] ImperatorPEKKA | Rank: 10 | Launcher: Rocket
 #11 | [T41] BubblyFalcon       | BOT   | Kills:  2
+	[Death] Killed at 10:23 by Real Player (Ringer_Cat) | dist:  47,8 m | via: Assault: Combat
+	[03:57] killed!: [BOT ] CrazyAlpaca98 | Rank: 50 |   1,4 m | Pistol: TeaCake
+	[08:35] killed!: [BOT ] TamKafadannn | Rank: 19 |   6,9 m | SMG: Burst
 #12 | [T85] MaximusIon59       | BOT   | Kills:  3
+	[Death] Killed at 10:11 by Real Player (Tanjirolovve) | dist:   0,8 m | via: Assault: PastaRipper
+	[05:30] killed!: [BOT ] Vertigo70 | Rank: 38 |  29,1 m | Assault: Heavy
+	[06:54] killed!: [BOT ] ButchSquire | Rank: 31 |   2,6 m | Shotgun: TeaCake
+	[10:10] killed!: [BOT ] PebbleSpider | Rank: 13 |   0,6 m
 #13 | [T56] PebbleSpider       | BOT   | Kills:  0
+	[Death] Killed at 10:10 by BOT Player (MaximusIon59) | dist:   0,6 m
 #14 * [T11] alegrassi46        | Real  | Kills:  4 | Level:  64 ( 64) | Platform: WIN | Skin: VoyagerRemix
+	[Death] Killed at 09:25 by Real Player (unknown) | dist: 199,3 m
+	[01:46] killed!: [Real] blighthesecond | Rank: 94 |   1,3 m | SMG: Burst
+	[03:45] killed!: [BOT ] MisterMosquito0 | Rank: 55 |   5,4 m | Assault: Combat
+	[09:00] killed!: [BOT ] PizzaKetchupAnanas | Rank: 16 |  35,1 m | Assault: Combat
+	[09:17] knocked: [Real] greenfnBob | Rank: 15 |   3,6 m | Shotgun: Dual
 #15 * [T03] greenfnBob         | Real  | Kills:  9 | Level:  34 ( 34) | Platform: WIN | Skin: Character_GlamClaws
+	[Death] Killed at 09:19 by Real Player (unknown) | dist:   8,4 m | via: Shotgun: Dual
+	[01:59] killed!: [BOT ] FlankTheTank | Rank: 90 |   6,3 m | Assault: Heavy
+	[02:03] killed!: [BOT ] SadTroll94 | Rank: 88 |   3,9 m | Shotgun: Dual
+	[02:09] killed!: [BOT ] Whitman40 | Rank: 84 |   7,7 m | Assault: Heavy
+	[04:18] killed!: [Real] Sharkich223 | Rank: 46 |  30,6 m | Assault: Heavy
+	[04:43] killed!: [BOT ] Triangulated86 | Rank: 43 |  95,1 m | Assault: Heavy
+	[06:24] killed!: [Real] llmatmut88ll | Rank: 36 |   5,5 m | SMG: LavaLeaf
+	[07:00] knocked: [Real] papez_ales | Rank: 30 |   8,8 m | SMG: LavaLeaf
+	[07:37] killed!: [BOT ] Перелесник | Rank: 26 |  18,2 m | SMG: LavaLeaf
+	[07:51] killed!: [BOT ] Fußballfreak2003 | Rank: 23 |  36,8 m | SMG: LavaLeaf
 #16 | [T87] PizzaKetchupAnanas | BOT   | Kills:  2
+	[Death] Killed at 09:00 by Real Player (alegrassi46) | dist:  35,1 m | via: Assault: Combat
+	[04:12] killed!: [BOT ] Soytupadre87202 | Rank: 49 |  20,9 m | SMG: Burst
+	[08:54] killed!: [BOT ] Gandolfoilbianco | Rank: 17 |   2,3 m | SMG: Burst
 #17 | [T25] Gandolfoilbianco   | BOT   | Kills:  0
+	[Death] Killed at 08:54 by BOT Player (PizzaKetchupAnanas) | dist:   2,3 m | via: SMG: Burst
 #18 | [T70] Anonymutt          | BOT   | Kills:  1
+	[Death] Killed at 08:40 by Real Player (Ringer_Cat) | dist:  11,0 m | via: Assault: Combat
+	[07:20] killed!: [BOT ] HaHaHeeHee73 | Rank: 28 |   5,5 m | Shotgun: TeaCake
 #19 | [T69] TamKafadannn       | BOT   | Kills:  0
+	[Death] Killed at 08:35 by BOT Player (BubblyFalcon) | dist:   6,9 m | via: SMG: Burst
 #20 | [T54] FuzzyPickl3s       | BOT   | Kills:  1
+	[Death] Killed at 08:21 by BOT Player (EndlessMike52) | dist:   5,8 m | via: SMG: Burst
+	[03:57] killed!: [BOT ] aClassyGamer94 | Rank: 51 |   1,3 m | Shotgun: Pump
 #21 | [T33] PotatoCupid        | BOT   | Kills:  1
+	[Death] Killed at 08:20 by Real Player (ImperatorPEKKA) | dist:  16,9 m | via: Assault: PastaRipper
+	[07:45] killed!: [BOT ] JoyRJ6420 | Rank: 24 |   3,1 m | Shotgun: Pump
 #22 | [T52] Ambrosia0          | BOT   | Kills:  1
+	[Death] Killed at 07:56 by Real Player (ImperatorPEKKA) | dist:  11,3 m | via: Assault: PastaRipper
+	[07:34] killed!: [BOT ] FeasibleWeasel80 | Rank: 27 |   7,1 m | Pistol: Standard
 #23 | [T89] Fußballfreak2003   | BOT   | Kills:  0
+	[Death] Killed at 07:51 by Real Player (greenfnBob) | dist:  36,8 m | via: SMG: LavaLeaf
 #24 | [T49] JoyRJ6420          | BOT   | Kills:  0
+	[Death] Killed at 07:45 by BOT Player (PotatoCupid) | dist:   3,1 m | via: Shotgun: Pump
 #25 | [T82] CherubTree         | BOT   | Kills:  1
+	[Death] Killed at 07:40 by Real Player (Tanjirolovve) | dist:  14,6 m | via: SMG: LavaLeaf
+	[03:12] killed!: [BOT ] ItsAlwaysMe | Rank: 62 |   3,5 m | Shotgun: Dual
 #26 | [T36] Перелесник         | BOT   | Kills:  0
+	[Death] Killed at 07:37 by Real Player (greenfnBob) | dist:  18,2 m | via: SMG: LavaLeaf
 #27 | [T62] FeasibleWeasel80   | BOT   | Kills:  2
+	[Death] Killed at 07:34 by BOT Player (Ambrosia0) | dist:   7,1 m | via: Pistol: Standard
+	[02:37] killed!: [BOT ] InnoScent24 | Rank: 72 |   1,9 m | Pistol: Standard
+	[04:43] killed!: [BOT ] dönerci_MeMo | Rank: 44 |   2,7 m | Pistol: Standard
 #28 | [T84] HaHaHeeHee73       | BOT   | Kills:  1
+	[Death] Killed at 07:20 by BOT Player (Anonymutt) | dist:   5,5 m | via: Shotgun: TeaCake
+	[03:48] killed!: [BOT ] g0tmy3Y3onU | Rank: 54 |  11,7 m | Shotgun: Dual
 #29 | [T39] 25_wütende_Affen   | BOT   | Kills:  0
+	[Death] Killed at 07:17 by Real Player (Tanjirolovve) | dist:  18,4 m | via: SMG: LavaLeaf
 #30 * [T06] papez_ales         | Real  | Kills:  1 | Level:  91 ( 91) | Platform: PS5 | Skin: Character_SwoopClaspPry
+	[Death] Killed at 07:03 by Real Player (unknown) | dist:   2,2 m | via: Shotgun: TeaCake
+	[04:19] killed!: [Real] Devis216 | Rank: 45 |   3,1 m | Assault: Heavy
 #31 | [T100] ButchSquire        | BOT   | Kills:  1
+	[Death] Killed at 06:54 by BOT Player (MaximusIon59) | dist:   2,6 m | via: Shotgun: TeaCake
+	[02:41] killed!: [BOT ] Pembe_Örümcek | Rank: 68 |   2,3 m | Shotgun: Dual
 #32 | [T90] Овощебаза2019      | BOT   | Kills:  0
+	[Death] Killed at 06:46 by BOT Player (EndlessMike52) | dist:   8,0 m | via: Assault: Combat
 #33 | [T26] Чиполлино41737     | BOT   | Kills:  2
+	[Death] Killed at 06:30 by BOT Player (MegaYeet98) | dist:   4,9 m | via: Assault: Combat
+	[02:24] killed!: [BOT ] SPAL_2019 | Rank: 78 |   7,5 m | Assault: Heavy
+	[02:39] killed!: [BOT ] SilentRogue98 | Rank: 70 |  31,8 m | Assault: Heavy
 #34 | [T98] Bohun15            | BOT   | Kills:  0
+	[Death] Killed at 06:27 by Real Player (xdx2k7) | dist:   3,1 m | via: Shotgun: Dual
 #35 | [T99] J005ek1            | BOT   | Kills:  0
+	[Death] Killed at 06:25 by Real Player (Tanjirolovve) | dist:  17,0 m | via: Assault: PastaRipper
 #36 * [T16] llmatmut88ll       | Real  | Kills:  2 | Level: ??? (???) | Platform: PSN | Skin: Character_QuicheLorraineCrisp
+	[Death] Killed at 06:24 by Real Player (greenfnBob) | dist:   5,5 m | via: SMG: LavaLeaf
+	[02:45] killed!: [NPC ] Genji | Rank: ?? |  11,7 m | Shotgun: TeaCake
+	[04:59] killed!: [BOT ] SoFastMan | Rank: 42 |  20,0 m | Assault: Combat
+	[05:07] killed!: [BOT ] Chug_Brigade | Rank: 41 |   8,3 m | Assault: Combat
 #37 | [T78] Gloriainfinita     | BOT   | Kills:  0
+	[Death] Killed at 05:35 by Real Player (xdx2k7) | dist:  10,6 m | via: Shotgun: Dual
 #38 | [T35] Vertigo70          | BOT   | Kills:  1
+	[Death] Killed at 05:30 by BOT Player (MaximusIon59) | dist:  29,1 m | via: Assault: Heavy
+	[03:55] killed!: [BOT ] PurpleCrayon85 | Rank: 52 |   3,8 m | Shotgun: Pump
 #39 | [T46] NeoHero4           | BOT   | Kills:  1
+	[Death] Killed at 05:17 by Real Player (Tanjirolovve) | dist: 124,8 m | via: DMR: TeaCake
+	[04:16] killed!: [BOT ] Gooddoggo80 | Rank: 47 |   5,0 m | SMG: Burst
 #40 | [T57] ThermalDragon39    | BOT   | Kills:  0
+	[Death] Killed at 05:13 by Real Player (ImperatorPEKKA) | dist:  10,1 m | via: Assault: PastaRipper
 #41 | [T93] Chug_Brigade       | BOT   | Kills:  0
+	[Death] Killed at 05:07 by Real Player (llmatmut88ll) | dist:   8,3 m | via: Assault: Combat
 #42 | [T75] SoFastMan          | BOT   | Kills:  1
+	[Death] Killed at 04:59 by Real Player (llmatmut88ll) | dist:  20,0 m | via: Assault: Combat
+	[02:07] killed!: [BOT ] Bartolone811 | Rank: 85 |  17,0 m | Shotgun: TeaCake
 #43 | [T47] Triangulated86     | BOT   | Kills:  1
+	[Death] Killed at 04:43 by Real Player (greenfnBob) | dist:  95,1 m | via: Assault: Heavy
+	[03:10] killed!: [BOT ] BlindCat47 | Rank: 63 |   1,3 m | Shotgun: Dual
 #44 | [T37] dönerci_MeMo       | BOT   | Kills:  3
+	[Death] Killed at 04:43 by BOT Player (FeasibleWeasel80) | dist:   2,7 m | via: Pistol: Standard
+	[02:06] killed!: [BOT ] إد1 | Rank: 86 |   3,0 m | Assault: Heavy
+	[03:08] killed!: [BOT ] SickPapaya | Rank: 65 |   4,0 m | Shotgun: Dual
+	[03:18] killed!: [BOT ] WonszRzeczny81351 | Rank: 60 |   5,3 m | Shotgun: Dual
 #45 * [T13] Devis216           | Real  | Kills:  1 | Level: ??? (186) | Platform: PS5 | Skin: Character_MustardToast
+	[Death] Killed at 04:19 by Real Player (papez_ales) | dist:   3,1 m | via: Assault: Heavy
+	[02:15] killed!: [Real] Malak_308 | Rank: 81 |   2,2 m | Assault: Heavy
 #46 * [T09] Sharkich223        | Real  | Kills:  1 | Level: ??? ( 35) | Platform: WIN | Skin: Character_KelpLinenMagnesium
+	[Death] Killed at 04:18 by Real Player (greenfnBob) | dist:  30,6 m | via: Assault: Heavy
+	[02:52] killed!: [BOT ] CyborgWalrus6 | Rank: 66 |  23,1 m | Assault: Heavy
 #47 | [T94] Gooddoggo80        | BOT   | Kills:  1
+	[Death] Killed at 04:16 by BOT Player (NeoHero4) | dist:   5,0 m | via: SMG: Burst
+	[02:35] killed!: [BOT ] Krasser_Babo | Rank: 74 |   7,5 m | Shotgun: TeaCake
 #48 | [T80] b4mb1r31s          | BOT   | Kills:  1
+	[Death] Killed at 04:15 by Real Player (Tanjirolovve) | dist:   1,3 m | via: Assault: PastaRipper
+	[02:37] killed!: [BOT ] Про100 Отпад | Rank: 71 |  34,1 m | DMR: TeaCake
 #49 | [T59] Soytupadre87202    | BOT   | Kills:  0
+	[Death] Killed at 04:12 by BOT Player (PizzaKetchupAnanas) | dist:  20,9 m | via: SMG: Burst
 #50 | [T58] CrazyAlpaca98      | BOT   | Kills:  0
+	[Death] Killed at 03:57 by BOT Player (BubblyFalcon) | dist:   1,4 m | via: Pistol: TeaCake
 #51 | [T91] aClassyGamer94     | BOT   | Kills:  0
+	[Death] Killed at 03:57 by BOT Player (FuzzyPickl3s) | dist:   1,3 m | via: Shotgun: Pump
 #52 | [T65] PurpleCrayon85     | BOT   | Kills:  0
+	[Death] Killed at 03:55 by BOT Player (Vertigo70) | dist:   3,8 m | via: Shotgun: Pump
 #53 | [T71] CantHearYou3       | BOT   | Kills:  0
+	[Death] Killed at 03:55 by Real Player (Tanjirolovve) | dist:   6,1 m | via: Assault: PastaRipper
 #54 | [T73] g0tmy3Y3onU        | BOT   | Kills:  0
+	[Death] Killed at 03:48 by BOT Player (HaHaHeeHee73) | dist:  11,7 m | via: Shotgun: Dual
 #55 | [T74] MisterMosquito0    | BOT   | Kills:  0
+	[Death] Killed at 03:45 by Real Player (alegrassi46) | dist:   5,4 m | via: Assault: Combat
 #56 | [T32] GrumbleofPugs6     | BOT   | Kills:  0
+	[Death] Killed at 03:44 by BOT Player (MegaYeet98) | dist:   3,0 m | via: Assault: Heavy
 #57 | [T64] McLawnmower91      | BOT   | Kills:  0
+	[Death] Killed at 03:43 by BOT Player (SuperWygar) | dist:   4,8 m | via: SMG: Burst
 #58 * [T17] gabrieletiggiano   | Real  | Kills:  2 | Level: ??? ( 26) | Platform: PS5 | Skin: Prime_E
+	[Death] Killed at 03:41 by Real Player (ImperatorPEKKA) | dist:   7,1 m | via: Shotgun: Dual
+	[01:37] killed!: [BOT ] Freylis21 | Rank: 96 |   1,7 m | Shotgun: Pump
+	[03:10] killed!: [Real] markoosik_26 | Rank: 64 |   6,3 m | Shotgun: Dual
 #59 | [T42] DoubleRainbow96    | BOT   | Kills:  0
+	[Death] Killed at 03:37 by BOT Player (MintElephant26) | dist:   2,2 m | via: Assault: Combat
 #60 | [T67] WonszRzeczny81351  | BOT   | Kills:  0
+	[Death] Killed at 03:18 by BOT Player (dönerci_MeMo) | dist:   5,3 m | via: Shotgun: Dual
 #61 | [T76] TryAgain49         | BOT   | Kills:  0
+	[Death] Killed at 03:15 by Real Player (Ringer_Cat) | dist:  16,2 m | via: Assault: Combat
 #62 | [T22] ItsAlwaysMe        | BOT   | Kills:  0
+	[Death] Killed at 03:12 by BOT Player (CherubTree) | dist:   3,5 m | via: Shotgun: Dual
 #63 | [T81] BlindCat47         | BOT   | Kills:  1
+	[Death] Killed at 03:10 by BOT Player (Triangulated86) | dist:   1,3 m | via: Shotgun: Dual
+	[02:46] killed!: [BOT ] Blueberry1002 | Rank: 67 |   4,5 m | Pistol: Standard
 #64 * [T14] markoosik_26       | Real  | Kills:  1 | Level: ??? (245) | Platform: PS5 | Skin: Character_DiamondHeart_Chic
+	[Death] Killed at 03:10 by Real Player (gabrieletiggiano) | dist:   6,3 m | via: Shotgun: Dual
+	[01:32] killed!: [BOT ] ShieldHorse63 | Rank: 98 |   5,7 m | Shotgun: Dual
 #65 | [T86] SickPapaya         | BOT   | Kills:  0
+	[Death] Killed at 03:08 by BOT Player (dönerci_MeMo) | dist:   4,0 m | via: Shotgun: Dual
 #66 | [T48] CyborgWalrus6      | BOT   | Kills:  2
+	[Death] Killed at 02:52 by Real Player (Sharkich223) | dist:  23,1 m | via: Assault: Heavy
+	[02:29] killed!: [BOT ] نولان | Rank: 76 |  31,4 m | Pistol: Standard
+	[02:38] killed!: [BOT ] R0ckStar5 | Rank: 73 |   6,0 m | Pistol: Standard
 #67 | [T92] Blueberry1002      | BOT   | Kills:  0
+	[Death] Killed at 02:46 by BOT Player (BlindCat47) | dist:   4,5 m | via: Pistol: Standard
 #68 | [T38] Pembe_Örümcek      | BOT   | Kills:  0
+	[Death] Killed at 02:41 by BOT Player (ButchSquire) | dist:   2,3 m | via: Shotgun: Dual
 #69 | [T29] BlipBlap53         | BOT   | Kills:  0
+	[Death] Killed at 02:40 by BOT Player (EndlessMike52) | dist:   7,8 m | via: Pistol: Standard
 #70 | [T44] SilentRogue98      | BOT   | Kills:  0
+	[Death] Killed at 02:39 by BOT Player (Чиполлино41737) | dist:  31,8 m | via: Assault: Heavy
 #71 | [T28] Про100 Отпад       | BOT   | Kills:  1
+	[Death] Killed at 02:37 by BOT Player (b4mb1r31s) | dist:  34,1 m | via: DMR: TeaCake
+	[02:26] killed!: [BOT ] كونور1 | Rank: 77 |   8,2 m | Assault: Heavy
 #72 | [T63] InnoScent24        | BOT   | Kills:  0
+	[Death] Killed at 02:37 by BOT Player (FeasibleWeasel80) | dist:   1,9 m | via: Pistol: Standard
 #73 | [T96] R0ckStar5          | BOT   | Kills:  0
+	[Death] Killed at 02:38 by BOT Player (CyborgWalrus6) | dist:   6,0 m | via: Pistol: Standard
 #74 | [T79] Krasser_Babo       | BOT   | Kills:  0
+	[Death] Killed at 02:35 by BOT Player (Gooddoggo80) | dist:   7,5 m | via: Shotgun: TeaCake
 #75 | [T40] aaaaaaaaalbert     | BOT   | Kills:  1
+	[Death] Killed at 02:32 by BOT Player (Chimuelopr0) | dist:   2,9 m | via: Shotgun: TeaCake
+	[02:20] killed!: [BOT ] Mannara2000 | Rank: 79 |   1,5 m | Assault: Heavy
 #76 | [T88] نولان              | BOT   | Kills:  0
+	[Death] Killed at 02:29 by BOT Player (CyborgWalrus6) | dist:  31,4 m | via: Pistol: Standard
 #77 | [T05] كونور1             | BOT   | Kills:  0
+	[Death] Killed at 02:26 by BOT Player (Про100 Отпад) | dist:   8,2 m | via: Assault: Heavy
 #78 | [T07] SPAL_2019          | BOT   | Kills:  0
+	[Death] Killed at 02:24 by BOT Player (Чиполлино41737) | dist:   7,5 m | via: Assault: Heavy
 #79 | [T60] Mannara2000        | BOT   | Kills:  0
+	[Death] Killed at 02:20 by BOT Player (aaaaaaaaalbert) | dist:   1,5 m | via: Assault: Heavy
 #80 | [T53] BoldPrediction     | BOT   | Kills:  3
+	[Death] Killed at 02:19 by Real Player (xdx2k7) | dist:   6,4 m | via: Shotgun: Dual
+	[01:47] killed!: [BOT ] RoyaleKing60953 | Rank: 93 |  21,5 m | Pistol: TeaCake
+	[02:04] killed!: [BOT ] WalkInThePark66 | Rank: 87 |  52,9 m | Pistol: TeaCake
+	[02:13] killed!: [BOT ] Knowaguy | Rank: 83 |  34,9 m | Pistol: TeaCake
 #81 * [T10] Malak_308          | Real  | Kills:  1 | Level:  85 ( 85) | Platform: PS5 | Skin: -
+	[Death] Killed at 02:15 by Real Player (Devis216) | dist:   2,2 m | via: Assault: Heavy
+	[01:59] killed!: [BOT ] KeyFlamingo | Rank: 89 |   6,7 m | Shotgun: Dual
 #82 | [T34] ThisSideUp87       | BOT   | Kills:  0
+	[Death] Killed at 02:17 by BOT Player (WanderAgent) | dist:   1,3 m | via: Assault: Heavy
 #83 | [T95] Knowaguy           | BOT   | Kills:  0
+	[Death] Killed at 02:13 by BOT Player (BoldPrediction) | dist:  34,9 m | via: Pistol: TeaCake
 #84 | [T77] Whitman40          | BOT   | Kills:  0
+	[Death] Killed at 02:09 by Real Player (greenfnBob) | dist:   7,7 m | via: Assault: Heavy
 #85 | [T50] Bartolone811       | BOT   | Kills:  0
+	[Death] Killed at 02:07 by BOT Player (SoFastMan) | dist:  17,0 m | via: Shotgun: TeaCake
 #86 | [T68] إد1                | BOT   | Kills:  0
+	[Death] Killed at 02:06 by BOT Player (dönerci_MeMo) | dist:   3,0 m | via: Assault: Heavy
 #87 | [T97] WalkInThePark66    | BOT   | Kills:  0
+	[Death] Killed at 02:04 by BOT Player (BoldPrediction) | dist:  52,9 m | via: Pistol: TeaCake
 #88 | [T30] SadTroll94         | BOT   | Kills:  0
+	[Death] Killed at 02:03 by Real Player (greenfnBob) | dist:   3,9 m | via: Shotgun: Dual
 #89 | [T21] KeyFlamingo        | BOT   | Kills:  1
+	[Death] Killed at 01:59 by Real Player (Malak_308) | dist:   6,7 m | via: Shotgun: Dual
+	[01:56] killed!: [BOT ] GigaWatt10k | Rank: 92 |  18,0 m | SMG: MusterQuickMag
 #90 | [T20] FlankTheTank       | BOT   | Kills:  0
+	[Death] Killed at 01:59 by Real Player (greenfnBob) | dist:   6,3 m | via: Assault: Heavy
 #91 | [T61] BananaPastrami     | BOT   | Kills:  0
+	[Death] Killed at 01:58 by BOT Player (EndlessMike52) | dist:   9,0 m | via: SMG: Burst
 #92 | [T31] GigaWatt10k        | BOT   | Kills:  0
+	[Death] Killed at 01:56 by BOT Player (KeyFlamingo) | dist:  18,0 m | via: SMG: MusterQuickMag
 #93 | [T27] RoyaleKing60953    | BOT   | Kills:  0
+	[Death] Killed at 01:47 by BOT Player (BoldPrediction) | dist:  21,5 m | via: Pistol: TeaCake
 #94 * [T08] blighthesecond     | Real  | Kills:  0 | Level: 140 (140) | Platform: PS5 | Skin: Character_GuideQuiz
+	[Death] Killed at 01:46 by Real Player (alegrassi46) | dist:   1,3 m | via: SMG: Burst
 #95 | [T72] Dessloch52         | BOT   | Kills:  0
+	[Death] Killed at 01:38 by Real Player (xdx2k7) | dist:   4,7 m | via: Shotgun: Dual
 #96 | [T43] Freylis21          | BOT   | Kills:  0
+	[Death] Killed at 01:37 by Real Player (gabrieletiggiano) | dist:   1,7 m | via: Shotgun: Pump
 #97 | [T83] Forbidden60        | BOT   | Kills:  0
+	[Death] Killed at 01:34 by Real Player (Tanjirolovve) | dist:  13,5 m | via: Pistol: Standard
 #98 | [T23] ShieldHorse63      | BOT   | Kills:  0
+	[Death] Killed at 01:32 by Real Player (markoosik_26) | dist:   5,7 m | via: Shotgun: Dual
