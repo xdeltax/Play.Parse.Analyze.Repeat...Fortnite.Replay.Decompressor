@@ -241,6 +241,15 @@ const App = () => {
 
   const activeRanking = rankingTab === 'team' ? fullTeamRanking : fullIndividualRanking;
 
+  const isSoloGame = currentReplayData && currentReplayData.GameData?.CurrentPlaylist && currentReplayData.GameData.CurrentPlaylist.toLowerCase().includes('solo');
+
+  // Force individual tab for Solo games
+  useEffect(() => {
+    if (isSoloGame) {
+      setRankingTab('individual');
+    }
+  }, [isSoloGame]);
+
   return (
     <div className="app-container">
       
@@ -281,12 +290,31 @@ const App = () => {
                     {sr.isParsed ? '✅ Parsed' : '⏳ Unparsed'}
                   </span>
                   {sr.isParsed ? (
-                    <button 
-                      onClick={() => setSelectedReplay(sr.filename.replace('.replay', '.json'))}
-                      style={{ padding: '4px 10px', background: 'var(--accent)', border: 'none', borderRadius: '4px', color: '#0b0f19', cursor: 'pointer', fontSize: '0.75rem', fontWeight: 'bold', transition: 'all 0.2s' }}
-                    >
-                      View
-                    </button>
+                    <div style={{ display: 'flex', gap: '4px' }}>
+                      <button 
+                        onClick={() => {
+                          setSelectedReplay(sr.filename.replace('.replay', '.json'));
+                          window.showKillDetails = false;
+                          // Force state update to re-render
+                          setExpandedPlayers({});
+                        }}
+                        style={{ padding: '4px 8px', background: isSelected && window.showKillDetails === false ? 'var(--accent)' : 'rgba(255,255,255,0.1)', border: 'none', borderRadius: '4px', color: isSelected && window.showKillDetails === false ? '#0b0f19' : '#fff', cursor: 'pointer', fontSize: '0.75rem', fontWeight: 'bold', transition: 'all 0.2s' }}
+                        title="Dashboard (Rankings only)"
+                      >
+                        D
+                      </button>
+                      <button 
+                        onClick={() => {
+                          setSelectedReplay(sr.filename.replace('.replay', '.json'));
+                          window.showKillDetails = true;
+                          setExpandedPlayers({});
+                        }}
+                        style={{ padding: '4px 8px', background: isSelected && window.showKillDetails === true ? 'var(--accent)' : 'rgba(255,255,255,0.1)', border: 'none', borderRadius: '4px', color: isSelected && window.showKillDetails === true ? '#0b0f19' : '#fff', cursor: 'pointer', fontSize: '0.75rem', fontWeight: 'bold', transition: 'all 0.2s' }}
+                        title="Kill Details"
+                      >
+                        K
+                      </button>
+                    </div>
                   ) : (
                     <button 
                       disabled={!!parsingTarget}
@@ -519,20 +547,22 @@ const App = () => {
                   <h2 className="section-title" style={{ margin: 0, border: 'none', padding: 0 }}>
                     <span>Rankings Overview</span>
                   </h2>
-                  <div className="tab-container">
-                    <button 
-                      onClick={() => setRankingTab('team')} 
-                      className={`tab-btn ${rankingTab === 'team' ? 'active' : ''}`}
-                    >
-                      Team-Ranking
-                    </button>
-                    <button 
-                      onClick={() => setRankingTab('individual')} 
-                      className={`tab-btn ${rankingTab === 'individual' ? 'active' : ''}`}
-                    >
-                      Ranking (Indiv)
-                    </button>
-                  </div>
+                  {!isSoloGame && (
+                    <div className="tab-container">
+                      <button 
+                        onClick={() => setRankingTab('team')} 
+                        className={`tab-btn ${rankingTab === 'team' ? 'active' : ''}`}
+                      >
+                        Team-Ranking
+                      </button>
+                      <button 
+                        onClick={() => setRankingTab('individual')} 
+                        className={`tab-btn ${rankingTab === 'individual' ? 'active' : ''}`}
+                      >
+                        Ranking (Indiv)
+                      </button>
+                    </div>
+                  )}
                 </div>
 
                 <div className="table-wrapper">
@@ -540,7 +570,7 @@ const App = () => {
                     <thead>
                       <tr>
                         <th style={{ width: '60px' }}>Rank</th>
-                        <th style={{ width: '60px' }}>Team</th>
+                        {!isSoloGame && <th style={{ width: '60px' }}>Team</th>}
                         <th>Player</th>
                         <th style={{ width: '80px' }}>Type</th>
                         <th style={{ width: '60px' }}>Kills</th>
@@ -558,18 +588,20 @@ const App = () => {
                         const displayLevel = p.Level !== null && p.Level !== undefined ? p.Level : '???';
                         const displaySeasonLevel = p.SeasonLevelUIDisplay !== null && p.SeasonLevelUIDisplay !== undefined ? p.SeasonLevelUIDisplay : '???';
 
+                        const showKillDetails = window.showKillDetails !== false;
+
                         return (
                           <React.Fragment key={i}>
                             <tr className={rowClass}>
                               <td style={{ fontWeight: 'bold', color: p.Placement === 1 ? 'var(--warning)' : p.Placement === 2 ? '#94a3b8' : 'var(--text-secondary)', display: 'flex', alignItems: 'center', gap: '4px' }}>
-                                {p.Id !== null && p.Id !== undefined && (
+                                {showKillDetails && p.Id !== null && p.Id !== undefined && (
                                   <button onClick={() => toggleExpand(p.Id)} className="expand-btn" style={{ fontSize: '0.8rem', padding: '0 4px', lineHeight: 1 }}>
                                     {expandedPlayers[p.Id] ? '−' : '+'}
                                   </button>
                                 )}
                                 {p.Placement ? `#${p.Placement.toString().padStart(2, '0')}` : '#??'}
                               </td>
-                              <td>T{p.TeamIndex !== null && p.TeamIndex !== undefined ? p.TeamIndex.toString().padStart(2, '0') : '??'}</td>
+                              {!isSoloGame && <td>T{p.TeamIndex !== null && p.TeamIndex !== undefined ? p.TeamIndex.toString().padStart(2, '0') : '??'}</td>}
                               <td style={{ color: p.IsReplayOwner ? 'var(--accent)' : '#fff', fontWeight: (p.IsReplayOwner || isTeammate) ? 'bold' : 'normal' }}>
                                 {p.IsReplayOwner && <span style={{ color: 'var(--accent)', marginRight: '4px' }}>★</span>}
                                 {isTeammate && <span style={{ color: 'var(--purple)', marginRight: '4px' }}>•</span>}
@@ -594,9 +626,9 @@ const App = () => {
                                 </td>
                               )}
                             </tr>
-                            {expandedPlayers[p.Id] && (
+                            {showKillDetails && expandedPlayers[p.Id] && (
                               <tr className="details-row">
-                                <td colSpan={rankingTab === 'team' ? 9 : 8}>
+                                <td colSpan={isSoloGame ? 7 : (rankingTab === 'team' ? 9 : 8)}>
                                   <div className="player-details-expanded">
                                     {/* Death Info */}
                                     {(() => {

@@ -13,6 +13,22 @@ using Unreal.Core.Models.Enums;
 
 internal static class ReplayAnalyzer
 {
+    private static double GetKillfeedTimeOffsetSeconds(FortniteReplay replay)
+    {
+        // For standard Fortnite matches, the first safe zone shrink countdown is 240s (4 minutes) before it starts shrinking.
+        // Therefore, (First SafeZone StartShrinkTime) - 240 seconds = Match start time (when the bus starts / warmup ends).
+        var firstSafeZone = replay.MapData?.SafeZones?.FirstOrDefault();
+        if (firstSafeZone?.StartShrinkTime > 240)
+        {
+            return (double)firstSafeZone.StartShrinkTime - 240.0;
+        }
+
+        return replay.GameData?.WarmupCountdownEndTime
+            ?? replay.GameData?.AircraftStartTime
+            ?? replay.GameData?.SafeZonesStartTime
+            ?? 0;
+    }
+
     internal sealed record ReplayProcessResult(string ReplayFilePath, string JsonPath, string TxtPath, string JsonText, string AnalysisText);
 
     public static void Run(string[] args)
@@ -355,18 +371,25 @@ internal static class ReplayAnalyzer
                     var timeFmt = time.HasValue ? FormatDurationMmSs(time.Value) : "??:??";
                     var victimRankNum = victimPlayer?.Placement.HasValue == true ? (int?)victimPlayer.Placement.Value : null;
                     var victimRankStr = victimRankNum.HasValue ? $"{victimRankNum.Value,2}" : "??";
+                    var victimKillsStr = victimPlayer is not null ? $" ({victimPlayer.Kills ?? 0} kills)" : string.Empty;
                     var feedDist = entry.Distance is float d and > 0 ? $" | {FormatDistanceMeters(d)}" : string.Empty;
                     var feedWeapon = ExtractWeaponFromTags(entry.DeathTags);
                     var feedWeaponStr = feedWeapon is not null ? $" | {feedWeapon}" : string.Empty;
-                    lines.Add($"  {i + 1,2}. [{timeFmt}] {action}: [{tag}] {victim.PadRight(killfeedVictimWidth)} | Rank: {victimRankStr}{feedDist}{feedWeaponStr}");
+                    lines.Add($"  {i + 1,2}. [{timeFmt}] {action}: [{tag}] {victim.PadRight(killfeedVictimWidth)} | Rank: {victimRankStr}{victimKillsStr}{feedDist}{feedWeaponStr}");
                 }
             }
 
             lines.Add(string.Empty);
         }
 
-        AppendRanking(lines, "Team-Ranking", teamRankedPlayers, teamUnrankedAliveRealPlayers, isTeamRanking: true, replay, playersById, killFeed);
-        lines.Add(string.Empty);
+        var lowerPlaylist = (replay.GameData?.CurrentPlaylist ?? string.Empty).ToLowerInvariant();
+        var isSoloMatch = lowerPlaylist.Contains("solo");
+
+        if (!isSoloMatch)
+        {
+            AppendRanking(lines, "Team-Ranking", teamRankedPlayers, teamUnrankedAliveRealPlayers, isTeamRanking: true, replay, playersById, killFeed);
+            lines.Add(string.Empty);
+        }
         AppendRanking(lines, "Ranking", normalRankedPlayers, normalUnrankedAliveRealPlayers, isTeamRanking: false, replay, playersById, killFeed);
 
         return string.Join(Environment.NewLine, lines);
@@ -610,13 +633,7 @@ internal static class ReplayAnalyzer
         return Math.Max(0, eventTimeSeconds.Value - GetKillfeedTimeOffsetSeconds(replay));
     }
 
-    private static double GetKillfeedTimeOffsetSeconds(FortniteReplay replay)
-    {
-        return replay.GameData?.WarmupCountdownEndTime
-            ?? replay.GameData?.AircraftStartTime
-            ?? replay.GameData?.SafeZonesStartTime
-            ?? 0;
-    }
+
 
     private static string GetPlayerDisplayName(PlayerData? player)
     {
