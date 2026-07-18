@@ -301,6 +301,12 @@ internal static class Program
             if (key == ConsoleKey.D)
             {
                 EnsurePendingProgressLineTerminated(pending);
+                ShowLastReplayRankingsWithoutDetails(lastProcessedResult);
+            }
+
+            if (key == ConsoleKey.K)
+            {
+                EnsurePendingProgressLineTerminated(pending);
                 ShowLastReplayDetails(lastProcessedResult);
             }
         }
@@ -390,7 +396,7 @@ internal static class Program
         }
     }
 
-    private static void ShowLastReplayDetails(ReplayAnalyzer.ReplayProcessResult? lastProcessedResult)
+    private static void ShowLastReplayRankingsWithoutDetails(ReplayAnalyzer.ReplayProcessResult? lastProcessedResult)
     {
         if (lastProcessedResult is null)
         {
@@ -400,7 +406,31 @@ internal static class Program
         }
 
         Console.WriteLine();
-        Console.WriteLine($"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] D pressed: showing details (including ranking) for {lastProcessedResult.ReplayFilePath}");
+        Console.WriteLine($"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] D pressed: showing rankings without details for {lastProcessedResult.ReplayFilePath}");
+        Console.WriteLine(GetTextWithoutPlayerDetails(lastProcessedResult.AnalysisText));
+        Console.WriteLine();
+        PrintShortcutHint(lastProcessedResult);
+    }
+
+    private static string GetTextWithoutPlayerDetails(string fullText)
+    {
+        if (string.IsNullOrEmpty(fullText)) return string.Empty;
+        var lines = fullText.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None);
+        var filtered = lines.Where(line => !line.StartsWith("\t"));
+        return string.Join(Environment.NewLine, filtered);
+    }
+
+    private static void ShowLastReplayDetails(ReplayAnalyzer.ReplayProcessResult? lastProcessedResult)
+    {
+        if (lastProcessedResult is null)
+        {
+            Console.WriteLine($"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] K pressed: no replay has been processed yet.");
+            PrintShortcutHint(lastProcessedResult);
+            return;
+        }
+
+        Console.WriteLine();
+        Console.WriteLine($"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] K pressed: showing details (including ranking) for {lastProcessedResult.ReplayFilePath}");
         Console.WriteLine(lastProcessedResult.AnalysisText);
         Console.WriteLine();
         PrintShortcutHint(lastProcessedResult);
@@ -511,7 +541,7 @@ internal static class Program
     private static void PrintShortcutHint(ReplayAnalyzer.ReplayProcessResult? lastProcessedResult)
     {
         var lastReplayName = lastProcessedResult is null ? "none" : Path.GetFileName(lastProcessedResult.ReplayFilePath);
-        Console.WriteLine($"[L] Last  [R] Reparse all  [D] Details last  [X] Exit | Last: {lastReplayName}");
+        Console.WriteLine($"[L] Last  [R] Reparse all  [D] Rankings  [K] Kill details  [X] Exit | Last: {lastReplayName}");
     }
 
     private static string? TryGetSignature(string filePath)
