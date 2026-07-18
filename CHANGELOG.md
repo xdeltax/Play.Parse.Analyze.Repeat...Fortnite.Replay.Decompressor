@@ -5,9 +5,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-- More changes and improvements by [SL-x-TnT](https://github.com/SL-x-TnT)
-- Interfaces to support proper DI
-- Register types to be parsed with DI
+
+## [3.0.3-xdx] - 2026-07-18
+### Changed
+- Dynamically calculate warmup/lobby timing offset using safe zones first start shrink time minus 240 seconds when aircraft start time is not replicated.
+- Show victim's pre-elimination kills in owner's killfeed.
+- Sidebar UI additions: K button for Kill details, D button for rankings only.
+- Hide Team rankings and Team / Reboots columns in solo match dashboard screens.
 
 ## [3.0.2-xdx] - 2026-05-25
 ### Changed
