@@ -132,6 +132,9 @@ internal static class ReplayAnalyzer
             .ToDictionary(g => g.Key, g => g.First());
         var killFeed = replay.KillFeed?.ToList() ?? new List<KillFeedEntry>();
 
+        var lowerPlaylist = (replay.GameData?.CurrentPlaylist ?? string.Empty).ToLowerInvariant();
+        var isSoloMatch = lowerPlaylist.Contains("solo");
+
         var teamRankedPlayers = players
             .Where(p => p.Placement.HasValue && p.Placement.Value > 0)
             .OrderBy(p => p.Placement)
@@ -288,29 +291,36 @@ internal static class ReplayAnalyzer
                 lines.Add($"       Skin: {skin} | Pickaxe: {pickaxe} | Glider: {glider} | Backpack: {backpack}");
             }
 
-            lines.Add(string.Empty);
-            var ownerTeamIndex = owner.TeamIndex;
-            var teammates = ownerTeamIndex.HasValue ? players.Where(p => p.TeamIndex == ownerTeamIndex.Value).ToList() : new List<PlayerData> { owner };
-            var teamKills = teammates.Sum(p => p.Kills ?? 0);
-            
-            var teamIds = teammates.Where(p => p.Id.HasValue).Select(p => p.Id!.Value).ToHashSet();
-            var teamKnocks = killFeed.Count(k => k.FinisherOrDowner.HasValue && teamIds.Contains(k.FinisherOrDowner.Value) && k.IsDowned && !k.IsRevived);
-            var teamRevivesFromFeed = killFeed.Count(k => k.FinisherOrDowner.HasValue && teamIds.Contains(k.FinisherOrDowner.Value) && k.IsRevived);
-            var teamRevivesDisplay = Math.Max(teamRevivesFromFeed, ownerRevives ?? 0);
-
-            var teamStr = ownerTeamIndex.HasValue ? $"Team {ownerTeamIndex.Value:00}" : "Team ??";
-            lines.Add($"Owner Team ({teamStr}):");
-            lines.Add($"       {teammates.Count} Players | Team Kills: {teamKills} | Team Knocks: {teamKnocks} | Team Revives: {teamRevivesDisplay}");
-            
-            foreach (var teammate in teammates.OrderByDescending(p => p.DeathTimeDouble ?? (double?)p.DeathTime ?? double.MaxValue).ThenByDescending(p => p.Kills ?? 0).ThenBy(p => GetPlayerDisplayName(p)))
+            if (!isSoloMatch)
             {
-                 var teammateKills = teammate.Kills ?? 0;
-                 var teammateKnocks = teammate.Id.HasValue ? killFeed.Count(k => k.FinisherOrDowner == teammate.Id.Value && k.IsDowned && !k.IsRevived) : 0;
-                 var teammateDamage = teammate.IsReplayOwner ? (ownerDamageGiven?.ToString() ?? "?") : "?";
-                 var teammateState = (teammate.DeathTimeDouble.HasValue || teammate.DeathTime.HasValue) ? "Dead " : "Alive";
-                 lines.Add($"       - {FormatDisplayNameWithCrown(teammate).PadRight(20)} | Kills: {teammateKills,2} | Knocks: {teammateKnocks,2} | Dmg: {teammateDamage,4} | {teammateState}");
+                lines.Add(string.Empty);
+                var ownerTeamIndex = owner.TeamIndex;
+                var teammates = ownerTeamIndex.HasValue ? players.Where(p => p.TeamIndex == ownerTeamIndex.Value).ToList() : new List<PlayerData> { owner };
+                var teamKills = teammates.Sum(p => p.Kills ?? 0);
+            
+                var teamIds = teammates.Where(p => p.Id.HasValue).Select(p => p.Id!.Value).ToHashSet();
+                var teamKnocks = killFeed.Count(k => k.FinisherOrDowner.HasValue && teamIds.Contains(k.FinisherOrDowner.Value) && k.IsDowned && !k.IsRevived);
+                var teamRevivesFromFeed = killFeed.Count(k => k.FinisherOrDowner.HasValue && teamIds.Contains(k.FinisherOrDowner.Value) && k.IsRevived);
+                var teamRevivesDisplay = Math.Max(teamRevivesFromFeed, ownerRevives ?? 0);
+
+                var teamStr = ownerTeamIndex.HasValue ? $"Team {ownerTeamIndex.Value:00}" : "Team ??";
+                lines.Add($"Owner Team ({teamStr}):");
+                lines.Add($"       {teammates.Count} Players | Team Kills: {teamKills} | Team Knocks: {teamKnocks} | Team Revives: {teamRevivesDisplay}");
+            
+                foreach (var teammate in teammates.OrderByDescending(p => p.DeathTimeDouble ?? (double?)p.DeathTime ?? double.MaxValue).ThenByDescending(p => p.Kills ?? 0).ThenBy(p => GetPlayerDisplayName(p)))
+                {
+                     var teammateKills = teammate.Kills ?? 0;
+                     var teammateKnocks = teammate.Id.HasValue ? killFeed.Count(k => k.FinisherOrDowner == teammate.Id.Value && k.IsDowned && !k.IsRevived) : 0;
+                     var teammateDamage = teammate.IsReplayOwner ? (ownerDamageGiven?.ToString() ?? "?") : "?";
+                     var teammateState = (teammate.DeathTimeDouble.HasValue || teammate.DeathTime.HasValue) ? "Dead " : "Alive";
+                     lines.Add($"       - {FormatDisplayNameWithCrown(teammate).PadRight(20)} | Kills: {teammateKills,2} | Knocks: {teammateKnocks,2} | Dmg: {teammateDamage,4} | {teammateState}");
+                }
+                lines.Add(string.Empty);
             }
-            lines.Add(string.Empty);
+            else
+            {
+                lines.Add(string.Empty);
+            }
 
             lines.Add("Owner Killfeed:");
 
@@ -373,9 +383,6 @@ internal static class ReplayAnalyzer
 
             lines.Add(string.Empty);
         }
-
-        var lowerPlaylist = (replay.GameData?.CurrentPlaylist ?? string.Empty).ToLowerInvariant();
-        var isSoloMatch = lowerPlaylist.Contains("solo");
 
         if (!isSoloMatch)
         {
